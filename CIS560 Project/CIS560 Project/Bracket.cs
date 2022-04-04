@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CIS560_Project
 {
-    public partial class Form1 : Form
+    public partial class Bracket : Form
     {
-        public Form1()
+        public Bracket()
         {
             InitializeComponent();
         }
