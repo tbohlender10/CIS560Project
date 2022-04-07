@@ -8,8 +8,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{845E2A2E-BD4F-4C0D-BA25-DBA5CE0B16AE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C89D1311-33BE-4AC5-B572-5D34E6475E3C}"
+	ProjectSection(SolutionItems) = preProject
+		RebuildDatabase.ps1 = RebuildDatabase.ps1
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{2898FEB4-FEB1-43A5-A67D-EFB52F81FF7D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{F8CFF6D5-6B7F-4096-B730-138C8FF7AED6}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\CreateDatabase.ps1 = Scripts\CreateDatabase.ps1
+		Scripts\CreateDatabase.sql = Scripts\CreateDatabase.sql
+		Scripts\DropDatabase.ps1 = Scripts\DropDatabase.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,7 +38,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2898FEB4-FEB1-43A5-A67D-EFB52F81FF7D} = {C89D1311-33BE-4AC5-B572-5D34E6475E3C}
+		{F8CFF6D5-6B7F-4096-B730-138C8FF7AED6} = {C89D1311-33BE-4AC5-B572-5D34E6475E3C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {12B950EC-5EF9-4B6B-B6E0-DEE50AF9C9E2}
