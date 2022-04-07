@@ -125,36 +125,36 @@ namespace CIS560_Project
             this.label61 = new System.Windows.Forms.Label();
             this.uxComboBox25 = new System.Windows.Forms.ComboBox();
             this.label62 = new System.Windows.Forms.Label();
-            this.uxCombBox61 = new System.Windows.Forms.ComboBox();
-            this.comboBox33 = new System.Windows.Forms.ComboBox();
+            this.uxCombBox33 = new System.Windows.Forms.ComboBox();
             this.uxComboBox34 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox33 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox38 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox37 = new System.Windows.Forms.ComboBox();
             this.uxComboBox36 = new System.Windows.Forms.ComboBox();
             this.uxComboBox35 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox42 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox41 = new System.Windows.Forms.ComboBox();
             this.uxComboBox40 = new System.Windows.Forms.ComboBox();
             this.uxComboBox39 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox46 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox45 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox38 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox37 = new System.Windows.Forms.ComboBox();
             this.uxComboBox44 = new System.Windows.Forms.ComboBox();
             this.uxComboBox43 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox47 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox42 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox41 = new System.Windows.Forms.ComboBox();
             this.uxComboBox48 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox51 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox52 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox47 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox46 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox45 = new System.Windows.Forms.ComboBox();
             this.uxComboBox49 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox50 = new System.Windows.Forms.ComboBox();
             this.uxComboBox53 = new System.Windows.Forms.ComboBox();
             this.uxComboBox54 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox50 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox51 = new System.Windows.Forms.ComboBox();
             this.uxComboBox55 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox57 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox58 = new System.Windows.Forms.ComboBox();
             this.uxComboBox56 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox52 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox57 = new System.Windows.Forms.ComboBox();
             this.uxComboBox59 = new System.Windows.Forms.ComboBox();
             this.uxComboBox60 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox58 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox61 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox62 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // uxLabel1
@@ -1085,305 +1085,335 @@ namespace CIS560_Project
             this.label62.TabIndex = 72;
             this.label62.Text = "1 Gonzaga";
             // 
-            // uxCombBox61
+            // uxCombBox33
             // 
-            this.uxCombBox61.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxCombBox61.FormattingEnabled = true;
-            this.uxCombBox61.Location = new System.Drawing.Point(184, 75);
-            this.uxCombBox61.MaxDropDownItems = 2;
-            this.uxCombBox61.Name = "uxCombBox61";
-            this.uxCombBox61.Size = new System.Drawing.Size(121, 28);
-            this.uxCombBox61.TabIndex = 96;
-            // 
-            // comboBox33
-            // 
-            this.comboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox33.FormattingEnabled = true;
-            this.comboBox33.Location = new System.Drawing.Point(184, 245);
-            this.comboBox33.MaxDropDownItems = 2;
-            this.comboBox33.Name = "comboBox33";
-            this.comboBox33.Size = new System.Drawing.Size(121, 28);
-            this.comboBox33.TabIndex = 97;
+            this.uxCombBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxCombBox33.FormattingEnabled = true;
+            this.uxCombBox33.Location = new System.Drawing.Point(184, 75);
+            this.uxCombBox33.MaxDropDownItems = 2;
+            this.uxCombBox33.Name = "uxCombBox33";
+            this.uxCombBox33.Size = new System.Drawing.Size(121, 28);
+            this.uxCombBox33.TabIndex = 96;
+            this.uxCombBox33.SelectedIndexChanged += new System.EventHandler(this.uxCombBox33_SelectedIndexChanged);
             // 
             // uxComboBox34
             // 
             this.uxComboBox34.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox34.FormattingEnabled = true;
-            this.uxComboBox34.Location = new System.Drawing.Point(184, 585);
+            this.uxComboBox34.Location = new System.Drawing.Point(184, 245);
             this.uxComboBox34.MaxDropDownItems = 2;
             this.uxComboBox34.Name = "uxComboBox34";
             this.uxComboBox34.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox34.TabIndex = 99;
-            // 
-            // uxComboBox33
-            // 
-            this.uxComboBox33.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox33.FormattingEnabled = true;
-            this.uxComboBox33.Location = new System.Drawing.Point(184, 415);
-            this.uxComboBox33.MaxDropDownItems = 2;
-            this.uxComboBox33.Name = "uxComboBox33";
-            this.uxComboBox33.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox33.TabIndex = 98;
-            // 
-            // uxComboBox38
-            // 
-            this.uxComboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox38.FormattingEnabled = true;
-            this.uxComboBox38.Location = new System.Drawing.Point(184, 1316);
-            this.uxComboBox38.MaxDropDownItems = 2;
-            this.uxComboBox38.Name = "uxComboBox38";
-            this.uxComboBox38.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox38.TabIndex = 104;
-            // 
-            // uxComboBox37
-            // 
-            this.uxComboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox37.FormattingEnabled = true;
-            this.uxComboBox37.Location = new System.Drawing.Point(184, 1146);
-            this.uxComboBox37.MaxDropDownItems = 2;
-            this.uxComboBox37.Name = "uxComboBox37";
-            this.uxComboBox37.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox37.TabIndex = 103;
+            this.uxComboBox34.TabIndex = 97;
+            this.uxComboBox34.SelectedIndexChanged += new System.EventHandler(this.uxComboBox34_SelectedIndexChanged);
             // 
             // uxComboBox36
             // 
             this.uxComboBox36.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox36.FormattingEnabled = true;
-            this.uxComboBox36.Location = new System.Drawing.Point(184, 976);
+            this.uxComboBox36.Location = new System.Drawing.Point(184, 585);
             this.uxComboBox36.MaxDropDownItems = 2;
             this.uxComboBox36.Name = "uxComboBox36";
             this.uxComboBox36.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox36.TabIndex = 102;
+            this.uxComboBox36.TabIndex = 99;
+            this.uxComboBox36.SelectedIndexChanged += new System.EventHandler(this.uxComboBox36_SelectedIndexChanged);
             // 
             // uxComboBox35
             // 
             this.uxComboBox35.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox35.FormattingEnabled = true;
-            this.uxComboBox35.Location = new System.Drawing.Point(184, 806);
+            this.uxComboBox35.Location = new System.Drawing.Point(184, 415);
             this.uxComboBox35.MaxDropDownItems = 2;
             this.uxComboBox35.Name = "uxComboBox35";
             this.uxComboBox35.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox35.TabIndex = 101;
-            // 
-            // uxComboBox42
-            // 
-            this.uxComboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox42.FormattingEnabled = true;
-            this.uxComboBox42.Location = new System.Drawing.Point(997, 585);
-            this.uxComboBox42.MaxDropDownItems = 2;
-            this.uxComboBox42.Name = "uxComboBox42";
-            this.uxComboBox42.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox42.TabIndex = 108;
-            // 
-            // uxComboBox41
-            // 
-            this.uxComboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox41.FormattingEnabled = true;
-            this.uxComboBox41.Location = new System.Drawing.Point(997, 415);
-            this.uxComboBox41.MaxDropDownItems = 2;
-            this.uxComboBox41.Name = "uxComboBox41";
-            this.uxComboBox41.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox41.TabIndex = 107;
+            this.uxComboBox35.TabIndex = 98;
+            this.uxComboBox35.SelectedIndexChanged += new System.EventHandler(this.uxComboBox35_SelectedIndexChanged);
             // 
             // uxComboBox40
             // 
             this.uxComboBox40.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox40.FormattingEnabled = true;
-            this.uxComboBox40.Location = new System.Drawing.Point(997, 245);
+            this.uxComboBox40.Location = new System.Drawing.Point(184, 1316);
             this.uxComboBox40.MaxDropDownItems = 2;
             this.uxComboBox40.Name = "uxComboBox40";
             this.uxComboBox40.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox40.TabIndex = 106;
+            this.uxComboBox40.TabIndex = 104;
+            this.uxComboBox40.SelectedIndexChanged += new System.EventHandler(this.uxComboBox40_SelectedIndexChanged);
             // 
             // uxComboBox39
             // 
             this.uxComboBox39.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox39.FormattingEnabled = true;
-            this.uxComboBox39.Location = new System.Drawing.Point(997, 75);
+            this.uxComboBox39.Location = new System.Drawing.Point(184, 1146);
             this.uxComboBox39.MaxDropDownItems = 2;
             this.uxComboBox39.Name = "uxComboBox39";
             this.uxComboBox39.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox39.TabIndex = 105;
+            this.uxComboBox39.TabIndex = 103;
+            this.uxComboBox39.SelectedIndexChanged += new System.EventHandler(this.uxComboBox39_SelectedIndexChanged);
             // 
-            // uxComboBox46
+            // uxComboBox38
             // 
-            this.uxComboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox46.FormattingEnabled = true;
-            this.uxComboBox46.Location = new System.Drawing.Point(997, 1316);
-            this.uxComboBox46.MaxDropDownItems = 2;
-            this.uxComboBox46.Name = "uxComboBox46";
-            this.uxComboBox46.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox46.TabIndex = 112;
+            this.uxComboBox38.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox38.FormattingEnabled = true;
+            this.uxComboBox38.Location = new System.Drawing.Point(184, 976);
+            this.uxComboBox38.MaxDropDownItems = 2;
+            this.uxComboBox38.Name = "uxComboBox38";
+            this.uxComboBox38.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox38.TabIndex = 102;
+            this.uxComboBox38.SelectedIndexChanged += new System.EventHandler(this.uxComboBox38_SelectedIndexChanged);
             // 
-            // uxComboBox45
+            // uxComboBox37
             // 
-            this.uxComboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox45.FormattingEnabled = true;
-            this.uxComboBox45.Location = new System.Drawing.Point(997, 1146);
-            this.uxComboBox45.MaxDropDownItems = 2;
-            this.uxComboBox45.Name = "uxComboBox45";
-            this.uxComboBox45.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox45.TabIndex = 111;
+            this.uxComboBox37.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox37.FormattingEnabled = true;
+            this.uxComboBox37.Location = new System.Drawing.Point(184, 806);
+            this.uxComboBox37.MaxDropDownItems = 2;
+            this.uxComboBox37.Name = "uxComboBox37";
+            this.uxComboBox37.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox37.TabIndex = 101;
+            this.uxComboBox37.SelectedIndexChanged += new System.EventHandler(this.uxComboBox37_SelectedIndexChanged);
             // 
             // uxComboBox44
             // 
             this.uxComboBox44.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox44.FormattingEnabled = true;
-            this.uxComboBox44.Location = new System.Drawing.Point(997, 976);
+            this.uxComboBox44.Location = new System.Drawing.Point(997, 585);
             this.uxComboBox44.MaxDropDownItems = 2;
             this.uxComboBox44.Name = "uxComboBox44";
             this.uxComboBox44.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox44.TabIndex = 110;
+            this.uxComboBox44.TabIndex = 108;
+            this.uxComboBox44.SelectedIndexChanged += new System.EventHandler(this.uxComboBox44_SelectedIndexChanged);
             // 
             // uxComboBox43
             // 
             this.uxComboBox43.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox43.FormattingEnabled = true;
-            this.uxComboBox43.Location = new System.Drawing.Point(997, 806);
+            this.uxComboBox43.Location = new System.Drawing.Point(997, 415);
             this.uxComboBox43.MaxDropDownItems = 2;
             this.uxComboBox43.Name = "uxComboBox43";
             this.uxComboBox43.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox43.TabIndex = 109;
+            this.uxComboBox43.TabIndex = 107;
+            this.uxComboBox43.SelectedIndexChanged += new System.EventHandler(this.uxComboBox43_SelectedIndexChanged);
             // 
-            // uxComboBox47
+            // uxComboBox42
             // 
-            this.uxComboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox47.FormattingEnabled = true;
-            this.uxComboBox47.Location = new System.Drawing.Point(352, 160);
-            this.uxComboBox47.MaxDropDownItems = 2;
-            this.uxComboBox47.Name = "uxComboBox47";
-            this.uxComboBox47.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox47.TabIndex = 113;
+            this.uxComboBox42.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox42.FormattingEnabled = true;
+            this.uxComboBox42.Location = new System.Drawing.Point(997, 245);
+            this.uxComboBox42.MaxDropDownItems = 2;
+            this.uxComboBox42.Name = "uxComboBox42";
+            this.uxComboBox42.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox42.TabIndex = 106;
+            this.uxComboBox42.SelectedIndexChanged += new System.EventHandler(this.uxComboBox42_SelectedIndexChanged);
+            // 
+            // uxComboBox41
+            // 
+            this.uxComboBox41.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox41.FormattingEnabled = true;
+            this.uxComboBox41.Location = new System.Drawing.Point(997, 75);
+            this.uxComboBox41.MaxDropDownItems = 2;
+            this.uxComboBox41.Name = "uxComboBox41";
+            this.uxComboBox41.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox41.TabIndex = 105;
+            this.uxComboBox41.SelectedIndexChanged += new System.EventHandler(this.uxComboBox41_SelectedIndexChanged);
             // 
             // uxComboBox48
             // 
             this.uxComboBox48.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox48.FormattingEnabled = true;
-            this.uxComboBox48.Location = new System.Drawing.Point(352, 500);
+            this.uxComboBox48.Location = new System.Drawing.Point(997, 1316);
             this.uxComboBox48.MaxDropDownItems = 2;
             this.uxComboBox48.Name = "uxComboBox48";
             this.uxComboBox48.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox48.TabIndex = 114;
+            this.uxComboBox48.TabIndex = 112;
+            this.uxComboBox48.SelectedIndexChanged += new System.EventHandler(this.uxComboBox48_SelectedIndexChanged);
             // 
-            // uxComboBox51
+            // uxComboBox47
             // 
-            this.uxComboBox51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox51.FormattingEnabled = true;
-            this.uxComboBox51.Location = new System.Drawing.Point(829, 160);
-            this.uxComboBox51.MaxDropDownItems = 2;
-            this.uxComboBox51.Name = "uxComboBox51";
-            this.uxComboBox51.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox51.TabIndex = 115;
+            this.uxComboBox47.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox47.FormattingEnabled = true;
+            this.uxComboBox47.Location = new System.Drawing.Point(997, 1146);
+            this.uxComboBox47.MaxDropDownItems = 2;
+            this.uxComboBox47.Name = "uxComboBox47";
+            this.uxComboBox47.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox47.TabIndex = 111;
+            this.uxComboBox47.SelectedIndexChanged += new System.EventHandler(this.uxComboBox47_SelectedIndexChanged);
             // 
-            // uxComboBox52
+            // uxComboBox46
             // 
-            this.uxComboBox52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox52.FormattingEnabled = true;
-            this.uxComboBox52.Location = new System.Drawing.Point(829, 500);
-            this.uxComboBox52.MaxDropDownItems = 2;
-            this.uxComboBox52.Name = "uxComboBox52";
-            this.uxComboBox52.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox52.TabIndex = 116;
+            this.uxComboBox46.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox46.FormattingEnabled = true;
+            this.uxComboBox46.Location = new System.Drawing.Point(997, 976);
+            this.uxComboBox46.MaxDropDownItems = 2;
+            this.uxComboBox46.Name = "uxComboBox46";
+            this.uxComboBox46.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox46.TabIndex = 110;
+            this.uxComboBox46.SelectedIndexChanged += new System.EventHandler(this.uxComboBox46_SelectedIndexChanged);
+            // 
+            // uxComboBox45
+            // 
+            this.uxComboBox45.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox45.FormattingEnabled = true;
+            this.uxComboBox45.Location = new System.Drawing.Point(997, 806);
+            this.uxComboBox45.MaxDropDownItems = 2;
+            this.uxComboBox45.Name = "uxComboBox45";
+            this.uxComboBox45.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox45.TabIndex = 109;
+            this.uxComboBox45.SelectedIndexChanged += new System.EventHandler(this.uxComboBox45_SelectedIndexChanged);
             // 
             // uxComboBox49
             // 
             this.uxComboBox49.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox49.FormattingEnabled = true;
-            this.uxComboBox49.Location = new System.Drawing.Point(352, 891);
+            this.uxComboBox49.Location = new System.Drawing.Point(352, 160);
             this.uxComboBox49.MaxDropDownItems = 2;
             this.uxComboBox49.Name = "uxComboBox49";
             this.uxComboBox49.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox49.TabIndex = 117;
-            // 
-            // uxComboBox53
-            // 
-            this.uxComboBox53.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox53.FormattingEnabled = true;
-            this.uxComboBox53.Location = new System.Drawing.Point(829, 891);
-            this.uxComboBox53.MaxDropDownItems = 2;
-            this.uxComboBox53.Name = "uxComboBox53";
-            this.uxComboBox53.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox53.TabIndex = 118;
-            // 
-            // uxComboBox54
-            // 
-            this.uxComboBox54.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox54.FormattingEnabled = true;
-            this.uxComboBox54.Location = new System.Drawing.Point(829, 1231);
-            this.uxComboBox54.MaxDropDownItems = 2;
-            this.uxComboBox54.Name = "uxComboBox54";
-            this.uxComboBox54.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox54.TabIndex = 119;
+            this.uxComboBox49.TabIndex = 113;
+            this.uxComboBox49.SelectedIndexChanged += new System.EventHandler(this.uxComboBox49_SelectedIndexChanged);
             // 
             // uxComboBox50
             // 
             this.uxComboBox50.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox50.FormattingEnabled = true;
-            this.uxComboBox50.Location = new System.Drawing.Point(352, 1231);
+            this.uxComboBox50.Location = new System.Drawing.Point(352, 500);
             this.uxComboBox50.MaxDropDownItems = 2;
             this.uxComboBox50.Name = "uxComboBox50";
             this.uxComboBox50.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox50.TabIndex = 120;
+            this.uxComboBox50.TabIndex = 114;
+            this.uxComboBox50.SelectedIndexChanged += new System.EventHandler(this.uxComboBox50_SelectedIndexChanged);
+            // 
+            // uxComboBox53
+            // 
+            this.uxComboBox53.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox53.FormattingEnabled = true;
+            this.uxComboBox53.Location = new System.Drawing.Point(829, 160);
+            this.uxComboBox53.MaxDropDownItems = 2;
+            this.uxComboBox53.Name = "uxComboBox53";
+            this.uxComboBox53.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox53.TabIndex = 115;
+            this.uxComboBox53.SelectedIndexChanged += new System.EventHandler(this.uxComboBox53_SelectedIndexChanged);
+            // 
+            // uxComboBox54
+            // 
+            this.uxComboBox54.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox54.FormattingEnabled = true;
+            this.uxComboBox54.Location = new System.Drawing.Point(829, 500);
+            this.uxComboBox54.MaxDropDownItems = 2;
+            this.uxComboBox54.Name = "uxComboBox54";
+            this.uxComboBox54.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox54.TabIndex = 116;
+            this.uxComboBox54.SelectedIndexChanged += new System.EventHandler(this.uxComboBox54_SelectedIndexChanged);
+            // 
+            // uxComboBox51
+            // 
+            this.uxComboBox51.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox51.FormattingEnabled = true;
+            this.uxComboBox51.Location = new System.Drawing.Point(352, 891);
+            this.uxComboBox51.MaxDropDownItems = 2;
+            this.uxComboBox51.Name = "uxComboBox51";
+            this.uxComboBox51.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox51.TabIndex = 117;
+            this.uxComboBox51.SelectedIndexChanged += new System.EventHandler(this.uxComboBox51_SelectedIndexChanged);
             // 
             // uxComboBox55
             // 
             this.uxComboBox55.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox55.FormattingEnabled = true;
-            this.uxComboBox55.Location = new System.Drawing.Point(520, 696);
+            this.uxComboBox55.Location = new System.Drawing.Point(829, 891);
             this.uxComboBox55.MaxDropDownItems = 2;
             this.uxComboBox55.Name = "uxComboBox55";
             this.uxComboBox55.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox55.TabIndex = 121;
-            // 
-            // uxComboBox57
-            // 
-            this.uxComboBox57.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox57.FormattingEnabled = true;
-            this.uxComboBox57.Location = new System.Drawing.Point(661, 696);
-            this.uxComboBox57.MaxDropDownItems = 2;
-            this.uxComboBox57.Name = "uxComboBox57";
-            this.uxComboBox57.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox57.TabIndex = 122;
-            // 
-            // uxComboBox58
-            // 
-            this.uxComboBox58.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox58.FormattingEnabled = true;
-            this.uxComboBox58.Location = new System.Drawing.Point(661, 1061);
-            this.uxComboBox58.MaxDropDownItems = 2;
-            this.uxComboBox58.Name = "uxComboBox58";
-            this.uxComboBox58.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox58.TabIndex = 124;
+            this.uxComboBox55.TabIndex = 118;
+            this.uxComboBox55.SelectedIndexChanged += new System.EventHandler(this.uxComboBox55_SelectedIndexChanged);
             // 
             // uxComboBox56
             // 
             this.uxComboBox56.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox56.FormattingEnabled = true;
-            this.uxComboBox56.Location = new System.Drawing.Point(520, 1061);
+            this.uxComboBox56.Location = new System.Drawing.Point(829, 1231);
             this.uxComboBox56.MaxDropDownItems = 2;
             this.uxComboBox56.Name = "uxComboBox56";
             this.uxComboBox56.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox56.TabIndex = 123;
+            this.uxComboBox56.TabIndex = 119;
+            this.uxComboBox56.SelectedIndexChanged += new System.EventHandler(this.uxComboBox56_SelectedIndexChanged);
+            // 
+            // uxComboBox52
+            // 
+            this.uxComboBox52.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox52.FormattingEnabled = true;
+            this.uxComboBox52.Location = new System.Drawing.Point(352, 1231);
+            this.uxComboBox52.MaxDropDownItems = 2;
+            this.uxComboBox52.Name = "uxComboBox52";
+            this.uxComboBox52.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox52.TabIndex = 120;
+            this.uxComboBox52.SelectedIndexChanged += new System.EventHandler(this.uxComboBox52_SelectedIndexChanged);
+            // 
+            // uxComboBox57
+            // 
+            this.uxComboBox57.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox57.FormattingEnabled = true;
+            this.uxComboBox57.Location = new System.Drawing.Point(520, 696);
+            this.uxComboBox57.MaxDropDownItems = 2;
+            this.uxComboBox57.Name = "uxComboBox57";
+            this.uxComboBox57.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox57.TabIndex = 121;
+            this.uxComboBox57.SelectedIndexChanged += new System.EventHandler(this.uxComboBox57_SelectedIndexChanged);
             // 
             // uxComboBox59
             // 
             this.uxComboBox59.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox59.FormattingEnabled = true;
-            this.uxComboBox59.Location = new System.Drawing.Point(590, 788);
+            this.uxComboBox59.Location = new System.Drawing.Point(661, 696);
             this.uxComboBox59.MaxDropDownItems = 2;
             this.uxComboBox59.Name = "uxComboBox59";
             this.uxComboBox59.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox59.TabIndex = 125;
+            this.uxComboBox59.TabIndex = 122;
+            this.uxComboBox59.SelectedIndexChanged += new System.EventHandler(this.uxComboBox59_SelectedIndexChanged);
             // 
             // uxComboBox60
             // 
             this.uxComboBox60.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox60.FormattingEnabled = true;
-            this.uxComboBox60.Location = new System.Drawing.Point(590, 970);
+            this.uxComboBox60.Location = new System.Drawing.Point(661, 1061);
             this.uxComboBox60.MaxDropDownItems = 2;
             this.uxComboBox60.Name = "uxComboBox60";
             this.uxComboBox60.Size = new System.Drawing.Size(121, 28);
-            this.uxComboBox60.TabIndex = 126;
+            this.uxComboBox60.TabIndex = 124;
+            this.uxComboBox60.SelectedIndexChanged += new System.EventHandler(this.uxComboBox60_SelectedIndexChanged);
+            // 
+            // uxComboBox58
+            // 
+            this.uxComboBox58.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox58.FormattingEnabled = true;
+            this.uxComboBox58.Location = new System.Drawing.Point(520, 1061);
+            this.uxComboBox58.MaxDropDownItems = 2;
+            this.uxComboBox58.Name = "uxComboBox58";
+            this.uxComboBox58.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox58.TabIndex = 123;
+            this.uxComboBox58.SelectedIndexChanged += new System.EventHandler(this.uxComboBox58_SelectedIndexChanged);
+            // 
+            // uxComboBox61
+            // 
+            this.uxComboBox61.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox61.FormattingEnabled = true;
+            this.uxComboBox61.Location = new System.Drawing.Point(590, 788);
+            this.uxComboBox61.MaxDropDownItems = 2;
+            this.uxComboBox61.Name = "uxComboBox61";
+            this.uxComboBox61.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox61.TabIndex = 125;
+            this.uxComboBox61.SelectedIndexChanged += new System.EventHandler(this.uxComboBox61_SelectedIndexChanged);
+            // 
+            // uxComboBox62
+            // 
+            this.uxComboBox62.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox62.FormattingEnabled = true;
+            this.uxComboBox62.Location = new System.Drawing.Point(590, 970);
+            this.uxComboBox62.MaxDropDownItems = 2;
+            this.uxComboBox62.Name = "uxComboBox62";
+            this.uxComboBox62.Size = new System.Drawing.Size(121, 28);
+            this.uxComboBox62.TabIndex = 126;
+            this.uxComboBox62.SelectedIndexChanged += new System.EventHandler(this.uxComboBox62_SelectedIndexChanged);
             // 
             // Bracket
             // 
@@ -1392,18 +1422,20 @@ namespace CIS560_Project
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1344, 1050);
+            this.Controls.Add(this.uxComboBox62);
+            this.Controls.Add(this.uxComboBox61);
             this.Controls.Add(this.uxComboBox60);
-            this.Controls.Add(this.uxComboBox59);
             this.Controls.Add(this.uxComboBox58);
-            this.Controls.Add(this.uxComboBox56);
+            this.Controls.Add(this.uxComboBox59);
             this.Controls.Add(this.uxComboBox57);
+            this.Controls.Add(this.uxComboBox52);
+            this.Controls.Add(this.uxComboBox56);
             this.Controls.Add(this.uxComboBox55);
-            this.Controls.Add(this.uxComboBox50);
+            this.Controls.Add(this.uxComboBox51);
             this.Controls.Add(this.uxComboBox54);
             this.Controls.Add(this.uxComboBox53);
+            this.Controls.Add(this.uxComboBox50);
             this.Controls.Add(this.uxComboBox49);
-            this.Controls.Add(this.uxComboBox52);
-            this.Controls.Add(this.uxComboBox51);
             this.Controls.Add(this.uxComboBox48);
             this.Controls.Add(this.uxComboBox47);
             this.Controls.Add(this.uxComboBox46);
@@ -1419,9 +1451,7 @@ namespace CIS560_Project
             this.Controls.Add(this.uxComboBox36);
             this.Controls.Add(this.uxComboBox35);
             this.Controls.Add(this.uxComboBox34);
-            this.Controls.Add(this.uxComboBox33);
-            this.Controls.Add(this.comboBox33);
-            this.Controls.Add(this.uxCombBox61);
+            this.Controls.Add(this.uxCombBox33);
             this.Controls.Add(this.label47);
             this.Controls.Add(this.uxComboBox32);
             this.Controls.Add(this.label48);
@@ -1623,36 +1653,36 @@ namespace CIS560_Project
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.ComboBox uxComboBox25;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.ComboBox uxCombBox61;
-        private System.Windows.Forms.ComboBox comboBox33;
+        private System.Windows.Forms.ComboBox uxCombBox33;
         private System.Windows.Forms.ComboBox uxComboBox34;
-        private System.Windows.Forms.ComboBox uxComboBox33;
-        private System.Windows.Forms.ComboBox uxComboBox38;
-        private System.Windows.Forms.ComboBox uxComboBox37;
         private System.Windows.Forms.ComboBox uxComboBox36;
         private System.Windows.Forms.ComboBox uxComboBox35;
-        private System.Windows.Forms.ComboBox uxComboBox42;
-        private System.Windows.Forms.ComboBox uxComboBox41;
         private System.Windows.Forms.ComboBox uxComboBox40;
         private System.Windows.Forms.ComboBox uxComboBox39;
-        private System.Windows.Forms.ComboBox uxComboBox46;
-        private System.Windows.Forms.ComboBox uxComboBox45;
+        private System.Windows.Forms.ComboBox uxComboBox38;
+        private System.Windows.Forms.ComboBox uxComboBox37;
         private System.Windows.Forms.ComboBox uxComboBox44;
         private System.Windows.Forms.ComboBox uxComboBox43;
-        private System.Windows.Forms.ComboBox uxComboBox47;
+        private System.Windows.Forms.ComboBox uxComboBox42;
+        private System.Windows.Forms.ComboBox uxComboBox41;
         private System.Windows.Forms.ComboBox uxComboBox48;
-        private System.Windows.Forms.ComboBox uxComboBox51;
-        private System.Windows.Forms.ComboBox uxComboBox52;
+        private System.Windows.Forms.ComboBox uxComboBox47;
+        private System.Windows.Forms.ComboBox uxComboBox46;
+        private System.Windows.Forms.ComboBox uxComboBox45;
         private System.Windows.Forms.ComboBox uxComboBox49;
+        private System.Windows.Forms.ComboBox uxComboBox50;
         private System.Windows.Forms.ComboBox uxComboBox53;
         private System.Windows.Forms.ComboBox uxComboBox54;
-        private System.Windows.Forms.ComboBox uxComboBox50;
+        private System.Windows.Forms.ComboBox uxComboBox51;
         private System.Windows.Forms.ComboBox uxComboBox55;
-        private System.Windows.Forms.ComboBox uxComboBox57;
-        private System.Windows.Forms.ComboBox uxComboBox58;
         private System.Windows.Forms.ComboBox uxComboBox56;
+        private System.Windows.Forms.ComboBox uxComboBox52;
+        private System.Windows.Forms.ComboBox uxComboBox57;
         private System.Windows.Forms.ComboBox uxComboBox59;
         private System.Windows.Forms.ComboBox uxComboBox60;
+        private System.Windows.Forms.ComboBox uxComboBox58;
+        private System.Windows.Forms.ComboBox uxComboBox61;
+        private System.Windows.Forms.ComboBox uxComboBox62;
     }
 }
 

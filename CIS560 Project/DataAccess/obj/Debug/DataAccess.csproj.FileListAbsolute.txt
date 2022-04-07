@@ -1,0 +1,6 @@
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.pdb

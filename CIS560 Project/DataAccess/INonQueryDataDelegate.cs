@@ -2,8 +2,8 @@
 
 namespace DataAccess
 {
-    public interface INonQueryDataDelegate<out T> : IDataDelegate
-    {
-        T Translate(SqlCommand command);
-    }
+   public interface INonQueryDataDelegate<out T> : IDataDelegate
+   {
+      T Translate(SqlCommand command);
+   }
 }

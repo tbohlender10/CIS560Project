@@ -2,10 +2,10 @@
 
 namespace DataAccess
 {
-    public interface IDataDelegate
-    {
-        string ProcedureName { get; }
+   public interface IDataDelegate
+   {
+      string ProcedureName { get; }
 
-        void PrepareCommand(SqlCommand command);
-    }
+      void PrepareCommand(SqlCommand command);
+   }
 }

@@ -176,5 +176,155 @@ namespace CIS560_Project
         {
 
         }
+
+        private void uxCombBox33_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox34_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox35_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox36_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox37_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox38_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox39_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox40_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox41_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox42_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox43_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox44_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox45_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox46_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox47_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox48_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox49_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox50_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox51_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox52_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox53_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox54_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox55_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox56_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox57_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox58_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox59_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox60_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox61_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxComboBox62_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

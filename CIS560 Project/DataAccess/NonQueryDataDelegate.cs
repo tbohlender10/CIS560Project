@@ -2,13 +2,13 @@
 
 namespace DataAccess
 {
-    public abstract class NonQueryDataDelegate<T> : DataDelegate, INonQueryDataDelegate<T>
-    {
-        protected NonQueryDataDelegate(string procedureName)
-           : base(procedureName)
-        {
-        }
+   public abstract class NonQueryDataDelegate<T> : DataDelegate, INonQueryDataDelegate<T>
+   {
+      protected NonQueryDataDelegate(string procedureName)
+         : base(procedureName)
+      {
+      }
 
-        public abstract T Translate(SqlCommand command);
-    }
+      public abstract T Translate(SqlCommand command);
+   }
 }
