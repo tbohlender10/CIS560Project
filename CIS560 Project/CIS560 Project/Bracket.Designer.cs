@@ -1358,6 +1358,7 @@ namespace CIS560_Project
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1344, 1050);
             this.Controls.Add(this.comboBox61);
             this.Controls.Add(this.comboBox60);
