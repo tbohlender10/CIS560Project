@@ -42,10 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataDelegates\FetchPersonDataDelegate.cs" />
-    <Compile Include="DataDelegates\RetrieveAddressesForPersonDataDelegate.cs" />
+    <Compile Include="DataDelegates\FetchPlayerDataDelegate.cs" />
+    <Compile Include="DataDelegates\RetrievePlayersForSchoolDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrievePersonsDataDelegate.cs" />
-    <Compile Include="DataDelegates\GetPersonDataDelegate.cs" />
+    <Compile Include="DataDelegates\GetSchoolDataDelegate.cs" />
     <Compile Include="DataDelegates\CreatePersonDataDelegate.cs" />
     <Compile Include="ISchoolRepository.cs" />
     <Compile Include="IPlayerRepository.cs" />

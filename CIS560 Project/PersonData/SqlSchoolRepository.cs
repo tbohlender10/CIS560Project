@@ -18,7 +18,7 @@ namespace PersonData
       public School GetSchool(int schoolID)
       {
          var d = new GetSchoolDataDelegate(schoolID);
-         executor.ExecuteNonQuery(d);
+         return executor.ExecuteReader(d);
       }
 
       public IReadOnlyList<School> RetrieveSchools();
