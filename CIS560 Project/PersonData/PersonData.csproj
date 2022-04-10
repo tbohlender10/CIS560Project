@@ -44,7 +44,6 @@
   <ItemGroup>
     <Compile Include="DataDelegates\FetchPlayerDataDelegate.cs" />
     <Compile Include="DataDelegates\RetrievePlayersForSchoolDataDelegate.cs" />
-    <Compile Include="DataDelegates\RetrievePersonsDataDelegate.cs" />
     <Compile Include="DataDelegates\GetSchoolDataDelegate.cs" />
     <Compile Include="DataDelegates\CreatePersonDataDelegate.cs" />
     <Compile Include="ISchoolRepository.cs" />
@@ -55,7 +54,7 @@
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="DataDelegates\SavePersonAddressDataDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveSchoolsDataDelegate.cs" />
     <Compile Include="SqlSchoolRepository.cs" />
     <Compile Include="SqlPlayerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
