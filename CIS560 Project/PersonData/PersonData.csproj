@@ -56,8 +56,8 @@
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="DataDelegates\SavePersonAddressDataDelegate.cs" />
-    <Compile Include="SqlAddressRepository.cs" />
-    <Compile Include="SqlPersonRepository.cs" />
+    <Compile Include="SqlSchoolRepository.cs" />
+    <Compile Include="SqlPlayerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
