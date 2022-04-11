@@ -1,6 +1,6 @@
 Param(
    [string] $Server = "(localdb)\MSSQLLocalDb",
-   [string] $Database = "johnkeller"
+   [string] $Database = "master"
 )
 
 # This script requires the SQL Server module for PowerShell.
@@ -31,7 +31,7 @@ Write-Host "Rebuilding database $Database on $Server..."
 #Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Tables\DropTables.sql"
 
 Write-Host "Creating schema..."
-Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Schemas\Person.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Schemas\Basketball.sql"
 
 Write-Host "Creating tables..."
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Tables\Person.Person.sql"

@@ -7,8 +7,8 @@
     <ProjectGuid>{D51AA58C-05B9-4A7D-9F80-CCEBF8A0EAF0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PersonData</RootNamespace>
-    <AssemblyName>PersonData</AssemblyName>
+    <RootNamespace>BasketballData</RootNamespace>
+    <AssemblyName>BasketballData</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -68,10 +68,10 @@
     <EmbeddedResource Include="Sql\Procedures\Person.CreatePerson.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Tables\Person.Person.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.Player.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Tables\Person.AddressType.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.Region.sql" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Tables\Person.PersonAddress.sql" />
@@ -86,7 +86,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Schemas\Person.sql" />
+    <EmbeddedResource Include="Sql\Schemas\Basketball.sql" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Person.SavePersonAddress.sql" />
@@ -96,6 +96,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Person.FetchPerson.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.Game.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.PlayerGameStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.PlayerSeasonStatistics.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

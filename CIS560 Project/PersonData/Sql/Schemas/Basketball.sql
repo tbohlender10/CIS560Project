@@ -5,5 +5,5 @@
       WHERE s.[name] = N'Person'
    )
 BEGIN
-   EXEC(N'CREATE SCHEMA [Person] AUTHORIZATION [dbo]');
+   EXEC(N'CREATE SCHEMA [Basketball] AUTHORIZATION [dbo]');
 END;
