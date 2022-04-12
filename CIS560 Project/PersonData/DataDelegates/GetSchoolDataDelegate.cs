@@ -9,7 +9,7 @@ namespace PersonData.DataDelegates
       private readonly int SchoolID;
 
       public GetSchoolDataDelegate(int schoolID)
-         : base("Person.GetPerson")
+         : base("Basketball.GetSchool")
       {
          SchoolID = schoolID;
       }

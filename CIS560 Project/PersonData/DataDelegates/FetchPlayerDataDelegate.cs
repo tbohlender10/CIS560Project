@@ -10,7 +10,7 @@ namespace PersonData.DataDelegates
       private readonly int PlayerID;
 
       public FetchPlayerDataDelegate(int playerID)
-         : base("Person.FetchPlayer") //what is this??
+         : base("Basketball.FetchPlayer")
       {
          PlayerID = playerID;
       }
@@ -28,7 +28,7 @@ namespace PersonData.DataDelegates
             throw new RecordNotFoundException(PlayerID.ToString());
 
          return new Player(PlayerID,
-            reader.GetInt32("SchoolID"), //is this what I need to do??
+            reader.GetInt32("SchoolID"),
             reader.GetString("[Name]"),
             reader.GetString("Grade"));
       }

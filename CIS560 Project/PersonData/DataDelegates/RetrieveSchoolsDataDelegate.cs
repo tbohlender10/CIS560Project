@@ -9,7 +9,7 @@ namespace PersonData.DataDelegates
    internal class RetrieveSchoolsDataDelegate : DataReaderDelegate<IReadOnlyList<School>>
     {
         public RetrieveSchoolsDataDelegate()
-            : base("Person.RetrieveSchools")
+            : base("Basketball.RetrieveSchools")
         {
         }
 
@@ -24,8 +24,7 @@ namespace PersonData.DataDelegates
                     reader.GetString("[Name]"),
                     reader.GetString("Coach"),
                     reader.GetInt32("Seed"),
-                    reader.GetInt32("RegionID"),
-                    reader.GetInt32("NCAATitles")));
+                    reader.GetInt32("RegionID")));
             }
 
             return schools;

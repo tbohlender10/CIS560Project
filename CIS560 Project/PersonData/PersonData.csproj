@@ -63,8 +63,8 @@
     <EmbeddedResource Include="Sql\Tables\DropTables.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Person.RetrievePersons.sql" />
-    <EmbeddedResource Include="Sql\Procedures\Person.GetPerson.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveSchools.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.GetSchool.sql" />
     <EmbeddedResource Include="Sql\Procedures\Person.CreatePerson.sql" />
   </ItemGroup>
   <ItemGroup>
@@ -74,7 +74,7 @@
     <EmbeddedResource Include="Sql\Tables\Basketball.Region.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Tables\Person.PersonAddress.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.School.sql" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Data\Person.AddressType.sql" />
@@ -92,10 +92,10 @@
     <EmbeddedResource Include="Sql\Procedures\Person.SavePersonAddress.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Person.RetrieveAddressesForPerson.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrievePlayersForSchool.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Person.FetchPerson.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchPlayer.sql" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Tables\Basketball.Game.sql" />

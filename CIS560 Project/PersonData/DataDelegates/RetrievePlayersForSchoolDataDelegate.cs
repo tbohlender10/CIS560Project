@@ -11,7 +11,7 @@ namespace PersonData.DataDelegates
       private readonly int SchoolID;
 
       public RetrievePlayersForSchoolDataDelegate(int schoolID)
-         : base("Basketball.RetrievePlayersForSchool") //what is this??
+         : base("Basketball.RetrievePlayersForSchool") //stored procedure
       {
          SchoolID = schoolID;
       }
@@ -20,7 +20,7 @@ namespace PersonData.DataDelegates
       {
          base.PrepareCommand(command);
 
-         command.Parameters.AddWithValue("SchoolID", SchoolID); //is this right??
+         command.Parameters.AddWithValue("SchoolID", SchoolID);
       }
       public override IReadOnlyList<Player> Translate(SqlCommand command, IDataRowReader reader)
       {
