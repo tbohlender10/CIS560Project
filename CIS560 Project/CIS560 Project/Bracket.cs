@@ -326,5 +326,13 @@ namespace CIS560_Project
         {
 
         }
+
+        private void uxStats_Click(object sender, EventArgs e)
+        {
+            Form newForm = new Stats();
+            this.Enabled = false;
+            newForm.Show();
+            //this.Close();
+        }
     }
 }
