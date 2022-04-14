@@ -6,9 +6,9 @@ using PersonData.Models;
 
 namespace PersonData.DataDelegates
 {
-   internal class RetrieveSchoolsDataDelegate : DataReaderDelegate<IReadOnlyList<School>>
+   internal class RetrieveSchoolsDataReaderDelegate : DataReaderDelegate<IReadOnlyList<School>>
     {
-        public RetrieveSchoolsDataDelegate()
+        public RetrieveSchoolsDataReaderDelegate()
             : base("Basketball.RetrieveSchools")
         {
         }

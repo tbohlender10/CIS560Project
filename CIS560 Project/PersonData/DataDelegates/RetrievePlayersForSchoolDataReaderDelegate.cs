@@ -6,11 +6,11 @@ using System.Data.SqlClient;
 
 namespace PersonData.DataDelegates
 {
-   internal class RetrievePlayersForSchoolDataDelegate : DataReaderDelegate<IReadOnlyList<Player>>
+   internal class RetrievePlayersForSchoolDataReaderDelegate : DataReaderDelegate<IReadOnlyList<Player>>
    {
       private readonly int SchoolID;
 
-      public RetrievePlayersForSchoolDataDelegate(int schoolID)
+      public RetrievePlayersForSchoolDataReaderDelegate(int schoolID)
          : base("Basketball.RetrievePlayersForSchool") //stored procedure
       {
          SchoolID = schoolID;

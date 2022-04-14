@@ -5,11 +5,11 @@ using System.Data.SqlClient;
 
 namespace PersonData.DataDelegates
 {
-   internal class FetchPlayerDataDelegate : DataReaderDelegate<Player>
+   internal class FetchPlayerDataReaderDelegate : DataReaderDelegate<Player>
    {
       private readonly int PlayerID;
 
-      public FetchPlayerDataDelegate(int playerID)
+      public FetchPlayerDataReaderDelegate(int playerID)
          : base("Basketball.FetchPlayer")
       {
          PlayerID = playerID;

@@ -4,11 +4,11 @@ using System.Data.SqlClient;
 
 namespace PersonData.DataDelegates
 {
-   internal class GetSchoolDataDelegate : DataReaderDelegate<School>
+   internal class GetSchoolDataReaderDelegate : DataReaderDelegate<School>
    {
       private readonly int SchoolID;
 
-      public GetSchoolDataDelegate(int schoolID)
+      public GetSchoolDataReaderDelegate(int schoolID)
          : base("Basketball.GetSchool")
       {
          SchoolID = schoolID;
@@ -31,8 +31,7 @@ namespace PersonData.DataDelegates
                 reader.GetString("[Name]"),
                 reader.GetString("Coach"),
                 reader.GetInt32("Seed"),
-                reader.GetInt32("RegionID"),
-                reader.GetInt32("NCAATitles"));
+                reader.GetInt32("RegionID"));
       }
    }
 }
