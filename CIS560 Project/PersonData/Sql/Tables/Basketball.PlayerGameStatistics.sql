@@ -15,5 +15,16 @@ BEGIN
 		[Minutes] INT NOT NULL
 
 		UNIQUE(PlayerID, GameID)
+
+		CONSTRAINT FK_Basketball_PlayerGameStatistics_GameIDSchoolID FOREIGN KEY
+		(
+			GameID,
+			SchoolID
+		)
+		REFERENCES Basketball.GameSchool
+		(
+			GameID,
+			SchoolID
+		)
 	)
 END;
