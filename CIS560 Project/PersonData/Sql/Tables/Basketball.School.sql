@@ -8,5 +8,7 @@ BEGIN
 	Seed INT NOT NULL,
 	RegionID INT NOT NULL FOREIGN KEY
 		REFERENCES Basketball.Region(RegionID)
+
+	UNIQUE(Seed, RegionID)
    );
 END
