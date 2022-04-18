@@ -17,13 +17,13 @@ namespace PersonData
 
       public Player FetchPlayer(int playerID)
       {
-         var d = new FetchPlayerDataDelegate(playerID);
+         var d = new FetchPlayerDataReaderDelegate(playerID);
          return executor.ExecuteReader(d);
       }
 
       public IReadOnlyList<Player> RetrievePlayersForSchool(int schoolID)
       {
-         return executor.ExecuteReader(new RetrievePlayersForSchoolDataDelegate(schoolID));
+         return executor.ExecuteReader(new RetrievePlayersForSchoolDataReaderDelegate(schoolID));
       }
    }
 }

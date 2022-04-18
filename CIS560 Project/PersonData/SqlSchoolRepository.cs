@@ -17,13 +17,13 @@ namespace PersonData
 
       public School GetSchool(int schoolID)
       {
-         var d = new GetSchoolDataDelegate(schoolID);
+         var d = new GetSchoolDataReaderDelegate(schoolID);
          return executor.ExecuteReader(d);
       }
 
       public IReadOnlyList<School> RetrieveSchools()
       {
-         var d = new RetrieveSchoolsDataDelegate();
+         var d = new RetrieveSchoolsDataReaderDelegate();
          return executor.ExecuteReader(d);
       }
    }

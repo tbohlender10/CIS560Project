@@ -43,9 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataDelegates\FetchPlayerDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveGamesForPlayerDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrievePlayersForSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
+    <Compile Include="IGameRepository.cs" />
     <Compile Include="ISchoolRepository.cs" />
     <Compile Include="IPlayerRepository.cs" />
     <Compile Include="Models\PlayerGameStatistics.cs" />
@@ -55,6 +57,7 @@
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Player.cs" />
     <Compile Include="DataDelegates\RetrieveSchoolsDataReaderDelegate.cs" />
+    <Compile Include="SqlGameRepository.cs" />
     <Compile Include="SqlSchoolRepository.cs" />
     <Compile Include="SqlPlayerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Data\Basketball.Round.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveGamesForPlayer.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
