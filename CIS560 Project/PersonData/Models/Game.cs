@@ -4,17 +4,15 @@
     {
         public int GameID { get; }
 
-        public int HomeSchoolID { get; }
+        public string DateTimeInfo { get; }
 
-        public int AwaySchoolID { get; }
+        public int RoundID { get; }
 
-        public int WinningSchoolID { get; set; }
-
-        public Game(int gameID, int homeSchoolID, int awaySchoolID)
+        public Game(int gameID, string dateTimeInfo, int roundID)
         {
             GameID = gameID;
-            HomeSchoolID = homeSchoolID;
-            AwaySchoolID = awaySchoolID;
+            DateTimeInfo = dateTime;
+            RoundID = roundID;
         }
     }
 }

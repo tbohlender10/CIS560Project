@@ -10,9 +10,15 @@ BEGIN
 		REFERENCES Basketball.TeamType(TeamTypeID),
 
 	CONSTRAINT PK_Basketball_GameSchool_GameIDSchoolID PRIMARY KEY
+    (
+        GameID,
+		SchoolID
+    ),
+
+	CONSTRAINT UK_Basketball_GameSchool_GameIDTeamTypeID UNIQUE
 	(
 		GameID,
-		SchoolID
+		TeamTypeID
 	)
    );
 END

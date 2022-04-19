@@ -8,22 +8,16 @@ namespace PersonData
 {
    public class SqlGameRepository : IGameRepository
    {
-      private readonly SqlCommandExecutor executor;
+          private readonly SqlCommandExecutor executor;
 
-      public SqlGameRepository(string connectionString)
-      {
-         executor = new SqlCommandExecutor(connectionString);
-      }
-
-        public IReadOnlyList<Game> RetrieveGamesForPlayer(int playerID)
-        {
-            var d = new RetrieveSchoolsDataReaderDelegate();
-            return executor.ExecuteReader(d);
-        }
+          public SqlGameRepository(string connectionString)
+          {
+             executor = new SqlCommandExecutor(connectionString);
+          }
 
         public IReadOnlyList<Game> RetrieveGamesForSchool(int schoolID)
         {
-            var d = new RetrieveSchoolsDataReaderDelegate();
+            var d = new RetrieveGamesForSchoolDataReaderDelegate(schoolID);
             return executor.ExecuteReader(d);
         }
     }

@@ -6,6 +6,8 @@
 
         public int GameID { get; }
 
+        public int SchoolID { get; }
+
         public int PlayerID { get; }
 
         public int Points { get; }

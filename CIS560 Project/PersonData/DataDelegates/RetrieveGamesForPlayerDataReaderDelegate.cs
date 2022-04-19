@@ -30,8 +30,8 @@ namespace PersonData.DataDelegates
          {
                 games.Add(new Game(
                 reader.GetInt32("GameID"),
-                reader.GetInt32("HomeSchoolID"),
-                reader.GetInt32("GuestSchoolID")));
+                reader.GetString("DateTime"),
+                reader.GetInt32("RoundID")));
          }
 
          return games;

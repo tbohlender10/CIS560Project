@@ -16,7 +16,10 @@ namespace CIS560_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Bracket());
+
+            Model m = new Model();
+
+            Application.Run(new Bracket(m));
         }
     }
 }

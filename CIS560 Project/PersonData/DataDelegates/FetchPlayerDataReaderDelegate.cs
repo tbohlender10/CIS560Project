@@ -30,6 +30,7 @@ namespace PersonData.DataDelegates
          return new Player(PlayerID,
             reader.GetInt32("SchoolID"),
             reader.GetString("[Name]"),
+             reader.GetInt32("Number"),
             reader.GetString("Grade"));
       }
    }

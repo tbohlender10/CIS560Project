@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace CIS560_Project
 {
@@ -19,6 +20,10 @@ namespace CIS560_Project
         {
             PlayerRepo = new SqlPlayerRepository(connectionString);
             SchoolRepo = new SqlSchoolRepository(connectionString);
+
+            var d = SchoolRepo.GetSchool(1);
+
+            MessageBox.Show(d.Name);
         }
     }
 }
