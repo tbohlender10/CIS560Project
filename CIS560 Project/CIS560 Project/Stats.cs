@@ -92,9 +92,8 @@ namespace CIS560_Project
             uxNameLabel.Show();
             uxSeed.Show();
             uxSeedLabel.Show();
-            uxGrade.Show();
-            uxGradeLabel.Show();
             uxRegion.Show();
+            uxRegionLabel.Show();
             uxBack.Show();
             uxSave.Show();
 
@@ -111,18 +110,10 @@ namespace CIS560_Project
                 c.Hide();
             }
 
-            uxRegion.DataSource = new string[]
-            {
-                "Freshman",
-                "Sophomore",
-                "Junior",
-                "Senior"
-            };
             uxName.Show();
             uxNameLabel.Show();
-            uxRegion.Show();
-            uxRegionLabel.Show();
-            uxRegion.Show();
+            uxGrade.Show();
+            uxGradeLabel.Show();
             uxBack.Show();
             uxSave.Show();
 
