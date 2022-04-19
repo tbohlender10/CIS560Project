@@ -15,6 +15,17 @@ namespace CIS560_Project
         public Bracket()
         {
             InitializeComponent();
+
+            //Possibly could use this loop to easily connect to SQL?
+            foreach (ComboBox control in this.Controls.OfType<ComboBox>().OrderBy(c => c.TabIndex))
+            {
+                control.DataSource = new string[]
+                    {
+                        "",
+                        "Team 1",
+                        "Team 2"
+                    };
+            }
         }
 
         private void uxComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -329,7 +340,7 @@ namespace CIS560_Project
 
         private void uxStats_Click(object sender, EventArgs e)
         {
-            Form newForm = new Stats();
+            Form newForm = new Stats(this);
             this.Enabled = false;
             newForm.Show();
             //this.Close();

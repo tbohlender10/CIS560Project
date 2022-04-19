@@ -154,8 +154,12 @@ namespace CIS560_Project
             this.uxComboBox60 = new System.Windows.Forms.ComboBox();
             this.uxComboBox58 = new System.Windows.Forms.ComboBox();
             this.uxComboBox61 = new System.Windows.Forms.ComboBox();
-            this.uxComboBox62 = new System.Windows.Forms.ComboBox();
+            this.uxComboBox = new System.Windows.Forms.ComboBox();
             this.uxStats = new System.Windows.Forms.Button();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.uxGames = new System.Windows.Forms.Button();
+            this.uxTourney = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uxLabel1
@@ -1466,27 +1470,63 @@ namespace CIS560_Project
             this.uxComboBox61.TabIndex = 125;
             this.uxComboBox61.SelectedIndexChanged += new System.EventHandler(this.uxComboBox61_SelectedIndexChanged);
             // 
-            // uxComboBox62
+            // uxComboBox
             // 
-            this.uxComboBox62.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxComboBox62.FormattingEnabled = true;
-            this.uxComboBox62.Location = new System.Drawing.Point(524, 776);
-            this.uxComboBox62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.uxComboBox62.MaxDropDownItems = 2;
-            this.uxComboBox62.Name = "uxComboBox62";
-            this.uxComboBox62.Size = new System.Drawing.Size(108, 24);
-            this.uxComboBox62.TabIndex = 126;
-            this.uxComboBox62.SelectedIndexChanged += new System.EventHandler(this.uxComboBox62_SelectedIndexChanged);
+            this.uxComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.uxComboBox.FormattingEnabled = true;
+            this.uxComboBox.Location = new System.Drawing.Point(524, 776);
+            this.uxComboBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxComboBox.MaxDropDownItems = 2;
+            this.uxComboBox.Name = "uxComboBox";
+            this.uxComboBox.Size = new System.Drawing.Size(108, 24);
+            this.uxComboBox.TabIndex = 126;
+            this.uxComboBox.SelectedIndexChanged += new System.EventHandler(this.uxComboBox62_SelectedIndexChanged);
             // 
             // uxStats
             // 
-            this.uxStats.Location = new System.Drawing.Point(524, 26);
+            this.uxStats.Location = new System.Drawing.Point(432, 27);
             this.uxStats.Name = "uxStats";
-            this.uxStats.Size = new System.Drawing.Size(108, 40);
+            this.uxStats.Size = new System.Drawing.Size(108, 57);
             this.uxStats.TabIndex = 127;
-            this.uxStats.Text = "View Stats";
+            this.uxStats.Text = "Player/Team Info";
             this.uxStats.UseVisualStyleBackColor = true;
             this.uxStats.Click += new System.EventHandler(this.uxStats_Click);
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Location = new System.Drawing.Point(177, 38);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(78, 17);
+            this.label63.TabIndex = 128;
+            this.label63.Text = "1 Gonzaga";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Location = new System.Drawing.Point(177, 86);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(78, 17);
+            this.label64.TabIndex = 129;
+            this.label64.Text = "1 Gonzaga";
+            // 
+            // uxGames
+            // 
+            this.uxGames.Location = new System.Drawing.Point(617, 27);
+            this.uxGames.Name = "uxGames";
+            this.uxGames.Size = new System.Drawing.Size(108, 57);
+            this.uxGames.TabIndex = 130;
+            this.uxGames.Text = "Edit Games";
+            this.uxGames.UseVisualStyleBackColor = true;
+            // 
+            // uxTourney
+            // 
+            this.uxTourney.Location = new System.Drawing.Point(502, 103);
+            this.uxTourney.Name = "uxTourney";
+            this.uxTourney.Size = new System.Drawing.Size(146, 57);
+            this.uxTourney.TabIndex = 131;
+            this.uxTourney.Text = "View Tournament Stats";
+            this.uxTourney.UseVisualStyleBackColor = true;
             // 
             // Bracket
             // 
@@ -1495,8 +1535,12 @@ namespace CIS560_Project
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1195, 840);
+            this.Controls.Add(this.uxTourney);
+            this.Controls.Add(this.uxGames);
+            this.Controls.Add(this.label64);
+            this.Controls.Add(this.label63);
             this.Controls.Add(this.uxStats);
-            this.Controls.Add(this.uxComboBox62);
+            this.Controls.Add(this.uxComboBox);
             this.Controls.Add(this.uxComboBox61);
             this.Controls.Add(this.uxComboBox60);
             this.Controls.Add(this.uxComboBox58);
@@ -1757,8 +1801,12 @@ namespace CIS560_Project
         private System.Windows.Forms.ComboBox uxComboBox60;
         private System.Windows.Forms.ComboBox uxComboBox58;
         private System.Windows.Forms.ComboBox uxComboBox61;
-        private System.Windows.Forms.ComboBox uxComboBox62;
+        private System.Windows.Forms.ComboBox uxComboBox;
         private System.Windows.Forms.Button uxStats;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Button uxGames;
+        private System.Windows.Forms.Button uxTourney;
     }
 }
 
