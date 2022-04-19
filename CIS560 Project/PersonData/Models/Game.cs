@@ -11,7 +11,7 @@
         public Game(int gameID, string dateTimeInfo, int roundID)
         {
             GameID = gameID;
-            DateTimeInfo = dateTime;
+            DateTimeInfo = dateTimeInfo;
             RoundID = roundID;
         }
     }

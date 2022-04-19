@@ -6,7 +6,5 @@ namespace PersonData
    public interface IGameRepository
    {
       IReadOnlyList<Game> RetrieveGamesForSchool(int schoolID);
-
-      IReadOnlyList<Game> RetrieveGamesForPlayer(int playerID);
    }
 }

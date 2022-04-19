@@ -22,8 +22,6 @@ C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Deb
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Stats.resources
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.GenerateResource.cache
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CoreCompileInputs.cache
-C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
-C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe.config
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.pdb
@@ -32,3 +30,5 @@ C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\bin\Deb
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\bin\Debug\PersonData.pdb
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.pdb
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
+C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
+C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
