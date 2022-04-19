@@ -52,6 +52,8 @@
     <Compile Include="Bracket.Designer.cs">
       <DependentUpon>Bracket.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Bracket.resx">
@@ -78,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PersonData\PersonData.csproj">
+      <Project>{D51AA58C-05B9-4A7D-9F80-CCEBF8A0EAF0}</Project>
+      <Name>PersonData</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

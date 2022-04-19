@@ -6,7 +6,7 @@ using System;
 
 namespace PersonData
 {
-   public class SqlPersonRepository : IPlayerRepository
+   public class SqlPersonRepository : IPersonRepository
    {
       private readonly SqlCommandExecutor executor;
 
@@ -15,7 +15,7 @@ namespace PersonData
          executor = new SqlCommandExecutor(connectionString);
       }
 
-      public Player CreatePerson(string firstName, string lastName, string email)
+      public Person CreatePerson(string firstName, string lastName, string email)
       {
          if (string.IsNullOrWhiteSpace(firstName))
             throw new ArgumentException("The parameter cannot be null or empty.", nameof(firstName));
@@ -30,19 +30,19 @@ namespace PersonData
          return executor.ExecuteNonQuery(d);
       }
 
-      public Player FetchPerson(int personId)
+      public Person FetchPerson(int personId)
       {
          var d = new FetchPersonDataDelegate(personId);
          return executor.ExecuteReader(d);
       }
 
-      public Player GetPerson(string email)
+      public Person GetPerson(string email)
       {
          var d = new GetPersonDataDelegate(email);
          return executor.ExecuteReader(d);
       }
 
-      public IReadOnlyList<Player> RetrievePersons()
+      public IReadOnlyList<Person> RetrievePersons()
       {
          return executor.ExecuteReader(new RetrievePersonsDataDelegate());
       }

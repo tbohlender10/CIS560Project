@@ -30,7 +30,7 @@ namespace PersonData.DataDelegates
          {
             addresses.Add(new Address(
                reader.GetInt32("PersonId"),
-               (Game)reader.GetByte("AddressTypeId"),
+               (AddressType)reader.GetByte("AddressTypeId"),
                reader.GetString("Line1"),
                reader.GetValue<string>("Line2", null),
                reader.GetString("City"),

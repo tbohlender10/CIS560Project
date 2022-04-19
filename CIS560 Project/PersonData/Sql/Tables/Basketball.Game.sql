@@ -1,0 +1,16 @@
+﻿IF OBJECT_ID(N'Basketball.Game') IS NULL
+BEGIN
+   CREATE TABLE Basketball.Game
+	(
+		GameID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+		HomeSchoolID INT NOT NULL FOREIGN KEY
+			REFERENCES Basketball.School(SchoolID),
+		GuestSchoolID INT NOT NULL FOREIGN KEY
+			REFERENCES Basketball.School(SchoolID),
+		WinningSchoolID INT NOT NULL FOREIGN KEY
+			REFERENCES Basketball.School(SchoolID),
+		[Date] DATETIMEOFFSET NOT NULL DEFAULT(SYSDATETIMEOFFSET()),
+		RoundID INT NOT NULL FOREIGN KEY
+			REFERENCES Basketball.[Round](RoundID)
+	)
+END;

@@ -42,11 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataDelegates\FetchPersonDataDelegate.cs" />
-    <Compile Include="DataDelegates\RetrieveAddressesForPersonDataDelegate.cs" />
-    <Compile Include="DataDelegates\RetrievePersonsDataDelegate.cs" />
-    <Compile Include="DataDelegates\GetPersonDataDelegate.cs" />
-    <Compile Include="DataDelegates\CreatePersonDataDelegate.cs" />
+    <Compile Include="DataDelegates\FetchPlayerDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveGamesForPlayerDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrievePlayersForSchoolDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
+    <Compile Include="IGameRepository.cs" />
     <Compile Include="ISchoolRepository.cs" />
     <Compile Include="IPlayerRepository.cs" />
     <Compile Include="Models\PlayerGameStatistics.cs" />
@@ -55,30 +56,31 @@
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="DataDelegates\SavePersonAddressDataDelegate.cs" />
-    <Compile Include="SqlAddressRepository.cs" />
-    <Compile Include="SqlPersonRepository.cs" />
+    <Compile Include="DataDelegates\RetrieveSchoolsDataReaderDelegate.cs" />
+    <Compile Include="SqlGameRepository.cs" />
+    <Compile Include="SqlSchoolRepository.cs" />
+    <Compile Include="SqlPlayerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Tables\DropTables.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Person.RetrievePersons.sql" />
-    <EmbeddedResource Include="Sql\Procedures\Person.GetPerson.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveSchools.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.GetSchool.sql" />
     <EmbeddedResource Include="Sql\Procedures\Person.CreatePerson.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Tables\Person.Person.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.Player.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Tables\Person.AddressType.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.Region.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Tables\Person.PersonAddress.sql" />
+    <EmbeddedResource Include="Sql\Tables\Basketball.School.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Data\Person.AddressType.sql" />
+    <EmbeddedResource Include="Sql\Data\Basketball.Region.sql" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DataAccess\DataAccess.csproj">
@@ -87,16 +89,55 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Schemas\Person.sql" />
+    <EmbeddedResource Include="Sql\Schemas\Basketball.sql" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Person.SavePersonAddress.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Person.RetrieveAddressesForPerson.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrievePlayersForSchool.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Person.FetchPerson.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchPlayer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.Game.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.PlayerGameStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.PlayerSeasonStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Data\Basketball.School.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Data\Basketball.Player.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchPlayerSeasonStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.GetTopPlayers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.Round.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Data\Basketball.Round.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveGamesForPlayer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.GameSchool.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Tables\Basketball.TeamType.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Data\Basketball.TeamType.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

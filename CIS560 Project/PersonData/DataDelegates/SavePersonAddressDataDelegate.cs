@@ -8,14 +8,14 @@ namespace PersonData.DataDelegates
    internal class SavePersonAddressDataDelegate : DataDelegate
    {
       private readonly int personId;
-      private readonly Game addressType;
+      private readonly AddressType addressType;
       private readonly string line1;
       private readonly string line2;
       private readonly string city;
       private readonly string stateCode;
       private readonly string zipCode;
 
-      public SavePersonAddressDataDelegate(int personId, Game addressType, string line1, string line2, string city, string stateCode, string zipCode)
+      public SavePersonAddressDataDelegate(int personId, AddressType addressType, string line1, string line2, string city, string stateCode, string zipCode)
          : base("Person.SavePersonAddress")
       {
          this.personId = personId;

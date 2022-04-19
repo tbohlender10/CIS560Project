@@ -5,20 +5,20 @@ using System.Data.SqlClient;
 
 namespace PersonData.DataDelegates
 {
-   internal class RetrievePersonsDataDelegate : DataReaderDelegate<IReadOnlyList<Player>>
+   internal class RetrievePersonsDataDelegate : DataReaderDelegate<IReadOnlyList<Person>>
    {
       public RetrievePersonsDataDelegate()
          : base("Person.RetrievePersons")
       {
       }
 
-      public override IReadOnlyList<Player> Translate(SqlCommand command, IDataRowReader reader) //don't have to get ordinals
+      public override IReadOnlyList<Person> Translate(SqlCommand command, IDataRowReader reader) //don't have to get ordinals
       {
-         var persons = new List<Player>();
+         var persons = new List<Person>();
 
          while (reader.Read())
          {
-            persons.Add(new Player(
+            persons.Add(new Person(
                reader.GetInt32("PersonId"),
                reader.GetString("FirstName"),
                reader.GetString("LastName"),

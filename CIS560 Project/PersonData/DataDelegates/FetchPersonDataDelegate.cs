@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace PersonData.DataDelegates
 {
-   internal class FetchPersonDataDelegate : DataReaderDelegate<Player>
+   internal class FetchPersonDataDelegate : DataReaderDelegate<Person>
    {
       private readonly int personId;
 
@@ -22,12 +22,12 @@ namespace PersonData.DataDelegates
          command.Parameters.AddWithValue("PersonId", personId);
       }
 
-      public override Player Translate(SqlCommand command, IDataRowReader reader)
+      public override Person Translate(SqlCommand command, IDataRowReader reader)
       {
          if (!reader.Read())
             throw new RecordNotFoundException(personId.ToString());
 
-         return new Player(personId,
+         return new Person(personId,
             reader.GetString("FirstName"),
             reader.GetString("LastName"),
             reader.GetString("Email"));

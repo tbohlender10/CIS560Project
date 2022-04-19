@@ -6,7 +6,7 @@ using System;
 
 namespace PersonData
 {
-   public class SqlAddressRepository : ISchoolRepository
+   public class SqlAddressRepository : IAddressRepository
    {
       private readonly SqlCommandExecutor executor;
 
@@ -15,7 +15,7 @@ namespace PersonData
          executor = new SqlCommandExecutor(connectionString);
       }
 
-      public void SaveAddress(int personId, Game addressType, string line1, string line2, string city, string stateCode, string zipCode)
+      public void SaveAddress(int personId, AddressType addressType, string line1, string line2, string city, string stateCode, string zipCode)
       {
          if (line1 == null)
             throw new ArgumentNullException(nameof(line1));

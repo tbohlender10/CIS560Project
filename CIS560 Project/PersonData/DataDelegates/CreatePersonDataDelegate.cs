@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace PersonData.DataDelegates
 {
-   internal class CreatePersonDataDelegate : NonQueryDataDelegate<Player>
+   internal class CreatePersonDataDelegate : NonQueryDataDelegate<Person>
    {
       public readonly string firstName;
       public readonly string lastName;
@@ -31,9 +31,9 @@ namespace PersonData.DataDelegates
          p.Direction = ParameterDirection.Output;
       }
 
-      public override Player Translate(SqlCommand command)
+      public override Person Translate(SqlCommand command)
       {
-         return new Player((int)command.Parameters["PersonId"].Value, firstName, lastName, email);
+         return new Person((int)command.Parameters["PersonId"].Value, firstName, lastName, email);
       }
    }
 }

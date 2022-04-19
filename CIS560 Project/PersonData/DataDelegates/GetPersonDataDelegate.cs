@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 namespace PersonData.DataDelegates
 {
-   internal class GetPersonDataDelegate : DataReaderDelegate<Player>
+   internal class GetPersonDataDelegate : DataReaderDelegate<Person>
    {
       private readonly string email;
 
@@ -21,12 +21,12 @@ namespace PersonData.DataDelegates
          command.Parameters.AddWithValue("Email", email);
       }
 
-      public override Player Translate(SqlCommand command, IDataRowReader reader)
+      public override Person Translate(SqlCommand command, IDataRowReader reader)
       {
          if (!reader.Read())
             return null;
 
-         return new Player(
+         return new Person(
             reader.GetInt32("PersonId"),
             reader.GetString("FirstName"),
             reader.GetString("LastName"),
