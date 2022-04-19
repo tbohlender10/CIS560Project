@@ -8,3 +8,11 @@ C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debu
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CoreCompileInputs.cache
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csprojAssemblyReference.cache
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Bracket.resources
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Properties.Resources.resources
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Stats.resources
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.GenerateResource.cache
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CoreCompileInputs.cache
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
