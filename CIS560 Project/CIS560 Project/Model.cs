@@ -19,7 +19,7 @@ namespace CIS560_Project
 
         public SqlGameRepository GameRepo;
 
-        public List<School> Schools; //have code in teh constructor to initialize this list
+        public List<School> Schools;
 
         public List<Player> Players; //have code in the constructor to initialize this list
 
@@ -29,6 +29,8 @@ namespace CIS560_Project
             SchoolRepo = new SqlSchoolRepository(connectionString);
             GameRepo = new SqlGameRepository(connectionString);
             Schools = SchoolRepo.RetrieveSchools();
+
+            MessageBox.Show("Test");
         }
     }
 }
