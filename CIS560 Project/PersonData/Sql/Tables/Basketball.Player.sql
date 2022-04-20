@@ -7,7 +7,8 @@ BEGIN
 		REFERENCES Basketball.School(SchoolID),
 	[Name] NVARCHAR(128) NOT NULL,
 	Number INT NOT NULL,
-	Grade NVARCHAR(64) NOT NULL
+	Grade NVARCHAR(64) NOT NULL,
+	Position NVARCHAR(64) NOT NULL
 
 	UNIQUE(SchoolID, Number)
    );
