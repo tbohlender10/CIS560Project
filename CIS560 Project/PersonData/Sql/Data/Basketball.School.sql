@@ -37,7 +37,7 @@ FROM
 		(N'Norfolk State', N'Robert Jones', 16, N'East'),
 		(N'Arizona', N'Tommy Lloyd', 1, N'South'),
 		(N'Villanova', N'Jay Wright', 2, N'South'),
-		(N'Tennesee', N'Rick Barnes', 3, N'South'),
+		(N'Tennessee', N'Rick Barnes', 3, N'South'),
 		(N'Illinois', N'Brad Underwood', 4, N'South'),
 		(N'Houston', N'Kelvin Sampson', 5, N'South'),
 		(N'Colorado State', N'Niko Medved', 6, N'South'),
