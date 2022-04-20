@@ -21,7 +21,7 @@ namespace PersonData
          return executor.ExecuteReader(d);
       }
 
-      public IReadOnlyList<School> RetrieveSchools()
+      public List<School> RetrieveSchools()
       {
          var d = new RetrieveSchoolsDataReaderDelegate();
          return executor.ExecuteReader(d);

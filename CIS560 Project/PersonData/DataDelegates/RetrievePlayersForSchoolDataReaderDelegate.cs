@@ -31,7 +31,7 @@ namespace PersonData.DataDelegates
                 players.Add(new Player(
                 reader.GetInt32("PlayerID"),
                 SchoolID,
-                reader.GetString("[Name]"),
+                reader.GetString("Name"),
                 reader.GetInt32("Number"),
                 reader.GetString("Grade")));
          }

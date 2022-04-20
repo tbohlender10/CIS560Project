@@ -11,7 +11,7 @@ namespace CIS560_Project
 {
     public class Model
     {
-        const string connectionString = @"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;";
+        const string connectionString = @"Server=(localdb)\MSSQLLocalDb;Database=CIS560Project;Integrated Security=SSPI;";
 
         public SqlPlayerRepository PlayerRepo;
 
@@ -28,6 +28,7 @@ namespace CIS560_Project
             PlayerRepo = new SqlPlayerRepository(connectionString);
             SchoolRepo = new SqlSchoolRepository(connectionString);
             GameRepo = new SqlGameRepository(connectionString);
+            Schools = SchoolRepo.RetrieveSchools();
         }
     }
 }

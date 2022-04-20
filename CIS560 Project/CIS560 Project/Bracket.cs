@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersonData.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -352,7 +353,7 @@ namespace CIS560_Project
 
         private void uxTourney_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

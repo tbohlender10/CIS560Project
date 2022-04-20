@@ -28,7 +28,7 @@ namespace PersonData.DataDelegates
 
          return new School(
                 SchoolID,
-                reader.GetString("[Name]"),
+                reader.GetString("Name"),
                 reader.GetString("Coach"),
                 reader.GetInt32("Seed"),
                 reader.GetInt32("RegionID"));

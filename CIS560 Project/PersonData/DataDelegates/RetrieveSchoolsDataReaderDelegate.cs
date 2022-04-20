@@ -6,14 +6,14 @@ using PersonData.Models;
 
 namespace PersonData.DataDelegates
 {
-   internal class RetrieveSchoolsDataReaderDelegate : DataReaderDelegate<IReadOnlyList<School>>
+   internal class RetrieveSchoolsDataReaderDelegate : DataReaderDelegate<List<School>>
     {
         public RetrieveSchoolsDataReaderDelegate()
             : base("Basketball.RetrieveSchools")
         {
         }
 
-        public override IReadOnlyList<School> Translate(SqlCommand command, IDataRowReader reader)
+        public override List<School> Translate(SqlCommand command, IDataRowReader reader)
         {
             var schools = new List<School>();
 
@@ -21,7 +21,7 @@ namespace PersonData.DataDelegates
             {
                 schools.Add(new School(
                     reader.GetInt32("SchoolID"),
-                    reader.GetString("[Name]"),
+                    reader.GetString("Name"),
                     reader.GetString("Coach"),
                     reader.GetInt32("Seed"),
                     reader.GetInt32("RegionID")));

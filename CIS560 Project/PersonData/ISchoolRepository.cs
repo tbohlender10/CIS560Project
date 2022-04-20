@@ -5,7 +5,7 @@ namespace PersonData
 {
    public interface ISchoolRepository
    {
-        IReadOnlyList<School> RetrieveSchools();
+        List<School> RetrieveSchools();
 
         School GetSchool(int schoolID);
    }
