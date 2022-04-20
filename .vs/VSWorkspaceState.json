@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\CIS560 Project",
+    "\\CIS560 Project\\PersonData",
+    "\\CIS560 Project\\PersonData\\Models"
   ],
-  "SelectedNode": "\\CIS560 Project.sln",
+  "SelectedNode": "\\CIS560 Project\\PersonData\\Models\\Game.cs",
   "PreviewInSolutionExplorer": false
 }

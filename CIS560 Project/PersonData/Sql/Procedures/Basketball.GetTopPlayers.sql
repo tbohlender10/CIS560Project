@@ -1,4 +1,4 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.FetchPlayer
+﻿CREATE OR ALTER PROCEDURE Basketball.GetTopPlayers
    @PlayerID INT
 AS
 
