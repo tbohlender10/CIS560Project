@@ -3,7 +3,7 @@ BEGIN
    CREATE TABLE Basketball.TeamType
 	(
 		TeamTypeID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-		TeamType NVARCHAR(64) NOT NULl
+		TeamType NVARCHAR(64) NOT NULL
 
 		UNIQUE(TeamType)
 	)

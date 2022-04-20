@@ -1,6 +1,6 @@
 Param(
    [string] $Server = "(localdb)\MSSQLLocalDb",
-   [string] $Database = "master"
+   [string] $Database = "CIS560Project"
 )
 
 # This script requires the SQL Server module for PowerShell.
