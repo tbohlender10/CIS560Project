@@ -3,6 +3,6 @@
 AS
 
 SELECT P.SchoolID, P.[Name], P.Grade
-FROM Basketball.Player
+FROM Basketball.Player P
 WHERE P.PersonId = @PlayerID;
 GO
