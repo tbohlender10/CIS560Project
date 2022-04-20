@@ -1,4 +1,5 @@
 ﻿using PersonData;
+using PersonData.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,18 +13,21 @@ namespace CIS560_Project
     {
         const string connectionString = @"Server=(localdb)\MSSQLLocalDb;Database=master;Integrated Security=SSPI;";
 
-        private SqlPlayerRepository PlayerRepo;
+        public SqlPlayerRepository PlayerRepo;
 
-        private SqlSchoolRepository SchoolRepo;
+        public SqlSchoolRepository SchoolRepo;
+
+        public SqlGameRepository GameRepo;
+
+        public List<School> Schools; //have code in teh constructor to initialize this list
+
+        public List<Player> Players; //have code in the constructor to initialize this list
 
         public Model()
         {
             PlayerRepo = new SqlPlayerRepository(connectionString);
             SchoolRepo = new SqlSchoolRepository(connectionString);
-
-            var d = SchoolRepo.GetSchool(1);
-
-            MessageBox.Show(d.Name);
+            GameRepo = new SqlGameRepository(connectionString);
         }
     }
 }

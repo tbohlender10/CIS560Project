@@ -12,13 +12,13 @@ namespace CIS560_Project
 {
     public partial class Bracket : Form
     {
-        Model M;
+        Model Model;
 
         public Bracket(Model m)
         {
             InitializeComponent();
 
-            M = m;
+            Model = m;
 
             //Possibly could use this loop to easily connect to SQL?
             foreach (ComboBox control in this.Controls.OfType<ComboBox>().OrderBy(c => c.TabIndex))

@@ -49,6 +49,8 @@
     <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForSchoolDataReaderDelegate.cs" />
+    <Compile Include="IPlayerSeasonStatisticsRepository.cs" />
+    <Compile Include="IPlayerGameStatisticsRepository.cs" />
     <Compile Include="IGameRepository.cs" />
     <Compile Include="ISchoolRepository.cs" />
     <Compile Include="IPlayerRepository.cs" />
@@ -61,6 +63,8 @@
     <Compile Include="Models\Player.cs" />
     <Compile Include="DataDelegates\RetrieveSchoolsDataReaderDelegate.cs" />
     <Compile Include="Models\TeamType.cs" />
+    <Compile Include="SqlPlayerSeasonStatisticsRepository.cs" />
+    <Compile Include="SqlPlayerGameStatisticsRepository.cs" />
     <Compile Include="SqlGameRepository.cs" />
     <Compile Include="SqlSchoolRepository.cs" />
     <Compile Include="SqlPlayerRepository.cs" />
