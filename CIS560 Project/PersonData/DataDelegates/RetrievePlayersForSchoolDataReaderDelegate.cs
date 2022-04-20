@@ -33,7 +33,8 @@ namespace PersonData.DataDelegates
                 SchoolID,
                 reader.GetString("Name"),
                 reader.GetInt32("Number"),
-                reader.GetString("Grade")));
+                reader.GetString("Grade"),
+                reader.GetString("Position")));
          }
 
          return players;

@@ -57,6 +57,7 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.Region.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.TeamType.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.School.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.Player.sql"
 
 Write-Host "Rebuild completed."
 Write-Host ""
