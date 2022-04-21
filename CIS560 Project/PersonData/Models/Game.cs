@@ -1,14 +1,15 @@
-﻿namespace PersonData.Models
+﻿using System;
+namespace PersonData.Models
 {
    public class Game
     {
         public int GameID { get; }
 
-        public string DateTimeInfo { get; }
+        public DateTimeOffset DateTimeInfo { get; }
 
         public int RoundID { get; }
 
-        public Game(int gameID, string dateTimeInfo, int roundID)
+        public Game(int gameID, DateTimeOffset dateTimeInfo, int roundID)
         {
             GameID = gameID;
             DateTimeInfo = dateTimeInfo;

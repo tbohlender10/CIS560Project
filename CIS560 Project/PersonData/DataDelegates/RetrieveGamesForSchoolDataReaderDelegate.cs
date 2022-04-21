@@ -32,7 +32,7 @@ namespace PersonData.DataDelegates
             {
                 games.Add(new Game(
                     reader.GetInt32("GameID"),
-                    reader.GetString("DateTime"),
+                    reader.GetDateTimeOffset("DateTimeInfo"),
                     reader.GetInt32("RoundID"))
                     );
             }

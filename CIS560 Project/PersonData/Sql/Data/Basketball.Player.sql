@@ -994,5 +994,5 @@ FROM
 	 (N'Texas Southern', N'Davon Barnes', 42, N'Freshman', N'Forward'),
 	 (N'Texas Southern', N'Brison Gresham', 44, N'Senior', N'Forward')
 ) Players(School, [Name], Number, Grade, Position)
-INNER JOIN Basketball.School S ON S.[Name] = Players.School;
+INNER JOIN Basketball.School S ON S.[Name] = Players.School
 

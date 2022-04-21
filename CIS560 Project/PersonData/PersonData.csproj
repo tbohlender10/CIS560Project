@@ -147,5 +147,8 @@
   <ItemGroup>
     <EmbeddedResource Include="Sql\Data\Basketball.TeamType.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Data\Basketball.Game.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
