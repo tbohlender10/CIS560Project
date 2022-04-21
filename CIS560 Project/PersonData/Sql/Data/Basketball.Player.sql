@@ -154,7 +154,6 @@ FROM
 	 (N'Davidson', N'David Kristensen', 12, N'Junior', N'Forward'),
 	 (N'Davidson', N'Michael Jones', 13, N'Junior', N'Guard'),
 	 (N'Davidson', N'Drew Dibble', 22, N'Senior', N'Guard'),
-	 (N'Davidson', N'Chris Ford', 23, N'Freshman', N'Forward'),
 	 (N'Davidson', N'Nelson Boachie-Yiadom', 32, N'Senior', N'Forward'),
 	 (N'Davidson', N'Styrmir Thrastarson', 34, N'Freshman', N'Guard'),
 	 (N'Davidson', N'Luka Brajkovic', 35, N'Senior', N'Forward'),
@@ -761,7 +760,6 @@ FROM
 	 (N'Kansas', N'Jalen Coleman-Lands', 55, N'Senior', N'Guard'),
 	 (N'Auburn', N'K.D. Johnson', 0, N'Sophomore', N'Guard'),
 	 (N'Auburn', N'Wendell Green Jr.', 1, N'Sophomore', N'Guard'),
-	 (N'Auburn', N'Jaylin Williams', 2, N'Junior', N'Forward'),
 	 (N'Auburn', N'Chris Moore', 5, N'Sophomore', N'Forward'),
 	 (N'Auburn', N'Jabari Smith', 10, N'Freshman', N'Forward'),
 	 (N'Auburn', N'Zep Jasper', 12, N'Senior', N'Guard'),
@@ -994,5 +992,5 @@ FROM
 	 (N'Texas Southern', N'Davon Barnes', 42, N'Freshman', N'Forward'),
 	 (N'Texas Southern', N'Brison Gresham', 44, N'Senior', N'Forward')
 ) Players(School, [Name], Number, Grade, Position)
-INNER JOIN Basketball.School S ON S.[Name] = Players.School;
+INNER JOIN Basketball.School S ON S.[Name] = Players.School
 
