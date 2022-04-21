@@ -3,8 +3,7 @@ BEGIN
    CREATE TABLE Basketball.PlayerGameStatistics
 	(
 		PlayerGameStatisticID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
-		PlayerID INT NOT NULL FOREIGN KEY
-			REFERENCES Basketball.Player(PlayerID),
+		PlayerID INT NOT NULL,
 		GameID INT NOT NULL,
 		SchoolID INT NOT NULL,
 		Points INT NOT NULL,
@@ -25,6 +24,17 @@ BEGIN
 		(
 			GameID,
 			SchoolID
+		),
+
+		CONSTRAINT FK_Basketball_PlayerGameStatistics_PlayerIDSchoolID FOREIGN KEY
+		(
+			SchoolID,
+			PlayerID
+		)
+		REFERENCES Basketball.Player
+		(
+			SchoolID,
+			PlayerID
 		)
 	)
 END;

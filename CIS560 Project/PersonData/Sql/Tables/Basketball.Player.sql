@@ -10,6 +10,8 @@ BEGIN
 	Grade NVARCHAR(64) NOT NULL,
 	Position NVARCHAR(64) NOT NULL
 
+	UNIQUE(SchoolID, PlayerID), 
+
 	UNIQUE(SchoolID, Number)
    );
 END;

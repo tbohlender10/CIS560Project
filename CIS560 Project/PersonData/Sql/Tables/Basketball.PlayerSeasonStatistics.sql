@@ -2,10 +2,10 @@
 BEGIN
    CREATE TABLE Basketball.PlayerSeasonStatistics
    (
-		PlayerSeasonStatisticsID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+		PlayerSeasonStaticsID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
 		PlayerID INT NOT NULL FOREIGN KEY
 			REFERENCES Basketball.Player(PlayerID),
-		PPG INT NOT NULL,
+		PointsPerGame INT NOT NULL,
 		[3PT] INT NOT NULL,
 		FGM INT NOT NULL,
 		FGA INT NOT NULL,
