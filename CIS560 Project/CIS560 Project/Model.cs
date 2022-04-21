@@ -21,16 +21,27 @@ namespace CIS560_Project
 
         public List<School> Schools;
 
-        public List<Player> Players; //have code in the constructor to initialize this list
-
         public Model()
         {
             PlayerRepo = new SqlPlayerRepository(connectionString);
             SchoolRepo = new SqlSchoolRepository(connectionString);
             GameRepo = new SqlGameRepository(connectionString);
             Schools = SchoolRepo.RetrieveSchools();
+        }
 
-            MessageBox.Show("Test");
+        public List<School> GetListForTwoSchools(string schoolOne, string schoolTwo)
+        {
+            List<School> schools = new List<School>();
+
+            foreach (School s in Schools)
+            {
+                if (s.Name == schoolOne || s.Name == schoolTwo)
+                {
+                    schools.Add(s);
+                }
+            }
+
+            return schools;
         }
     }
 }
