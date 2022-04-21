@@ -31,6 +31,7 @@ namespace PersonData.DataDelegates
                 reader.GetInt32("PlayerSeasonStatisticsID"),
                 PlayerID,
                 reader.GetInt32("PPG"),
+                reader.GetInt32("3Pt"),
                 reader.GetInt32("FGM"),
                 reader.GetInt32("FGA"),
                 reader.GetInt32("Rebounds"),
