@@ -6,7 +6,7 @@
 
         public int PlayerID { get; }
 
-        public int PointsPerGame { get; }
+        public int PPG { get; }
 
         public int ThreePoints { get; }
 
@@ -18,12 +18,12 @@
 
         public int Minutes { get; }
 
-        public PlayerSeasonStatistics(int playerSeasonStatisticsID, int playerID, int pointsPerGame,
+        public PlayerSeasonStatistics(int playerSeasonStatisticsID, int playerID, int ppg,
             int fgm, int fga, int rebounds, int minutes)
         {
             PlayerSeasonStatisticsID = playerSeasonStatisticsID;
             PlayerID = playerID;
-            PointsPerGame = pointsPerGame;
+            PPG = ppg;
             FGM = fgm;
             FGA = fga;
             Rebounds = rebounds;
