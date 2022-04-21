@@ -11,5 +11,7 @@ BEGIN
 		FGA INT NOT NULL,
 		Rebounds INT NOT NULL,
 		[Minutes] INT NOT NULL
+
+		UNIQUE(PlayerID)
    );
 END;
