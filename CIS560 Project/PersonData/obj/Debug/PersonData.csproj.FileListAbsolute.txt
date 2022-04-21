@@ -18,3 +18,10 @@ C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\Pe
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.dll
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.pdb
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\PersonData\bin\Debug\PersonData.dll
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\PersonData\bin\Debug\PersonData.pdb
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\PersonData\bin\Debug\DataAccess.dll
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\PersonData\bin\Debug\DataAccess.pdb
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.csproj.CopyComplete
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.dll
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.pdb

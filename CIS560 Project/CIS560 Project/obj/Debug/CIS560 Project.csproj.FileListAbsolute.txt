@@ -38,3 +38,12 @@ C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debu
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe.config
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.pdb
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\PersonData.dll
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.dll
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\PersonData.pdb
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.pdb
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
+C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Games.resources

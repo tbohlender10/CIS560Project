@@ -53,7 +53,7 @@
             // uxGradeLabel
             // 
             this.uxGradeLabel.AutoSize = true;
-            this.uxGradeLabel.Location = new System.Drawing.Point(366, 342);
+            this.uxGradeLabel.Location = new System.Drawing.Point(363, 306);
             this.uxGradeLabel.Name = "uxGradeLabel";
             this.uxGradeLabel.Size = new System.Drawing.Size(52, 17);
             this.uxGradeLabel.TabIndex = 39;
@@ -65,7 +65,7 @@
             this.uxGrade.AllowDrop = true;
             this.uxGrade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxGrade.FormattingEnabled = true;
-            this.uxGrade.Location = new System.Drawing.Point(322, 362);
+            this.uxGrade.Location = new System.Drawing.Point(319, 326);
             this.uxGrade.Name = "uxGrade";
             this.uxGrade.Size = new System.Drawing.Size(150, 24);
             this.uxGrade.Sorted = true;
@@ -75,7 +75,7 @@
             // uxRegionLabel
             // 
             this.uxRegionLabel.AutoSize = true;
-            this.uxRegionLabel.Location = new System.Drawing.Point(366, 289);
+            this.uxRegionLabel.Location = new System.Drawing.Point(363, 253);
             this.uxRegionLabel.Name = "uxRegionLabel";
             this.uxRegionLabel.Size = new System.Drawing.Size(57, 17);
             this.uxRegionLabel.TabIndex = 37;
@@ -87,7 +87,7 @@
             this.uxRegion.AllowDrop = true;
             this.uxRegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxRegion.FormattingEnabled = true;
-            this.uxRegion.Location = new System.Drawing.Point(322, 309);
+            this.uxRegion.Location = new System.Drawing.Point(319, 273);
             this.uxRegion.Name = "uxRegion";
             this.uxRegion.Size = new System.Drawing.Size(150, 24);
             this.uxRegion.Sorted = true;
@@ -97,7 +97,7 @@
             // uxSeedLabel
             // 
             this.uxSeedLabel.AutoSize = true;
-            this.uxSeedLabel.Location = new System.Drawing.Point(371, 179);
+            this.uxSeedLabel.Location = new System.Drawing.Point(368, 143);
             this.uxSeedLabel.Name = "uxSeedLabel";
             this.uxSeedLabel.Size = new System.Drawing.Size(45, 17);
             this.uxSeedLabel.TabIndex = 35;
@@ -106,7 +106,7 @@
             // 
             // uxSeed
             // 
-            this.uxSeed.Location = new System.Drawing.Point(338, 199);
+            this.uxSeed.Location = new System.Drawing.Point(335, 163);
             this.uxSeed.Maximum = new decimal(new int[] {
             16,
             0,
@@ -130,7 +130,7 @@
             // uxNameLabel
             // 
             this.uxNameLabel.AutoSize = true;
-            this.uxNameLabel.Location = new System.Drawing.Point(371, 114);
+            this.uxNameLabel.Location = new System.Drawing.Point(368, 78);
             this.uxNameLabel.Name = "uxNameLabel";
             this.uxNameLabel.Size = new System.Drawing.Size(52, 17);
             this.uxNameLabel.TabIndex = 33;
@@ -139,7 +139,7 @@
             // 
             // uxName
             // 
-            this.uxName.Location = new System.Drawing.Point(310, 134);
+            this.uxName.Location = new System.Drawing.Point(307, 98);
             this.uxName.Name = "uxName";
             this.uxName.Size = new System.Drawing.Size(174, 22);
             this.uxName.TabIndex = 32;
@@ -148,7 +148,7 @@
             // uxInfo
             // 
             this.uxInfo.AutoSize = true;
-            this.uxInfo.Location = new System.Drawing.Point(346, 260);
+            this.uxInfo.Location = new System.Drawing.Point(343, 224);
             this.uxInfo.Name = "uxInfo";
             this.uxInfo.Size = new System.Drawing.Size(102, 17);
             this.uxInfo.TabIndex = 31;
@@ -157,37 +157,40 @@
             // uxUpdatePlayer
             // 
             this.uxUpdatePlayer.Enabled = false;
-            this.uxUpdatePlayer.Location = new System.Drawing.Point(590, 341);
+            this.uxUpdatePlayer.Location = new System.Drawing.Point(587, 305);
             this.uxUpdatePlayer.Name = "uxUpdatePlayer";
             this.uxUpdatePlayer.Size = new System.Drawing.Size(116, 45);
             this.uxUpdatePlayer.TabIndex = 30;
             this.uxUpdatePlayer.Text = "Update Player Info";
             this.uxUpdatePlayer.UseVisualStyleBackColor = true;
+            this.uxUpdatePlayer.Click += new System.EventHandler(this.uxUpdatePlayer_Click);
             // 
             // uxUpdateTeam
             // 
             this.uxUpdateTeam.Enabled = false;
-            this.uxUpdateTeam.Location = new System.Drawing.Point(78, 341);
+            this.uxUpdateTeam.Location = new System.Drawing.Point(75, 305);
             this.uxUpdateTeam.Name = "uxUpdateTeam";
             this.uxUpdateTeam.Size = new System.Drawing.Size(116, 45);
             this.uxUpdateTeam.TabIndex = 29;
             this.uxUpdateTeam.Text = "Update Team Info";
             this.uxUpdateTeam.UseVisualStyleBackColor = true;
+            this.uxUpdateTeam.Click += new System.EventHandler(this.uxUpdateTeam_Click);
             // 
             // uxViewTeam
             // 
             this.uxViewTeam.Enabled = false;
-            this.uxViewTeam.Location = new System.Drawing.Point(78, 246);
+            this.uxViewTeam.Location = new System.Drawing.Point(75, 210);
             this.uxViewTeam.Name = "uxViewTeam";
             this.uxViewTeam.Size = new System.Drawing.Size(116, 45);
             this.uxViewTeam.TabIndex = 28;
             this.uxViewTeam.Text = "View Team Info";
             this.uxViewTeam.UseVisualStyleBackColor = true;
+            this.uxViewTeam.Click += new System.EventHandler(this.uxViewTeam_Click);
             // 
             // uxPlayerLabel
             // 
             this.uxPlayerLabel.AutoSize = true;
-            this.uxPlayerLabel.Location = new System.Drawing.Point(602, 65);
+            this.uxPlayerLabel.Location = new System.Drawing.Point(599, 29);
             this.uxPlayerLabel.Name = "uxPlayerLabel";
             this.uxPlayerLabel.Size = new System.Drawing.Size(91, 17);
             this.uxPlayerLabel.TabIndex = 27;
@@ -196,7 +199,7 @@
             // uxTeamLabel
             // 
             this.uxTeamLabel.AutoSize = true;
-            this.uxTeamLabel.Location = new System.Drawing.Point(107, 65);
+            this.uxTeamLabel.Location = new System.Drawing.Point(104, 29);
             this.uxTeamLabel.Name = "uxTeamLabel";
             this.uxTeamLabel.Size = new System.Drawing.Size(87, 17);
             this.uxTeamLabel.TabIndex = 26;
@@ -209,11 +212,12 @@
             this.uxSelectPlayer.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxSelectPlayer.Enabled = false;
             this.uxSelectPlayer.FormattingEnabled = true;
-            this.uxSelectPlayer.Location = new System.Drawing.Point(578, 96);
+            this.uxSelectPlayer.Location = new System.Drawing.Point(575, 60);
             this.uxSelectPlayer.Name = "uxSelectPlayer";
             this.uxSelectPlayer.Size = new System.Drawing.Size(150, 24);
             this.uxSelectPlayer.Sorted = true;
             this.uxSelectPlayer.TabIndex = 25;
+            this.uxSelectPlayer.SelectedIndexChanged += new System.EventHandler(this.uxSelectPlayer_SelectedIndexChanged);
             // 
             // uxSelectTeam
             // 
@@ -221,22 +225,24 @@
             this.uxSelectTeam.DisplayMember = "Select Team";
             this.uxSelectTeam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxSelectTeam.FormattingEnabled = true;
-            this.uxSelectTeam.Location = new System.Drawing.Point(73, 96);
+            this.uxSelectTeam.Location = new System.Drawing.Point(70, 60);
             this.uxSelectTeam.MaxDropDownItems = 64;
             this.uxSelectTeam.Name = "uxSelectTeam";
             this.uxSelectTeam.Size = new System.Drawing.Size(150, 24);
             this.uxSelectTeam.Sorted = true;
             this.uxSelectTeam.TabIndex = 24;
+            this.uxSelectTeam.SelectedIndexChanged += new System.EventHandler(this.uxSelectTeam_SelectedIndexChanged);
             // 
             // uxViewPlayer
             // 
             this.uxViewPlayer.Enabled = false;
-            this.uxViewPlayer.Location = new System.Drawing.Point(590, 246);
+            this.uxViewPlayer.Location = new System.Drawing.Point(587, 210);
             this.uxViewPlayer.Name = "uxViewPlayer";
             this.uxViewPlayer.Size = new System.Drawing.Size(116, 45);
             this.uxViewPlayer.TabIndex = 23;
             this.uxViewPlayer.Text = "View Player Info";
             this.uxViewPlayer.UseVisualStyleBackColor = true;
+            this.uxViewPlayer.Click += new System.EventHandler(this.uxViewPlayer_Click);
             // 
             // uxBack
             // 
@@ -246,6 +252,7 @@
             this.uxBack.TabIndex = 40;
             this.uxBack.Text = "Back";
             this.uxBack.UseVisualStyleBackColor = true;
+            this.uxBack.Click += new System.EventHandler(this.uxBack_Click);
             // 
             // uxSave
             // 
@@ -253,8 +260,9 @@
             this.uxSave.Name = "uxSave";
             this.uxSave.Size = new System.Drawing.Size(116, 45);
             this.uxSave.TabIndex = 41;
-            this.uxSave.Text = "Back";
+            this.uxSave.Text = "Save";
             this.uxSave.UseVisualStyleBackColor = true;
+            this.uxSave.Click += new System.EventHandler(this.uxSave_Click);
             // 
             // Stats
             // 

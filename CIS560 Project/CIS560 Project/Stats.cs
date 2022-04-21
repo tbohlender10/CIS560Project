@@ -131,7 +131,7 @@ namespace CIS560_Project
 
         private void uxSelectPlayer_SelectedIndexChanged(object sender, EventArgs e)
         {
-            uxUpdatePlayer.Enabled = true;
+           uxUpdatePlayer.Enabled = true;
             uxViewPlayer.Enabled = true;
         }
 
@@ -144,7 +144,15 @@ namespace CIS560_Project
 
         private void uxBack_Click(object sender, EventArgs e)
         {
-
+            if (close)
+            {
+                parent.Enabled = true;
+                this.Close();
+            }
+            else
+            {
+                showMenu();
+            }
         }
 
         private void uxUpdateTeam_Click(object sender, EventArgs e)
