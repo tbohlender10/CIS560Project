@@ -15,10 +15,9 @@ namespace PersonData
              executor = new SqlCommandExecutor(connectionString);
           }
 
-        public IReadOnlyList<Game> RetrieveGamesForSchool(int schoolID)
+        public IList<Game> RetrieveAllGames()
         {
-            var d = new RetrieveGamesForSchoolDataReaderDelegate(schoolID);
-            return executor.ExecuteReader(d);
+            throw new NotImplementedException();
         }
     }
 }

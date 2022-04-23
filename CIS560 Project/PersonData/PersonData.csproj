@@ -158,5 +158,14 @@
   <ItemGroup>
     <EmbeddedResource Include="Sql\Data\Basketball.GameSchool.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdateGameScore.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchSchoolsWithNumberOfWins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchGameInfoForSchool.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

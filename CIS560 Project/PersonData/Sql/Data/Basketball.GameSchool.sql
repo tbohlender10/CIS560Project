@@ -129,8 +129,6 @@ FROM
 	 (N'Duke', '2022-04-02 19:00:00', N'Home'),
 	 (N'North Carolina', '2022-04-04 20:00:00', N'Guest'),
 	 (N'Kansas', '2022-04-04 20:00:00', N'Home')
-
-
 ) SchoolGame(School, DateTimeInfo, TeamType)
 INNER JOIN Basketball.School S ON S.[Name] = SchoolGame.School
 INNER JOIN Basketball.Game G ON G.DateTimeInfo = SchoolGame.DateTimeInfo
