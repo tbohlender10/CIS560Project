@@ -43,12 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataDelegates\CreatePlayerDataDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveAllGamesDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForPlayerDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrievePlayersForSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForSchoolDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\UpdateGameScore.cs" />
+    <Compile Include="DataDelegates\UpdatePlayerGrade.cs" />
+    <Compile Include="DataDelegates\UpdatePlayerName.cs" />
+    <Compile Include="DataDelegates\UpdatePlayerNumber.cs" />
+    <Compile Include="DataDelegates\UpdatePlayerPosition.cs" />
     <Compile Include="IGameSchoolRepository.cs" />
     <Compile Include="IPlayerSeasonStatisticsRepository.cs" />
     <Compile Include="IPlayerGameStatisticsRepository.cs" />
@@ -181,6 +188,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.CreateNewPlayer.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveAllGames.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

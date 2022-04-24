@@ -17,7 +17,9 @@ namespace PersonData
 
         public bool CreateNewPlayer(string school, string playerName, int number, string grade, string position)
         {
-            throw new NotImplementedException();
+            var d = new CreatePlayerDataDelegate(school, playerName, number, grade, position);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
 
         public Player FetchPlayer(int playerID)
@@ -31,24 +33,32 @@ namespace PersonData
          return executor.ExecuteReader(new RetrievePlayersForSchoolDataReaderDelegate(schoolID));
       }
 
-        public bool UpdatePlayerGrade(string playerName, string school, string grade)
+        public bool UpdatePlayerGrade(string school, string playerName, string grade)
         {
-            throw new NotImplementedException();
+            var d = new UpdatePlayerGrade(school, playerName, grade);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
 
-        public bool UpdatePlayerName(string playerName, string school, int number)
+        public bool UpdatePlayerName(string school, string playerName, int number)
         {
-            throw new NotImplementedException();
+            var d = new UpdatePlayerName(school, playerName, number);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
 
-        public bool UpdatePlayerNumber(string playerName, string school, int number)
+        public bool UpdatePlayerNumber(string school, string playerName, int number)
         {
-            throw new NotImplementedException();
+            var d = new UpdatePlayerNumber(school, playerName, number);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
 
-        public bool UpdatePlayerPosition(string playerName, string school, string position)
+        public bool UpdatePlayerPosition(string school, string playerName, string position)
         {
-            throw new NotImplementedException();
+            var d = new UpdatePlayerPosition(school, playerName, position);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
     }
 }

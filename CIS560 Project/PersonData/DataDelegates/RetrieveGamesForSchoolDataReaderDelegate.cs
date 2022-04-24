@@ -6,25 +6,25 @@ using PersonData.Models;
 
 namespace PersonData.DataDelegates
 {
-   internal class RetrieveGamesForSchoolDataReaderDelegate : DataReaderDelegate<IReadOnlyList<Game>>
+   internal class RetrieveGamesForSchoolDataReaderDelegate : DataReaderDelegate<List<Game>>
     {
 
-        public readonly int SchoolID;
+        public readonly int School;
 
-        public RetrieveGamesForSchoolDataReaderDelegate(int schoolID)
+        public RetrieveGamesForSchoolDataReaderDelegate(int school)
             : base("Basketball.RetrieveGamesForSchool")
         {
-            SchoolID = schoolID;
+            School = school;
         }
 
         public override void PrepareCommand(SqlCommand command)
         {
             base.PrepareCommand(command);
 
-            command.Parameters.AddWithValue("SchoolID", SchoolID); 
+            command.Parameters.AddWithValue("School", School); 
         }
 
-        public override IReadOnlyList<Game> Translate(SqlCommand command, IDataRowReader reader)
+        public override List<Game> Translate(SqlCommand command, IDataRowReader reader)
         {
             var games = new List<Game>();
 
