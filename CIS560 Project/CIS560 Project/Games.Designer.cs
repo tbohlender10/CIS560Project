@@ -276,6 +276,7 @@
             this.uxViewGame.TabIndex = 70;
             this.uxViewGame.Text = "View Game Stats";
             this.uxViewGame.UseVisualStyleBackColor = true;
+            this.uxViewGame.Click += new System.EventHandler(this.uxViewGame_Click);
             // 
             // uxUpdateGame
             // 
@@ -286,6 +287,7 @@
             this.uxUpdateGame.TabIndex = 71;
             this.uxUpdateGame.Text = "Update Game Stats";
             this.uxUpdateGame.UseVisualStyleBackColor = true;
+            this.uxUpdateGame.Click += new System.EventHandler(this.uxUpdateGame_Click);
             // 
             // uxViewPlayer
             // 
@@ -339,6 +341,7 @@
             this.Controls.Add(this.uxSelectTeam);
             this.Name = "Games";
             this.Text = "Games";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Games_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

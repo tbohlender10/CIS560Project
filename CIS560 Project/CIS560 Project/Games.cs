@@ -104,9 +104,11 @@ namespace CIS560_Project
             uxBack.Show();
         }
 
-            private void uxSelectGame_SelectedIndexChanged(object sender, EventArgs e)
+        private void uxSelectGame_SelectedIndexChanged(object sender, EventArgs e)
         {
             uxSelectTeam.Enabled = true;
+            uxViewGame.Enabled = true;
+            uxUpdateGame.Enabled = true;
         }
 
         private void uxSelectTeam_SelectedIndexChanged(object sender, EventArgs e)
@@ -153,6 +155,22 @@ namespace CIS560_Project
             uxBack_Click(sender, e);
         }
 
+        private void Games_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            parent.Enabled = true;
+        }
 
+        private void uxViewGame_Click(object sender, EventArgs e)
+        {
+            showViewPlayer();
+            uxCurrPlayerLabel.Text = "";
+            uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
+            uxPlayerStats.Text = "Team 1 Points: N/A\nTeam 2 Points: N/A\nWinning Team: N/A";
+        }
+
+        private void uxUpdateGame_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

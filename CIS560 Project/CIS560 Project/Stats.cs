@@ -178,5 +178,10 @@ namespace CIS560_Project
             //SQL Magic idk
             uxBack_Click(sender, e);
         }
+
+        private void Stats_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            parent.Enabled = true;
+        }
     }
 }

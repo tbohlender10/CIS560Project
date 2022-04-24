@@ -741,7 +741,9 @@ namespace CIS560_Project
 
         private void uxTourney_Click(object sender, EventArgs e)
         {
-            
+            Form newForm = new Tourney(this, Model);
+            this.Enabled = false;
+            newForm.Show();
         }
 
         private void uxGames_Click(object sender, EventArgs e)
