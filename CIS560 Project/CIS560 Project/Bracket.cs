@@ -596,62 +596,134 @@ namespace CIS560_Project
 
         private void uxComboBox51_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox51.DataSource != null && uxComboBox52.DataSource != null && uxComboBox51.SelectedIndex >= 0 && uxComboBox52.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex172.Clear();
 
+                Model.SchoolsTabIndex172.Add(((BindingList<School>)uxComboBox51.DataSource)[uxComboBox51.SelectedIndex]);
+                Model.SchoolsTabIndex172.Add(((BindingList<School>)uxComboBox52.DataSource)[uxComboBox52.SelectedIndex]);
+            }
         }
 
         private void uxComboBox52_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox51.DataSource != null && uxComboBox52.DataSource != null && uxComboBox51.SelectedIndex >= 0 && uxComboBox52.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex172.Clear();
 
+                Model.SchoolsTabIndex172.Add(((BindingList<School>)uxComboBox51.DataSource)[uxComboBox51.SelectedIndex]);
+                Model.SchoolsTabIndex172.Add(((BindingList<School>)uxComboBox52.DataSource)[uxComboBox52.SelectedIndex]);
+            }
         }
 
         private void uxComboBox53_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox53.DataSource != null && uxComboBox54.DataSource != null && uxComboBox53.SelectedIndex >= 0 && uxComboBox54.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex175.Clear();
 
+                Model.SchoolsTabIndex175.Add(((BindingList<School>)uxComboBox53.DataSource)[uxComboBox53.SelectedIndex]);
+                Model.SchoolsTabIndex175.Add(((BindingList<School>)uxComboBox54.DataSource)[uxComboBox54.SelectedIndex]);
+            }
         }
 
         private void uxComboBox54_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox53.DataSource != null && uxComboBox54.DataSource != null && uxComboBox53.SelectedIndex >= 0 && uxComboBox54.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex175.Clear();
 
+                Model.SchoolsTabIndex175.Add(((BindingList<School>)uxComboBox53.DataSource)[uxComboBox53.SelectedIndex]);
+                Model.SchoolsTabIndex175.Add(((BindingList<School>)uxComboBox54.DataSource)[uxComboBox54.SelectedIndex]);
+            }
         }
 
         private void uxComboBox55_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox55.DataSource != null && uxComboBox56.DataSource != null && uxComboBox55.SelectedIndex >= 0 && uxComboBox56.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex178.Clear();
 
+                Model.SchoolsTabIndex178.Add(((BindingList<School>)uxComboBox55.DataSource)[uxComboBox55.SelectedIndex]);
+                Model.SchoolsTabIndex178.Add(((BindingList<School>)uxComboBox56.DataSource)[uxComboBox56.SelectedIndex]);
+            }
         }
 
         private void uxComboBox56_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox55.DataSource != null && uxComboBox56.DataSource != null && uxComboBox55.SelectedIndex >= 0 && uxComboBox56.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex178.Clear();
 
+                Model.SchoolsTabIndex178.Add(((BindingList<School>)uxComboBox55.DataSource)[uxComboBox55.SelectedIndex]);
+                Model.SchoolsTabIndex178.Add(((BindingList<School>)uxComboBox56.DataSource)[uxComboBox56.SelectedIndex]);
+            }
         }
 
         private void uxComboBox57_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox57.DataSource != null && uxComboBox58.DataSource != null && uxComboBox57.SelectedIndex >= 0 && uxComboBox58.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex181.Clear();
 
+                Model.SchoolsTabIndex181.Add(((BindingList<School>)uxComboBox57.DataSource)[uxComboBox57.SelectedIndex]);
+                Model.SchoolsTabIndex181.Add(((BindingList<School>)uxComboBox58.DataSource)[uxComboBox58.SelectedIndex]);
+            }
         }
 
         private void uxComboBox58_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox57.DataSource != null && uxComboBox58.DataSource != null && uxComboBox57.SelectedIndex >= 0 && uxComboBox58.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex181.Clear();
 
+                Model.SchoolsTabIndex181.Add(((BindingList<School>)uxComboBox57.DataSource)[uxComboBox57.SelectedIndex]);
+                Model.SchoolsTabIndex181.Add(((BindingList<School>)uxComboBox58.DataSource)[uxComboBox58.SelectedIndex]);
+            }
         }
 
         private void uxComboBox59_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox59.DataSource != null && uxComboBox60.DataSource != null && uxComboBox59.SelectedIndex >= 0 && uxComboBox60.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex184.Clear();
 
+                Model.SchoolsTabIndex184.Add(((BindingList<School>)uxComboBox59.DataSource)[uxComboBox59.SelectedIndex]);
+                Model.SchoolsTabIndex184.Add(((BindingList<School>)uxComboBox60.DataSource)[uxComboBox60.SelectedIndex]);
+            }
         }
 
         private void uxComboBox60_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox59.DataSource != null && uxComboBox60.DataSource != null && uxComboBox59.SelectedIndex >= 0 && uxComboBox60.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex184.Clear();
 
+                Model.SchoolsTabIndex184.Add(((BindingList<School>)uxComboBox59.DataSource)[uxComboBox59.SelectedIndex]);
+                Model.SchoolsTabIndex184.Add(((BindingList<School>)uxComboBox60.DataSource)[uxComboBox60.SelectedIndex]);
+            }
         }
 
         private void uxComboBox61_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox61.DataSource != null && uxComboBox62.DataSource != null && uxComboBox61.SelectedIndex >= 0 && uxComboBox62.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex187.Clear();
 
+                Model.SchoolsTabIndex187.Add(((BindingList<School>)uxComboBox61.DataSource)[uxComboBox61.SelectedIndex]);
+                Model.SchoolsTabIndex187.Add(((BindingList<School>)uxComboBox62.DataSource)[uxComboBox62.SelectedIndex]);
+            }
         }
 
         private void uxComboBox62_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (uxComboBox61.DataSource != null && uxComboBox62.DataSource != null && uxComboBox61.SelectedIndex >= 0 && uxComboBox62.SelectedIndex >= 0)
+            {
+                Model.SchoolsTabIndex187.Clear();
 
+                Model.SchoolsTabIndex187.Add(((BindingList<School>)uxComboBox61.DataSource)[uxComboBox61.SelectedIndex]);
+                Model.SchoolsTabIndex187.Add(((BindingList<School>)uxComboBox62.DataSource)[uxComboBox62.SelectedIndex]);
+            }
         }
 
         private void uxComboBox63_SelectedIndexChanged(object sender, EventArgs e)

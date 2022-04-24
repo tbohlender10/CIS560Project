@@ -165,7 +165,7 @@ namespace CIS560_Project
             // 
             this.uxComboBox62.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox62.FormattingEnabled = true;
-            this.uxComboBox62.Location = new System.Drawing.Point(590, 786);
+            this.uxComboBox62.Location = new System.Drawing.Point(747, 695);
             this.uxComboBox62.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxComboBox62.MaxDropDownItems = 2;
             this.uxComboBox62.Name = "uxComboBox62";
@@ -177,7 +177,7 @@ namespace CIS560_Project
             // 
             this.uxComboBox61.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox61.FormattingEnabled = true;
-            this.uxComboBox61.Location = new System.Drawing.Point(590, 572);
+            this.uxComboBox61.Location = new System.Drawing.Point(435, 695);
             this.uxComboBox61.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxComboBox61.MaxDropDownItems = 2;
             this.uxComboBox61.Name = "uxComboBox61";
@@ -1518,7 +1518,7 @@ namespace CIS560_Project
             // 
             this.uxComboBox63.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxComboBox63.FormattingEnabled = true;
-            this.uxComboBox63.Location = new System.Drawing.Point(590, 668);
+            this.uxComboBox63.Location = new System.Drawing.Point(591, 695);
             this.uxComboBox63.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.uxComboBox63.MaxDropDownItems = 2;
             this.uxComboBox63.Name = "uxComboBox63";
