@@ -15,7 +15,7 @@ namespace PersonData.Models
 
         public int RegionId { get; }
       
-        internal School(int schoolID, string name, string coach, 
+        public School(int schoolID, string name, string coach, 
             int seed, int regionId)
         {
             SchoolID = schoolID;
@@ -24,5 +24,10 @@ namespace PersonData.Models
             Seed = seed;
             RegionId = regionId;
         }
-   }
+
+        public override string ToString()
+        {
+            return Name + " " + Seed.ToString();
+        }
+    }
 }

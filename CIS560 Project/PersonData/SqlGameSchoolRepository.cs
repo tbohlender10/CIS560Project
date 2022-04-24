@@ -15,6 +15,9 @@ namespace PersonData
             executor = new SqlCommandExecutor(connectionString);
         }
 
-        
+        public bool UpdateGameScore(string schoolName, int gameID, TeamType teamType, int score)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

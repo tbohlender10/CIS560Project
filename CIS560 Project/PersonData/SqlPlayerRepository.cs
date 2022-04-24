@@ -15,7 +15,12 @@ namespace PersonData
          executor = new SqlCommandExecutor(connectionString);
       }
 
-      public Player FetchPlayer(int playerID)
+        public bool CreateNewPlayer(string school, string playerName, int number, string grade, string position)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Player FetchPlayer(int playerID)
       {
          var d = new FetchPlayerDataReaderDelegate(playerID);
          return executor.ExecuteReader(d);
@@ -25,5 +30,25 @@ namespace PersonData
       {
          return executor.ExecuteReader(new RetrievePlayersForSchoolDataReaderDelegate(schoolID));
       }
-   }
+
+        public bool UpdatePlayerGrade(string playerName, string school, string grade)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdatePlayerName(string playerName, string school, int number)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdatePlayerNumber(string playerName, string school, int number)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool UpdatePlayerPosition(string playerName, string school, string position)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

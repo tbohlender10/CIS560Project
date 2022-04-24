@@ -19,7 +19,9 @@ namespace CIS560_Project
 
             Model m = new Model();
 
-            Application.Run(new Bracket(m));
+            Controller c = new Controller(m);
+
+            Application.Run(new Bracket(m,c));
         }
     }
 }

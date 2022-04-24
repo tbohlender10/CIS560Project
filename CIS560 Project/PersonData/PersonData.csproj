@@ -158,5 +158,29 @@
   <ItemGroup>
     <EmbeddedResource Include="Sql\Data\Basketball.GameSchool.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdateGameScore.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchSchoolsWithNumberOfWins.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchGameInfoForSchool.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerNumber.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerGrade.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerPosition.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerName.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.CreateNewPlayer.sql" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
