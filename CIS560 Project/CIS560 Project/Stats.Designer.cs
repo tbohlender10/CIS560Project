@@ -290,6 +290,7 @@
             this.Controls.Add(this.uxViewPlayer);
             this.Name = "Stats";
             this.Text = "Stats";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Stats_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.uxSeed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

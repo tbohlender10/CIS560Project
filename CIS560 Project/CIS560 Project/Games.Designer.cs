@@ -339,6 +339,7 @@
             this.Controls.Add(this.uxSelectTeam);
             this.Name = "Games";
             this.Text = "Games";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Games_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

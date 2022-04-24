@@ -14,9 +14,11 @@ namespace CIS560_Project
     {
         bool close = true;
         Form parent;
-        public Stats(Form f)
+        Model model;
+        public Stats(Form f, Model m)
         {
             InitializeComponent();
+            model = m;
             uxSelectTeam.DataSource = new string[]
             {
                 //Temp data
@@ -68,6 +70,7 @@ namespace CIS560_Project
             uxUpdatePlayer.Show();
             uxUpdateTeam.Show();
             uxBack.Show();
+
         }
 
         private void showViewStats()
@@ -177,6 +180,11 @@ namespace CIS560_Project
         {
             //SQL Magic idk
             uxBack_Click(sender, e);
+        }
+
+        private void Stats_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            parent.Enabled = true;
         }
     }
 }

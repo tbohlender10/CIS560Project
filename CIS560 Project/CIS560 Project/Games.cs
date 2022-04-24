@@ -153,6 +153,9 @@ namespace CIS560_Project
             uxBack_Click(sender, e);
         }
 
-
+        private void Games_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            parent.Enabled = true;
+        }
     }
 }
