@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="DataDelegates\CreatePlayerDataDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\InsertPlayerGameStatistics.cs" />
     <Compile Include="DataDelegates\RetrieveAllGamesDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForPlayerDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrievePlayersForSchoolDataReaderDelegate.cs" />
@@ -85,7 +86,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveSchools.sql" />
     <EmbeddedResource Include="Sql\Procedures\Basketball.GetSchool.sql" />
-    <EmbeddedResource Include="Sql\Procedures\Person.CreatePerson.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.InsertPlayerGameStatistics.sql" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Tables\Basketball.Player.sql" />

@@ -30,6 +30,13 @@ namespace PersonData
             throw new NotImplementedException();
         }
 
+        public bool InsertPlayerGameStatistics(DateTimeOffset dti, string school, string playerName, int points, int threePoints, int fgm, int fga, int rebounds, int minutes)
+        {
+            var d = new InsertPlayerGameStatistics(dti, school, playerName, points, threePoints, fgm, fga, rebounds, minutes);
+            executor.ExecuteNonQuery(d);
+            return true;
+        }
+
         public IReadOnlyList<PlayerGameStatistics> RetrievePlayerGameStatisticsForSchool(int schoolID)
         {
             throw new NotImplementedException();
