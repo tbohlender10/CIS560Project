@@ -15,5 +15,40 @@ namespace PersonData.Models
             DateTimeInfo = dateTimeInfo;
             RoundID = roundID;
         }
+
+        public override string ToString()
+        {
+            string round;
+            if (RoundID == 1)
+            {
+                round = "First Round";
+            }
+            else if(RoundID == 2)
+            {
+                round = "Second Round";
+            }
+            else if (RoundID == 3)
+            {
+                round = "Sweet 16";
+            }
+            else if (RoundID == 4)
+            {
+                round = "Elite 8";
+            }
+            else if (RoundID == 5)
+            {
+                round = "Final 4";
+            }
+            else if (RoundID == 6)
+            {
+                round = "National Championship";
+            }
+            else
+            {
+                round = "ERROR";
+            }
+
+            return DateTimeInfo.ToString() + " " + round;
+        }
     }
 }

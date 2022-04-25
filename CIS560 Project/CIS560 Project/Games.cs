@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PersonData.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,32 +21,12 @@ namespace CIS560_Project
             InitializeComponent();
             close = true;
             parent = f;
-            uxSelectTeam.DataSource = new string[]
-            {
-                //Temp data
-                "item 1",
-                "item 2",
-                "item 3"
-            };
-
-            uxSelectPlayer.DataSource = new string[]
-            {
-                //Temp data
-                "item 1",
-                "item 2",
-                "item 3"
-            };
-
-            uxSelectGame.DataSource = new string[]
-            {
-                "Game 1",
-                "Game 2",
-                "Game 3"
-            };
+            model = m;
+            
+            uxSelectGame.DataSource = model.GameRepo.RetrieveAllGames();
 
             uxCurrPlayerLabel.Text = "";
             uxPlayerStats.Text = "";
-            model = m;
         }
 
         private void showMenu()
@@ -111,6 +92,8 @@ namespace CIS560_Project
             uxSelectTeam.Enabled = true;
             uxViewGame.Enabled = true;
             uxUpdateGame.Enabled = true;
+
+            uxSelectTeam.DataSource = model.GameRepo.RetrieveSchoolsForGame(((Game)uxSelectGame.SelectedItem).GameID);
         }
 
         private void uxSelectTeam_SelectedIndexChanged(object sender, EventArgs e)

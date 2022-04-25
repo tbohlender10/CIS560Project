@@ -1,12 +1,13 @@
 ﻿using System.Collections.Generic;
+using System.ComponentModel;
 using PersonData.Models;
 
 namespace PersonData
 {
    public interface IGameRepository
    {
-        List<Game> RetrieveAllGames();
+        BindingList<Game> RetrieveAllGames();
 
-        List<Game> FetchGamesForSchool(string school);
+        BindingList<School> RetrieveSchoolsForGame(int gameID);
    }
 }

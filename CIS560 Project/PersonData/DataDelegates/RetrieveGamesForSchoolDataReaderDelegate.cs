@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data.SqlClient;
 using DataAccess;
 using PersonData.Models;
 
 namespace PersonData.DataDelegates
 {
-   internal class RetrieveGamesForSchoolDataReaderDelegate : DataReaderDelegate<List<Game>>
+   internal class RetrieveGamesForSchoolDataReaderDelegate : DataReaderDelegate<BindingList<Game>>
     {
 
         public readonly string School;
@@ -24,9 +25,9 @@ namespace PersonData.DataDelegates
             command.Parameters.AddWithValue("School", School); 
         }
 
-        public override List<Game> Translate(SqlCommand command, IDataRowReader reader)
+        public override BindingList<Game> Translate(SqlCommand command, IDataRowReader reader)
         {
-            var games = new List<Game>();
+            var games = new BindingList<Game>();
 
             while (reader.Read())
             {

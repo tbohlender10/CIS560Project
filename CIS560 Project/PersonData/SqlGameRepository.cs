@@ -3,6 +3,7 @@ using DataAccess;
 using PersonData.Models;
 using PersonData.DataDelegates;
 using System;
+using System.ComponentModel;
 
 namespace PersonData
 {
@@ -15,13 +16,13 @@ namespace PersonData
              executor = new SqlCommandExecutor(connectionString);
           }
 
-        public List<Game> FetchGamesForSchool(string school)
+        public BindingList<School> RetrieveSchoolsForGame(int gameID)
         {
-            var d = new RetrieveGamesForSchoolDataReaderDelegate(school);
+            var d = new RetrieveSchoolsForGame(gameID);
             return executor.ExecuteReader(d);
         }
 
-        public List<Game> RetrieveAllGames()
+        public BindingList<Game> RetrieveAllGames()
         {
             var d = new RetrieveAllGamesDataReaderDelegate();
             return executor.ExecuteReader(d);

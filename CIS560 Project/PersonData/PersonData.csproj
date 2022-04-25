@@ -52,6 +52,7 @@
     <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForSchoolDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveSchoolsForGame.cs" />
     <Compile Include="DataDelegates\UpdateGameScore.cs" />
     <Compile Include="DataDelegates\UpdatePlayerGrade.cs" />
     <Compile Include="DataDelegates\UpdatePlayerName.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="Models\GameSchool.cs" />
     <Compile Include="Models\PlayerGameStatistics.cs" />
     <Compile Include="Models\PlayerSeasonStatistics.cs" />
+    <Compile Include="Models\Round.cs" />
     <Compile Include="Models\Region.cs" />
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Game.cs" />
@@ -110,7 +112,7 @@
     <EmbeddedResource Include="Sql\Schemas\Basketball.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Person.SavePersonAddress.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveSchoolsForGame.sql" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.RetrievePlayersForSchool.sql" />
