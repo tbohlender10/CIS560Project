@@ -9,9 +9,9 @@ namespace PersonData.DataDelegates
    internal class RetrieveGamesForSchoolDataReaderDelegate : DataReaderDelegate<List<Game>>
     {
 
-        public readonly int School;
+        public readonly string School;
 
-        public RetrieveGamesForSchoolDataReaderDelegate(int school)
+        public RetrieveGamesForSchoolDataReaderDelegate(string school)
             : base("Basketball.RetrieveGamesForSchool")
         {
             School = school;
