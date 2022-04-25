@@ -5,6 +5,8 @@ namespace PersonData
 {
    public interface IGameRepository
    {
-        IList<Game> RetrieveAllGames();
+        List<Game> RetrieveAllGames();
+
+        List<Game> FetchGamesForSchool(string school);
    }
 }
