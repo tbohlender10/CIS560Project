@@ -16,14 +16,19 @@ namespace PersonData.Models
 
         public string Position { get; }
 
-      public Player(int playerID, int schoolID, string name, int number, string grade, string position)
-      {
+        public Player(int playerID, int schoolID, string name, int number, string grade, string position)
+        {
             PlayerID = playerID;
             SchoolID = schoolID;
             Name = name;
             Number = number;
             Grade = grade;
             Position = position;
-      }
-   }
+        }
+
+        public override string ToString()
+        {
+            return Name;
+        }
+    }
 }

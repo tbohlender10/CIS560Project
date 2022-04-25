@@ -27,7 +27,8 @@ namespace PersonData
 
         public PlayerGameStatistics GetPlayerGameStatisticsForPlayerGame(int gameID, int playerID)
         {
-            throw new NotImplementedException();
+            var d = new FetchPlayerGameStatisticsForPlayerGame(gameID, playerID);
+            return executor.ExecuteReader(d);
         }
 
         public bool InsertPlayerGameStatistics(DateTimeOffset dti, string school, string playerName, int points, int threePoints, int fgm, int fga, int rebounds, int minutes)

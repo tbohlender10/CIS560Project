@@ -1,5 +1,6 @@
 ﻿using PersonData.Models;
 using System;
+using PersonData;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,14 @@ namespace CIS560_Project
         Form parent;
         private bool close;
         Model model;
+        private BindingList<School> schools;
+        private BindingList<Player> players;
+        private int Points;
+        private int FGM;
+        private int FGA;
+        private int Rebounds;
+        private int Minutes;
+
         public Games(Form f, Model m)
         {
             InitializeComponent();
@@ -24,6 +33,12 @@ namespace CIS560_Project
             model = m;
             
             uxSelectGame.DataSource = model.GameRepo.RetrieveAllGames();
+
+            schools = new BindingList<School>();
+            players = new BindingList<Player>();
+
+            uxSelectTeam.DataSource = schools;
+            uxSelectPlayer.DataSource = players;
 
             uxCurrPlayerLabel.Text = "";
             uxPlayerStats.Text = "";
@@ -93,12 +108,24 @@ namespace CIS560_Project
             uxViewGame.Enabled = true;
             uxUpdateGame.Enabled = true;
 
-            uxSelectTeam.DataSource = model.GameRepo.RetrieveSchoolsForGame(((Game)uxSelectGame.SelectedItem).GameID);
+            ((BindingList<School>)uxSelectTeam.DataSource).Clear();
+
+            foreach (School s in model.GameRepo.RetrieveSchoolsForGame(((Game)uxSelectGame.SelectedItem).GameID))
+            {
+                ((BindingList<School>)uxSelectTeam.DataSource).Add(s);
+            }
         }
 
         private void uxSelectTeam_SelectedIndexChanged(object sender, EventArgs e)
         {
             uxSelectPlayer.Enabled = true;
+
+            ((BindingList<Player>)uxSelectPlayer.DataSource).Clear();
+
+            foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(((School)uxSelectTeam.SelectedItem).SchoolID))
+            {
+                ((BindingList<Player>)uxSelectPlayer.DataSource).Add(p);
+            }
         }
 
         private void uxSelectPlayer_SelectedIndexChanged(object sender, EventArgs e)
@@ -115,10 +142,14 @@ namespace CIS560_Project
         }
         private void uxViewPlayer_Click(object sender, EventArgs e)
         {
+            Player p = ((Player)uxSelectPlayer.SelectedItem);
+            Game g = ((Game)uxSelectGame.SelectedItem);
+            PlayerGameStatistics pgs = model.PlayerGameStatisticsRepo.GetPlayerGameStatisticsForPlayerGame(g.GameID, p.PlayerID);
+
             showViewPlayer();
             uxCurrPlayerLabel.Text = "Selected Player: " + uxSelectPlayer.Text;
             uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
-            uxPlayerStats.Text = "Points: N/A\nFGM: N/A\nFGA: N/A\nRebounds: N/A\nMinutes: N/A";
+            uxPlayerStats.Text = "Points: " + pgs.Points.ToString() + "\n" + "FGM: " + pgs.FGM.ToString() + "\n" + "FGA: " + pgs.FGA.ToString() + "\n" + "Rebounds: " + pgs.Rebounds.ToString() + "\n"+ "Minutes: " + pgs.Minutes.ToString();
         }
 
         private void uxBack_Click(object sender, EventArgs e)
@@ -136,7 +167,7 @@ namespace CIS560_Project
 
         private void uxSave_Click(object sender, EventArgs e)
         {
-            //SQL Magic idk
+            
             uxBack_Click(sender, e);
         }
 
@@ -156,6 +187,31 @@ namespace CIS560_Project
         private void uxUpdateGame_Click(object sender, EventArgs e)
         {
            
+        }
+
+        private void uxPoints_ValueChanged(object sender, EventArgs e)
+        {
+            Points = (int)uxPoints.Value;
+        }
+
+        private void uxFGM_ValueChanged(object sender, EventArgs e)
+        {
+            FGM = (int)uxFGM.Value;
+        }
+
+        private void uxFGA_ValueChanged(object sender, EventArgs e)
+        {
+            FGA = (int)uxFGA.Value;
+        }
+
+        private void uxRebounds_ValueChanged(object sender, EventArgs e)
+        {
+            Rebounds = (int)uxRebounds.Value;
+        }
+
+        private void uxMinutes_ValueChanged(object sender, EventArgs e)
+        {
+            Minutes = (int)uxMinutes.Value;
         }
     }
 }

@@ -42,17 +42,22 @@
             this.uxPlayerLabel = new System.Windows.Forms.Label();
             this.uxSelectTeam = new System.Windows.Forms.ComboBox();
             this.uxTeamLabel = new System.Windows.Forms.Label();
-            this.uxPoints = new System.Windows.Forms.TextBox();
             this.uxPointsLabel = new System.Windows.Forms.Label();
-            this.uxFGM = new System.Windows.Forms.TextBox();
             this.uxFGMLabel = new System.Windows.Forms.Label();
-            this.uxFGA = new System.Windows.Forms.TextBox();
             this.uxFGALabel = new System.Windows.Forms.Label();
-            this.uxRebounds = new System.Windows.Forms.TextBox();
             this.uxReboundsLabel = new System.Windows.Forms.Label();
-            this.uxMinutes = new System.Windows.Forms.TextBox();
             this.uxMinutesLabel = new System.Windows.Forms.Label();
             this.uxPlayerStats = new System.Windows.Forms.Label();
+            this.uxPoints = new System.Windows.Forms.NumericUpDown();
+            this.uxFGM = new System.Windows.Forms.NumericUpDown();
+            this.uxFGA = new System.Windows.Forms.NumericUpDown();
+            this.uxRebounds = new System.Windows.Forms.NumericUpDown();
+            this.uxMinutes = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.uxPoints)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxFGM)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxFGA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxRebounds)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxMinutes)).BeginInit();
             this.SuspendLayout();
             // 
             // uxCurrGameLabel
@@ -219,71 +224,35 @@
             this.uxTeamLabel.TabIndex = 51;
             this.uxTeamLabel.Text = "Select Team:";
             // 
-            // uxPoints
-            // 
-            this.uxPoints.Location = new System.Drawing.Point(408, 172);
-            this.uxPoints.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.uxPoints.Name = "uxPoints";
-            this.uxPoints.Size = new System.Drawing.Size(112, 26);
-            this.uxPoints.TabIndex = 56;
-            this.uxPoints.Visible = false;
-            // 
             // uxPointsLabel
             // 
             this.uxPointsLabel.AutoSize = true;
-            this.uxPointsLabel.Location = new System.Drawing.Point(349, 176);
+            this.uxPointsLabel.Location = new System.Drawing.Point(345, 176);
             this.uxPointsLabel.Name = "uxPointsLabel";
             this.uxPointsLabel.Size = new System.Drawing.Size(57, 20);
             this.uxPointsLabel.TabIndex = 57;
             this.uxPointsLabel.Text = "Points:";
             this.uxPointsLabel.Visible = false;
             // 
-            // uxFGM
-            // 
-            this.uxFGM.Location = new System.Drawing.Point(408, 232);
-            this.uxFGM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.uxFGM.Name = "uxFGM";
-            this.uxFGM.Size = new System.Drawing.Size(112, 26);
-            this.uxFGM.TabIndex = 58;
-            this.uxFGM.Visible = false;
-            // 
             // uxFGMLabel
             // 
             this.uxFGMLabel.AutoSize = true;
-            this.uxFGMLabel.Location = new System.Drawing.Point(349, 236);
+            this.uxFGMLabel.Location = new System.Drawing.Point(353, 236);
             this.uxFGMLabel.Name = "uxFGMLabel";
             this.uxFGMLabel.Size = new System.Drawing.Size(49, 20);
             this.uxFGMLabel.TabIndex = 59;
             this.uxFGMLabel.Text = "FGM:";
             this.uxFGMLabel.Visible = false;
             // 
-            // uxFGA
-            // 
-            this.uxFGA.Location = new System.Drawing.Point(408, 292);
-            this.uxFGA.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.uxFGA.Name = "uxFGA";
-            this.uxFGA.Size = new System.Drawing.Size(112, 26);
-            this.uxFGA.TabIndex = 60;
-            this.uxFGA.Visible = false;
-            // 
             // uxFGALabel
             // 
             this.uxFGALabel.AutoSize = true;
-            this.uxFGALabel.Location = new System.Drawing.Point(349, 296);
+            this.uxFGALabel.Location = new System.Drawing.Point(355, 294);
             this.uxFGALabel.Name = "uxFGALabel";
             this.uxFGALabel.Size = new System.Drawing.Size(47, 20);
             this.uxFGALabel.TabIndex = 61;
             this.uxFGALabel.Text = "FGA:";
             this.uxFGALabel.Visible = false;
-            // 
-            // uxRebounds
-            // 
-            this.uxRebounds.Location = new System.Drawing.Point(408, 351);
-            this.uxRebounds.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.uxRebounds.Name = "uxRebounds";
-            this.uxRebounds.Size = new System.Drawing.Size(112, 26);
-            this.uxRebounds.TabIndex = 62;
-            this.uxRebounds.Visible = false;
             // 
             // uxReboundsLabel
             // 
@@ -295,19 +264,10 @@
             this.uxReboundsLabel.Text = "Rebounds:";
             this.uxReboundsLabel.Visible = false;
             // 
-            // uxMinutes
-            // 
-            this.uxMinutes.Location = new System.Drawing.Point(408, 414);
-            this.uxMinutes.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.uxMinutes.Name = "uxMinutes";
-            this.uxMinutes.Size = new System.Drawing.Size(112, 26);
-            this.uxMinutes.TabIndex = 64;
-            this.uxMinutes.Visible = false;
-            // 
             // uxMinutesLabel
             // 
             this.uxMinutesLabel.AutoSize = true;
-            this.uxMinutesLabel.Location = new System.Drawing.Point(327, 418);
+            this.uxMinutesLabel.Location = new System.Drawing.Point(333, 418);
             this.uxMinutesLabel.Name = "uxMinutesLabel";
             this.uxMinutesLabel.Size = new System.Drawing.Size(69, 20);
             this.uxMinutesLabel.TabIndex = 65;
@@ -323,11 +283,61 @@
             this.uxPlayerStats.TabIndex = 73;
             this.uxPlayerStats.Text = "(player stats label)";
             // 
+            // uxPoints
+            // 
+            this.uxPoints.Location = new System.Drawing.Point(408, 174);
+            this.uxPoints.Name = "uxPoints";
+            this.uxPoints.Size = new System.Drawing.Size(120, 26);
+            this.uxPoints.TabIndex = 74;
+            this.uxPoints.Visible = false;
+            this.uxPoints.ValueChanged += new System.EventHandler(this.uxPoints_ValueChanged);
+            // 
+            // uxFGM
+            // 
+            this.uxFGM.Location = new System.Drawing.Point(408, 234);
+            this.uxFGM.Name = "uxFGM";
+            this.uxFGM.Size = new System.Drawing.Size(120, 26);
+            this.uxFGM.TabIndex = 75;
+            this.uxFGM.Visible = false;
+            this.uxFGM.ValueChanged += new System.EventHandler(this.uxFGM_ValueChanged);
+            // 
+            // uxFGA
+            // 
+            this.uxFGA.Location = new System.Drawing.Point(408, 292);
+            this.uxFGA.Name = "uxFGA";
+            this.uxFGA.Size = new System.Drawing.Size(120, 26);
+            this.uxFGA.TabIndex = 76;
+            this.uxFGA.Visible = false;
+            this.uxFGA.ValueChanged += new System.EventHandler(this.uxFGA_ValueChanged);
+            // 
+            // uxRebounds
+            // 
+            this.uxRebounds.Location = new System.Drawing.Point(408, 351);
+            this.uxRebounds.Name = "uxRebounds";
+            this.uxRebounds.Size = new System.Drawing.Size(120, 26);
+            this.uxRebounds.TabIndex = 77;
+            this.uxRebounds.Visible = false;
+            this.uxRebounds.ValueChanged += new System.EventHandler(this.uxRebounds_ValueChanged);
+            // 
+            // uxMinutes
+            // 
+            this.uxMinutes.Location = new System.Drawing.Point(408, 416);
+            this.uxMinutes.Name = "uxMinutes";
+            this.uxMinutes.Size = new System.Drawing.Size(120, 26);
+            this.uxMinutes.TabIndex = 78;
+            this.uxMinutes.Visible = false;
+            this.uxMinutes.ValueChanged += new System.EventHandler(this.uxMinutes_ValueChanged);
+            // 
             // Games
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.uxMinutes);
+            this.Controls.Add(this.uxRebounds);
+            this.Controls.Add(this.uxFGA);
+            this.Controls.Add(this.uxFGM);
+            this.Controls.Add(this.uxPoints);
             this.Controls.Add(this.uxPlayerStats);
             this.Controls.Add(this.uxViewPlayer);
             this.Controls.Add(this.uxUpdateGame);
@@ -337,15 +347,10 @@
             this.Controls.Add(this.uxBack);
             this.Controls.Add(this.uxCurrPlayerLabel);
             this.Controls.Add(this.uxMinutesLabel);
-            this.Controls.Add(this.uxMinutes);
             this.Controls.Add(this.uxReboundsLabel);
-            this.Controls.Add(this.uxRebounds);
             this.Controls.Add(this.uxFGALabel);
-            this.Controls.Add(this.uxFGA);
             this.Controls.Add(this.uxFGMLabel);
-            this.Controls.Add(this.uxFGM);
             this.Controls.Add(this.uxPointsLabel);
-            this.Controls.Add(this.uxPoints);
             this.Controls.Add(this.uxEditPlayer);
             this.Controls.Add(this.uxGameLabel);
             this.Controls.Add(this.uxSelectGame);
@@ -357,6 +362,11 @@
             this.Name = "Games";
             this.Text = "Games";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Games_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.uxPoints)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxFGM)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxFGA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxRebounds)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uxMinutes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -378,16 +388,16 @@
         private System.Windows.Forms.Label uxPlayerLabel;
         private System.Windows.Forms.ComboBox uxSelectTeam;
         private System.Windows.Forms.Label uxTeamLabel;
-        private System.Windows.Forms.TextBox uxPoints;
         private System.Windows.Forms.Label uxPointsLabel;
-        private System.Windows.Forms.TextBox uxFGM;
         private System.Windows.Forms.Label uxFGMLabel;
-        private System.Windows.Forms.TextBox uxFGA;
         private System.Windows.Forms.Label uxFGALabel;
-        private System.Windows.Forms.TextBox uxRebounds;
         private System.Windows.Forms.Label uxReboundsLabel;
-        private System.Windows.Forms.TextBox uxMinutes;
         private System.Windows.Forms.Label uxMinutesLabel;
         private System.Windows.Forms.Label uxPlayerStats;
+        private System.Windows.Forms.NumericUpDown uxPoints;
+        private System.Windows.Forms.NumericUpDown uxFGM;
+        private System.Windows.Forms.NumericUpDown uxFGA;
+        private System.Windows.Forms.NumericUpDown uxRebounds;
+        private System.Windows.Forms.NumericUpDown uxMinutes;
     }
 }

@@ -2,7 +2,7 @@
 BEGIN
    CREATE TABLE Basketball.PlayerGameStatistics
 	(
-		PlayerGameStatisticID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+		PlayerGameStatisticsID INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
 		PlayerID INT NOT NULL,
 		GameID INT NOT NULL,
 		SchoolID INT NOT NULL,
