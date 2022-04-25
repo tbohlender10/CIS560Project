@@ -14,7 +14,8 @@ namespace CIS560_Project
     {
         Form parent;
         private bool close;
-        public Games(Form f)
+        Model model;
+        public Games(Form f, Model m)
         {
             InitializeComponent();
             close = true;
@@ -44,6 +45,7 @@ namespace CIS560_Project
 
             uxCurrPlayerLabel.Text = "";
             uxPlayerStats.Text = "";
+            model = m;
         }
 
         private void showMenu()

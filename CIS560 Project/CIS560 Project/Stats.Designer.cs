@@ -90,7 +90,6 @@
             this.uxRegion.Location = new System.Drawing.Point(319, 273);
             this.uxRegion.Name = "uxRegion";
             this.uxRegion.Size = new System.Drawing.Size(150, 24);
-            this.uxRegion.Sorted = true;
             this.uxRegion.TabIndex = 36;
             this.uxRegion.Visible = false;
             // 
@@ -226,7 +225,7 @@
             this.uxSelectTeam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxSelectTeam.FormattingEnabled = true;
             this.uxSelectTeam.Location = new System.Drawing.Point(70, 60);
-            this.uxSelectTeam.MaxDropDownItems = 64;
+            this.uxSelectTeam.MaxDropDownItems = 10;
             this.uxSelectTeam.Name = "uxSelectTeam";
             this.uxSelectTeam.Size = new System.Drawing.Size(150, 24);
             this.uxSelectTeam.Sorted = true;

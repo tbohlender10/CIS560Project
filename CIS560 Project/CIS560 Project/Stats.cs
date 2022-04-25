@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PersonData.Models;
 
 namespace CIS560_Project
 {
@@ -14,24 +15,21 @@ namespace CIS560_Project
     {
         bool close = true;
         Form parent;
-        public Stats(Form f)
+        Model model;
+        int schoolID = 0;
+
+        public Stats(Form f, Model m)
         {
             InitializeComponent();
-            uxSelectTeam.DataSource = new string[]
+            string[] allTeams = new string[64];
+            int iterator = 0;
+            foreach (School s in m.Schools)
             {
-                //Temp data
-                "item 1",
-                "item 2",
-                "item 3"
-            };
+                allTeams[iterator] = s.Name;
+                iterator++;
+            }
+            uxSelectTeam.DataSource = allTeams;
 
-            uxSelectPlayer.DataSource = new string[]
-            {
-                //Temp data
-                "item 1",
-                "item 2",
-                "item 3"
-            };
 
             uxRegion.DataSource = new string[]
             {
@@ -40,6 +38,8 @@ namespace CIS560_Project
                 "South",
                 "Midwest"
             };
+
+
 
             uxGrade.DataSource = new string[]
             {
@@ -50,6 +50,7 @@ namespace CIS560_Project
             };
             uxInfo.Text = "";
             parent = f;
+            model = m;
         }
 
         private void showMenu()
@@ -127,18 +128,41 @@ namespace CIS560_Project
             uxViewTeam.Enabled = true;
             uxUpdateTeam.Enabled = true;
 
+            string[] playersOnTeam = new string[30];
+            int iterator = 0;
+
+            foreach (School s in model.Schools)
+            {
+                if (s.Name.Equals(uxSelectTeam.Text))
+                {
+                    schoolID = s.SchoolID;
+                    break;
+                }
+            }
+            foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(schoolID))
+            {
+                playersOnTeam[iterator] = p.Name;
+                iterator++;
+            }
+            uxSelectPlayer.SuspendLayout();
+
         }
 
         private void uxSelectPlayer_SelectedIndexChanged(object sender, EventArgs e)
         {
-           uxUpdatePlayer.Enabled = true;
+            uxUpdatePlayer.Enabled = true;
             uxViewPlayer.Enabled = true;
         }
 
         private void uxViewTeam_Click(object sender, EventArgs e)
         {
             showViewStats();
-            uxInfo.Text = "School: " + uxSelectTeam.Text + "\nGames Won: N/A\nSeed: N/A\nCoach: N/A\nRegion: N/A";
+
+
+            School currSchool = model.SchoolRepo.GetSchool(schoolID);
+            PersonData.Models.Region region = (PersonData.Models.Region)currSchool.RegionId;
+            uxInfo.Text = "School: " + uxSelectTeam.Text + "\nGames Won: N/A\nSeed: " + currSchool.Seed + "\nCoach: " + currSchool.Coach + "\nRegion: " + region.ToString();
+
         }
 
 
@@ -158,6 +182,10 @@ namespace CIS560_Project
         private void uxUpdateTeam_Click(object sender, EventArgs e)
         {
             showUpdateTeam();
+            School currSchool = model.SchoolRepo.GetSchool(schoolID);
+            uxName.Text = currSchool.Coach;
+            uxSeed.Value = currSchool.Seed;
+            uxRegion.SelectedIndex = currSchool.RegionId - 1;
         }
 
         private void uxViewPlayer_Click(object sender, EventArgs e)
@@ -182,6 +210,11 @@ namespace CIS560_Project
         private void Stats_FormClosing(object sender, FormClosingEventArgs e)
         {
             parent.Enabled = true;
+        }
+
+        private void uxSelectPlayer_DataSourceChanged(object sender, EventArgs e)
+        {
+            uxSelectPlayer.Enabled = true;
         }
     }
 }

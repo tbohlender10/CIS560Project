@@ -30,7 +30,7 @@ namespace CIS560_Project
 
         private void uxStats_Click(object sender, EventArgs e)
         {
-            Form newForm = new Stats(this);
+            Form newForm = new Stats(this, Model);
             this.Enabled = false;
             newForm.Show();
             //this.Close();
@@ -45,7 +45,7 @@ namespace CIS560_Project
 
         private void uxGames_Click(object sender, EventArgs e)
         {
-            Form newForm = new Games(this);
+            Form newForm = new Games(this, Model);
             this.Enabled = false;
             newForm.Show();
         }
