@@ -12,5 +12,5 @@ WHERE [Name] = @PlayerName
 		SELECT S.SchoolID
 		FROM Basketball.School S
 		WHERE S.[Name] = @School
-	)
+	) AND IsDeleted = 0;
 GO

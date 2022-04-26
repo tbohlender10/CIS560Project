@@ -9,5 +9,5 @@ FROM Basketball.School SH
    INNER JOIN Basketball.GameSchool GSG ON GSG.GameId = GSH.GameId
       AND GSG.TeamTypeId <> GSH.TeamTypeId 
    INNER JOIN Basketball.School SG ON SG.SchoolId = GSG.SchoolId 
-WHERE SH.[Name] = @SchoolName;
+WHERE SH.[Name] = @SchoolName AND SH.IsDeleted = 0;
 GO

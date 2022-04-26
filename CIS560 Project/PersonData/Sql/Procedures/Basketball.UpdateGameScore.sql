@@ -19,7 +19,7 @@ WITH SourceCte(GameID, SchoolID, TeamTypeID, Score) AS
 )
 MERGE Basketball.GameSchool GS
 USING SourceCte S ON S.GameID = GS.GameID 
-	AND S.SchoolID = GS.GameID
+	AND S.SchoolID = GS.GameID AND GS.IsDeleted = 0
 WHEN MATCHED AND (GS.Score <> S.Score
 		OR GS.Score IS NULL AND S.Score IS NOT NULL
 		OR GS.Score IS NOT NULL AND S.Score IS NULL) THEN

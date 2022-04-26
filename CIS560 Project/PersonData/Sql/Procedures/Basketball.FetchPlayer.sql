@@ -4,5 +4,5 @@ AS
 
 SELECT P.SchoolID, P.[Name], P.Number, P.Grade, P.Position
 FROM Basketball.Player P
-WHERE P.PlayerID = @PlayerID;
+WHERE P.PlayerID = @PlayerID AND P.IsDeleted = 0;
 GO
