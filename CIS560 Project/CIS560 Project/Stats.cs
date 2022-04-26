@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using PersonData.Models;
+using System;
 using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using PersonData.Models;
 
 namespace CIS560_Project
 {
@@ -18,11 +12,18 @@ namespace CIS560_Project
         Model model;
         int schoolID = 0;
 
+        bool team = true;
+
+        Player currPlayer;
+        School currSchool;
+
+        BindingList<String> players;
         public Stats(Form f, Model m)
         {
             InitializeComponent();
             string[] allTeams = new string[64];
             int iterator = 0;
+            players = new BindingList<string>();
             foreach (School s in m.Schools)
             {
                 allTeams[iterator] = s.Name;
@@ -37,6 +38,12 @@ namespace CIS560_Project
                 "West",
                 "South",
                 "Midwest"
+            };
+
+            uxPosition.DataSource = new string[]
+            {
+                "Forward",
+                "Guard"
             };
 
 
@@ -85,6 +92,7 @@ namespace CIS560_Project
         private void showUpdateTeam()
         {
             close = false;
+            team = true;
             foreach (Control c in this.Controls)
             {
                 c.Hide();
@@ -96,7 +104,9 @@ namespace CIS560_Project
             uxRegion.Show();
             uxRegionLabel.Show();
             uxBack.Show();
-            uxSave.Show();
+            uxSaveName.Show();
+            uxSaveRegion.Show();
+            uxSaveSeed.Show();
 
             uxNameLabel.Text = "Coach:";
 
@@ -106,6 +116,7 @@ namespace CIS560_Project
         private void showUpdatePlayer()
         {
             close = false;
+            team = false;
             foreach (Control c in this.Controls)
             {
                 c.Hide();
@@ -116,7 +127,14 @@ namespace CIS560_Project
             uxGrade.Show();
             uxGradeLabel.Show();
             uxBack.Show();
-            uxSave.Show();
+            uxSaveGrade.Show();
+            uxSaveName.Show();
+            uxPosition.Show();
+            uxPositionLabel.Show();
+            uxSavePosition.Show();
+            uxNumber.Show();
+            uxNumberLabel.Show();
+            uxSaveNumber.Show();
 
             uxNameLabel.Text = "Player Name:";
             uxRegionLabel.Text = "Grade:";
@@ -127,9 +145,8 @@ namespace CIS560_Project
             uxSelectPlayer.Enabled = true;
             uxViewTeam.Enabled = true;
             uxUpdateTeam.Enabled = true;
-
-            string[] playersOnTeam = new string[30];
-            int iterator = 0;
+            players.Clear();
+            BindingSource bs = new BindingSource();
 
             foreach (School s in model.Schools)
             {
@@ -141,10 +158,12 @@ namespace CIS560_Project
             }
             foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(schoolID))
             {
-                playersOnTeam[iterator] = p.Name;
-                iterator++;
+                players.Add(p.Name);
             }
-            uxSelectPlayer.SuspendLayout();
+            bs.DataSource = players;
+            uxSelectPlayer.DataBindings.Clear();
+            uxSelectPlayer.DataSource = bs;
+
 
         }
 
@@ -152,16 +171,26 @@ namespace CIS560_Project
         {
             uxUpdatePlayer.Enabled = true;
             uxViewPlayer.Enabled = true;
+            currSchool = model.SchoolRepo.GetSchool(schoolID);
+            int playerID = 0;
+            foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(schoolID))
+            {
+                if (p.Name.Equals(uxSelectPlayer.Text))
+                {
+                    playerID = p.PlayerID;
+                    break;
+                }
+            }
+            currPlayer = model.PlayerRepo.FetchPlayer(playerID);
+
         }
 
         private void uxViewTeam_Click(object sender, EventArgs e)
         {
             showViewStats();
 
-
-            School currSchool = model.SchoolRepo.GetSchool(schoolID);
             PersonData.Models.Region region = (PersonData.Models.Region)currSchool.RegionId;
-            uxInfo.Text = "School: " + uxSelectTeam.Text + "\nGames Won: N/A\nSeed: " + currSchool.Seed + "\nCoach: " + currSchool.Coach + "\nRegion: " + region.ToString();
+            uxInfo.Text = "School: " + uxSelectTeam.Text + "\n\nGames Won: N/A\n\nSeed: " + currSchool.Seed + "\n\nCoach: " + currSchool.Coach + "\n\nRegion: " + region.ToString();
 
         }
 
@@ -182,7 +211,8 @@ namespace CIS560_Project
         private void uxUpdateTeam_Click(object sender, EventArgs e)
         {
             showUpdateTeam();
-            School currSchool = model.SchoolRepo.GetSchool(schoolID);
+            team = true;
+            currSchool = model.SchoolRepo.GetSchool(schoolID);
             uxName.Text = currSchool.Coach;
             uxSeed.Value = currSchool.Seed;
             uxRegion.SelectedIndex = currSchool.RegionId - 1;
@@ -191,21 +221,48 @@ namespace CIS560_Project
         private void uxViewPlayer_Click(object sender, EventArgs e)
         {
             showViewStats();
-            uxInfo.Text = "Player: " + uxSelectPlayer.Text + "\nPlays for: " + uxSelectTeam.Text + "\nGrade: N/A";
+            uxInfo.Text = "Player: " + currPlayer.Name + "\n\nPlays for: " + currSchool.Name + "\n\nGrade: " + currPlayer.Grade + "\n\nNumber: " + currPlayer.Number + "\n\nPosition: " + currPlayer.Position;
         }
 
         private void uxUpdatePlayer_Click(object sender, EventArgs e)
         {
             showUpdatePlayer();
-            uxName.Text = uxSelectPlayer.SelectedItem.ToString();
+            team = false;
+            uxName.Text = currPlayer.Name;
+            uxGrade.SelectedItem = currPlayer.Grade;
+            uxNumber.Value = currPlayer.Number;
+            uxPosition.SelectedItem = currPlayer.Position;
 
         }
 
-        private void uxSave_Click(object sender, EventArgs e)
+
+        private Player GetPlayer(int id)
         {
-            //SQL Magic idk
-            uxBack_Click(sender, e);
+            int playerID = 0;
+            foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(id))
+            {
+                if (p.Name.Equals(uxSelectPlayer.Text))
+                {
+                    playerID = p.PlayerID;
+                    break;
+                }
+            }
+            currPlayer = model.PlayerRepo.FetchPlayer(playerID);
+            return currPlayer;
         }
+
+        private void Save(object sender, EventArgs e)
+        {
+            //players.Clear();
+            //uxSelectTeam_SelectedIndexChanged(sender, e);
+            players.Remove(currPlayer.Name);
+            players.Remove(uxName.Text);
+            players.Add(uxName.Text);
+            uxSelectTeam.Text = currSchool.Name;
+            uxSelectPlayer.SelectedItem = uxName.Text;
+            uxSelectPlayer_SelectedIndexChanged(sender, e);
+        }
+
 
         private void Stats_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -215,6 +272,57 @@ namespace CIS560_Project
         private void uxSelectPlayer_DataSourceChanged(object sender, EventArgs e)
         {
             uxSelectPlayer.Enabled = true;
+        }
+
+        private void uxSaveNumber_Click(object sender, EventArgs e)
+        {
+
+            model.PlayerRepo.UpdatePlayerNumber(currSchool.Name, currPlayer.Name, (int)uxNumber.Value);
+            //uxSelectTeam_SelectedIndexChanged(sender, e);
+            Save(sender, e);
+
+        }
+
+        private void uxSaveName_Click(object sender, EventArgs e)
+        {
+
+            if (team)
+            {
+                //Team stuff
+            }
+            else
+            {
+                model.PlayerRepo.UpdatePlayerName(currSchool.Name, uxName.Text, currPlayer.Number);
+                //uxSelectTeam_SelectedIndexChanged(sender, e);
+                Save(sender, e);
+            }
+
+        }
+
+        private void uxSaveSeed_Click(object sender, EventArgs e)
+        {
+            //Team thing
+        }
+
+        private void uxSaveRegion_Click(object sender, EventArgs e)
+        {
+            //Team thing
+        }
+
+        private void uxSaveGrade_Click(object sender, EventArgs e)
+        {
+            model.PlayerRepo.UpdatePlayerGrade(currSchool.Name, currPlayer.Name, uxGrade.Text.ToString());
+            //uxSelectTeam_SelectedIndexChanged(sender, e);
+            Save(sender, e);
+
+        }
+
+        private void uxSavePosition_Click(object sender, EventArgs e)
+        {
+            model.PlayerRepo.UpdatePlayerPosition(currSchool.Name, currPlayer.Name, uxPosition.Text);
+            //uxSelectTeam_SelectedIndexChanged(sender, e);
+            Save(sender, e);
+
         }
     }
 }
