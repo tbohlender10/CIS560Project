@@ -1,20 +1,18 @@
 ﻿CREATE OR ALTER PROCEDURE Basketball.UpdateGameScore
-	@SchoolName NVARCHAR(64),
+	@SchoolID int,
 	@DateTimeInfo DATETIMEOFFSET,
-	@TeamType NVARCHAR(64),
+	@TeamTypeID int,
 	@Score INT
 AS
 
 WITH SourceCte(GameID, SchoolID, TeamTypeID, Score) AS
 (
-	SELECT G.GameID, S.SchoolID, TT.TeamTypeID, GameInfo.Score
+	SELECT G.GameID, GameInfo.SchoolID, GameInfo.TeamTypeID, GameInfo.Score
 	FROM
 	(
 		VALUES
-		(@DateTimeInfo, @SchoolName, @TeamType, @Score)
-	) GameInfo(DateTimeInfo, SchoolName, TeamType, Score)
-	INNER JOIN Basketball.School S ON S.[Name] = GameInfo.SchoolName
-	INNER JOIN Basketball.TeamType TT ON TT.TeamType = GameInfo.TeamType
+		(@DateTimeInfo, @SchoolID, @TeamTypeID, @Score)
+	) GameInfo(DateTimeInfo, SchoolID, TeamTypeID, Score)
 	INNER JOIN Basketball.Game G ON G.DateTimeInfo = GameInfo.DateTimeInfo
 )
 MERGE Basketball.GameSchool GS

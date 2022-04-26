@@ -11,17 +11,17 @@ namespace PersonData.DataDelegates
 {
     public class UpdateGameScore : DataDelegate
     {
-        public string School;
+        public int SchoolID;
         public DateTimeOffset Time;
-        public TeamType TeamType;
+        public int TeamTypeID;
         public int Score;
 
-        public UpdateGameScore(string school, DateTimeOffset time, TeamType teamType, int score)
+        public UpdateGameScore(int schoolID, DateTimeOffset time, int teamTypeID, int score)
            : base("Basketball.UpdateGameScore")
         {
-            School = school;
+            SchoolID = schoolID;
             Time = time;
-            TeamType = teamType;
+            TeamTypeID = teamTypeID;
             Score = score;
         }
 
@@ -29,9 +29,9 @@ namespace PersonData.DataDelegates
         {
             base.PrepareCommand(command);
 
-            command.Parameters.AddWithValue("School", School);
+            command.Parameters.AddWithValue("SchoolID", SchoolID);
             command.Parameters.AddWithValue("DateTimeInfo", Time);
-            command.Parameters.AddWithValue("TeamType", TeamType);
+            command.Parameters.AddWithValue("TeamTypeID", TeamTypeID);
             command.Parameters.AddWithValue("Score", Score);
         }
     }

@@ -15,9 +15,21 @@ namespace PersonData
             executor = new SqlCommandExecutor(connectionString);
         }
 
-        public bool UpdateGameScore(string schoolName, DateTimeOffset dateTimeInfo, TeamType teamType, int score)
+        public GameSchool RetrieveGuestSchoolForGame(int gameID)
         {
-            var d = new UpdateGameScore(schoolName, dateTimeInfo, teamType, score);
+            var d = new RetrieveGuestSchoolForGame(gameID);
+            return executor.ExecuteReader(d);
+        }
+
+        public GameSchool RetrieveHomeSchoolForGame(int gameID)
+        {
+            var d = new RetrieveHomeSchoolForGame(gameID);
+            return executor.ExecuteReader(d);
+        }
+
+        public bool UpdateGameScore(int schoolID, DateTimeOffset dateTimeInfo, int teamTypeID, int score)
+        {
+            var d = new UpdateGameScore(schoolID, dateTimeInfo, teamTypeID, score);
             executor.ExecuteNonQuery(d);
             return true;
         }

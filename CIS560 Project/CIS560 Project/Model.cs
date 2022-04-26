@@ -22,6 +22,8 @@ namespace CIS560_Project
 
         public SqlPlayerGameStatisticsRepository PlayerGameStatisticsRepo;
 
+        public SqlGameSchoolRepository GameSchoolRepo;
+
         public List<School> Schools;
 
         public Model()
@@ -30,6 +32,7 @@ namespace CIS560_Project
             SchoolRepo = new SqlSchoolRepository(connectionString);
             GameRepo = new SqlGameRepository(connectionString);
             PlayerGameStatisticsRepo = new SqlPlayerGameStatisticsRepository(connectionString);
+            GameSchoolRepo = new SqlGameSchoolRepository(connectionString);
             Schools = SchoolRepo.RetrieveSchools();
         }
     }

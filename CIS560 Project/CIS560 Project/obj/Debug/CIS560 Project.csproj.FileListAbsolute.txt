@@ -22,22 +22,6 @@ C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\bin\Deb
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe.config
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.pdb
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\PersonData.dll
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.dll
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\PersonData.pdb
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.pdb
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.AssemblyReference.cache
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Bracket.resources
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Properties.Resources.resources
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Stats.resources
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.GenerateResource.cache
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CoreCompileInputs.cache
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
 C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe.config
 C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe
 C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.pdb
@@ -47,7 +31,6 @@ C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debu
 C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.pdb
 C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\nickg\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Games.resources
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Games.resources
 C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Tourney.resources
 C:\Users\tbohl\OneDrive\Desktop\CIS 560\CIS 560 Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe.config
 C:\Users\tbohl\OneDrive\Desktop\CIS 560\CIS 560 Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe
@@ -104,3 +87,22 @@ C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe.config
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\PersonData.dll
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.dll
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\PersonData.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.AssemblyReference.cache
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Bracket.resources
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Games.resources
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Properties.Resources.resources
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Stats.resources
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Tourney.resources
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.UpdateGameStats.resources
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.GenerateResource.cache
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CoreCompileInputs.cache
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb

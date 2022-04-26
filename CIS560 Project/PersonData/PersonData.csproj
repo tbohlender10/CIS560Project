@@ -49,6 +49,8 @@
     <Compile Include="DataDelegates\InsertPlayerGameStatistics.cs" />
     <Compile Include="DataDelegates\RetrieveAllGamesDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForPlayerDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveGuestSchoolForGame.cs" />
+    <Compile Include="DataDelegates\RetrieveHomeSchoolForGame.cs" />
     <Compile Include="DataDelegates\RetrievePlayersForSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
@@ -202,6 +204,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerGameStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveHomeSchoolForGame.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveGuestSchoolForGame.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

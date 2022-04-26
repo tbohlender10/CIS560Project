@@ -214,7 +214,8 @@ namespace CIS560_Project
 
         private void uxUpdateGame_Click(object sender, EventArgs e)
         {
-            UpdateGameStats form = new UpdateGameStats(model, ((Game)uxSelectGame.SelectedItem), ((BindingList<School>)uxSelectTeam.DataSource), ((Player)uxSelectPlayer.SelectedItem));
+            UpdateGameStats form = new UpdateGameStats(model, ((Game)uxSelectGame.SelectedItem), this);
+            this.Enabled = false;
             form.Show();
         }
 

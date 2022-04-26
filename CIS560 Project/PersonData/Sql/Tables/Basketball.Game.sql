@@ -7,5 +7,7 @@ BEGIN
 		RoundID INT NOT NULL FOREIGN KEY
 			REFERENCES Basketball.[Round](RoundID),
 		IsDeleted INT NOT NULL DEFAULT(0) CHECK(IsDeleted = 0 OR IsDeleted = 1)
+
+		UNIQUE(DateTimeInfo)
 	)
 END;

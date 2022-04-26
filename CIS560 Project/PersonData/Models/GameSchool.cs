@@ -8,16 +8,19 @@ namespace PersonData.Models
 {
     public class GameSchool
     {
-        int GameID { get; }
+        public int GameID { get; }
 
-        int SchoolID { get; }
+        public int SchoolID { get; }
 
-        int TeamTypeID { get; }
+        public int Score { get; }
 
-        public GameSchool(int gameID, int schoolID, int teamTypeID)
+        public int TeamTypeID { get; }
+
+        public GameSchool(int gameID, int schoolID, int score, int teamTypeID)
         {
             GameID = gameID;
             SchoolID = schoolID;
+            Score = score;
             TeamTypeID = teamTypeID;
         }
     }

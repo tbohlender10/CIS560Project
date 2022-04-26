@@ -10,12 +10,6 @@ C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\DataAccess\obj\Debug\D
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\DataAccess\obj\Debug\DataAccess.pdb
 C:\Users\tbohl\Source\Repos\CIS560Project1\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.dll
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.pdb
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.dll
-C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.pdb
 C:\Users\tbohl\OneDrive\Desktop\CIS 560\CIS 560 Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.dll
 C:\Users\tbohl\OneDrive\Desktop\CIS 560\CIS 560 Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.pdb
 C:\Users\tbohl\OneDrive\Desktop\CIS 560\CIS 560 Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
@@ -33,3 +27,9 @@ C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\DataAcc
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\DataAccess\obj\Debug\DataAccess.pdb
