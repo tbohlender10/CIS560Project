@@ -66,9 +66,10 @@
             // uxCurrGameLabel
             // 
             this.uxCurrGameLabel.AutoSize = true;
-            this.uxCurrGameLabel.Location = new System.Drawing.Point(537, 14);
+            this.uxCurrGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxCurrGameLabel.Location = new System.Drawing.Point(437, 14);
             this.uxCurrGameLabel.Name = "uxCurrGameLabel";
-            this.uxCurrGameLabel.Size = new System.Drawing.Size(124, 20);
+            this.uxCurrGameLabel.Size = new System.Drawing.Size(153, 25);
             this.uxCurrGameLabel.TabIndex = 69;
             this.uxCurrGameLabel.Text = "Selected Game:";
             this.uxCurrGameLabel.Visible = false;
@@ -98,9 +99,10 @@
             // uxCurrPlayerLabel
             // 
             this.uxCurrPlayerLabel.AutoSize = true;
-            this.uxCurrPlayerLabel.Location = new System.Drawing.Point(180, 14);
+            this.uxCurrPlayerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxCurrPlayerLabel.Location = new System.Drawing.Point(66, 14);
             this.uxCurrPlayerLabel.Name = "uxCurrPlayerLabel";
-            this.uxCurrPlayerLabel.Size = new System.Drawing.Size(123, 20);
+            this.uxCurrPlayerLabel.Size = new System.Drawing.Size(155, 25);
             this.uxCurrPlayerLabel.TabIndex = 66;
             this.uxCurrPlayerLabel.Text = "Selected Player:";
             this.uxCurrPlayerLabel.Visible = false;
@@ -280,9 +282,10 @@
             // uxPlayerStats
             // 
             this.uxPlayerStats.AutoSize = true;
+            this.uxPlayerStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxPlayerStats.Location = new System.Drawing.Point(370, 231);
             this.uxPlayerStats.Name = "uxPlayerStats";
-            this.uxPlayerStats.Size = new System.Drawing.Size(137, 20);
+            this.uxPlayerStats.Size = new System.Drawing.Size(209, 29);
             this.uxPlayerStats.TabIndex = 73;
             this.uxPlayerStats.Text = "(player stats label)";
             // 

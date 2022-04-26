@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace PersonData.DataDelegates
 {
@@ -33,8 +34,11 @@ namespace PersonData.DataDelegates
         public override PlayerGameStatistics Translate(SqlCommand command, IDataRowReader reader)
         {
             if (!reader.Read())
+            {
+                MessageBox.Show("Player with PlayerID: " + PlayerID.ToString() + " does not exist. Be sure records exist for the player!");
                 throw new RecordNotFoundException(PlayerID.ToString());
-
+            }
+                
             return new PlayerGameStatistics(
                 reader.GetInt32("PlayerGameStatisticsID"),
                 GameID,

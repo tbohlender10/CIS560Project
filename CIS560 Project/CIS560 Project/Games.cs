@@ -107,34 +107,43 @@ namespace CIS560_Project
 
         private void uxSelectGame_SelectedIndexChanged(object sender, EventArgs e)
         {
-            uxSelectTeam.Enabled = true;
-            uxViewGame.Enabled = true;
-            uxUpdateGame.Enabled = true;
-
-            ((BindingList<School>)uxSelectTeam.DataSource).Clear();
-
-            foreach (School s in model.GameRepo.RetrieveSchoolsForGame(((Game)uxSelectGame.SelectedItem).GameID))
+            if(uxSelectGame.SelectedItem != null)
             {
-                ((BindingList<School>)uxSelectTeam.DataSource).Add(s);
+                uxSelectTeam.Enabled = true;
+                uxViewGame.Enabled = true;
+                uxUpdateGame.Enabled = true;
+
+                ((BindingList<School>)uxSelectTeam.DataSource).Clear();
+
+                foreach (School s in model.GameRepo.RetrieveSchoolsForGame(((Game)uxSelectGame.SelectedItem).GameID))
+                {
+                    ((BindingList<School>)uxSelectTeam.DataSource).Add(s);
+                }
             }
         }
 
         private void uxSelectTeam_SelectedIndexChanged(object sender, EventArgs e)
         {
-            uxSelectPlayer.Enabled = true;
-
-            ((BindingList<Player>)uxSelectPlayer.DataSource).Clear();
-
-            foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(((School)uxSelectTeam.SelectedItem).SchoolID))
+            if(uxSelectTeam.SelectedItem != null)
             {
-                ((BindingList<Player>)uxSelectPlayer.DataSource).Add(p);
+                uxSelectPlayer.Enabled = true;
+
+                ((BindingList<Player>)uxSelectPlayer.DataSource).Clear();
+
+                foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(((School)uxSelectTeam.SelectedItem).SchoolID))
+                {
+                    ((BindingList<Player>)uxSelectPlayer.DataSource).Add(p);
+                }
             }
         }
 
         private void uxSelectPlayer_SelectedIndexChanged(object sender, EventArgs e)
         {
-            uxEditPlayer.Enabled = true;
-            uxViewPlayer.Enabled = true;
+            if(uxSelectPlayer.SelectedItem != null)
+            {
+                uxEditPlayer.Enabled = true;
+                uxViewPlayer.Enabled = true;
+            }
         }
 
         private void uxEditPlayer_Click(object sender, EventArgs e)
@@ -152,7 +161,7 @@ namespace CIS560_Project
             showViewPlayer();
             uxCurrPlayerLabel.Text = "Selected Player: " + uxSelectPlayer.Text;
             uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
-            uxPlayerStats.Text = "Points: " + pgs.Points.ToString() + "\n" + "FGM: " + pgs.FGM.ToString() + "\n" + "FGA: " + pgs.FGA.ToString() + "\n" + "Rebounds: " + pgs.Rebounds.ToString() + "\n"+ "Minutes: " + pgs.Minutes.ToString();
+            uxPlayerStats.Text = "Points: " + pgs.Points.ToString() + "\n" + "3Points: " + pgs.ThreePoints.ToString() + "\n" + "FGM: " + pgs.FGM.ToString() + "\n" + "FGA: " + pgs.FGA.ToString() + "\n" + "Rebounds: " + pgs.Rebounds.ToString() + "\n"+ "Minutes: " + pgs.Minutes.ToString();
         }
 
         private void uxBack_Click(object sender, EventArgs e)
@@ -181,6 +190,12 @@ namespace CIS560_Project
             {
                 MessageBox.Show("You must enter in all statistics to make an update!");
             }
+            Points = -1;
+            ThreePoints = -1;
+            FGM = -1;
+            FGA = -1;
+            Rebounds = -1;
+            Minutes = -1;
             uxBack_Click(sender, e);
         }
 
@@ -199,7 +214,8 @@ namespace CIS560_Project
 
         private void uxUpdateGame_Click(object sender, EventArgs e)
         {
-           
+            UpdateGameStats form = new UpdateGameStats(model, ((Game)uxSelectGame.SelectedItem), ((BindingList<School>)uxSelectTeam.DataSource), ((Player)uxSelectPlayer.SelectedItem));
+            form.Show();
         }
 
         private void uxPoints_ValueChanged(object sender, EventArgs e)
