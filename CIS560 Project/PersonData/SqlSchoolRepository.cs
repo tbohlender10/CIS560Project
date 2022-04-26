@@ -26,5 +26,10 @@ namespace PersonData
          var d = new RetrieveSchoolsDataReaderDelegate();
          return executor.ExecuteReader(d);
       }
-   }
+
+        public bool UpdateSchoolCoach(int schoolID, string coach)
+        {
+            throw new NotImplementedException();
+        }
+    }
 }

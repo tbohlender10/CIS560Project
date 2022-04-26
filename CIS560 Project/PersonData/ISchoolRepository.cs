@@ -8,5 +8,7 @@ namespace PersonData
         List<School> RetrieveSchools();
 
         School GetSchool(int schoolID);
+
+        bool UpdateSchoolCoach(int schoolID, string coach);
    }
 }
