@@ -22,11 +22,12 @@
 
         public int Minutes { get; }
 
-        public PlayerGameStatistics(int playerGameStatisticsID, int gameID, int playerID, int points,
+        public PlayerGameStatistics(int playerGameStatisticsID, int gameID, int schoolID, int playerID, int points,
             int threePoints, int fgm, int fga, int rebounds, int minutes)
         {
             PlayerGameStatisticsID = playerGameStatisticsID;
             GameID = gameID;
+            SchoolID = schoolID;
             PlayerID = playerID;
             Points = points;
             ThreePoints = threePoints;

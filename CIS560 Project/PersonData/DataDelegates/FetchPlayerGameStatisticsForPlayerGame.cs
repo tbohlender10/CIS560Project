@@ -38,9 +38,10 @@ namespace PersonData.DataDelegates
             return new PlayerGameStatistics(
                 reader.GetInt32("PlayerGameStatisticsID"),
                 GameID,
-                PlayerID,
                 reader.GetInt32("SchoolID"),
+                PlayerID,
                 reader.GetInt32("Points"),
+                reader.GetInt32("3PT"),
                 reader.GetInt32("FGM"),
                 reader.GetInt32("FGA"),
                 reader.GetInt32("Rebounds"),
