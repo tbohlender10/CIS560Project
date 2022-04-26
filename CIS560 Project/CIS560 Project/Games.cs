@@ -19,11 +19,12 @@ namespace CIS560_Project
         Model model;
         private BindingList<School> schools;
         private BindingList<Player> players;
-        private int Points;
-        private int FGM;
-        private int FGA;
-        private int Rebounds;
-        private int Minutes;
+        private int Points = -1;
+        private int ThreePoints = -1;
+        private int FGM = -1;
+        private int FGA = -1;
+        private int Rebounds = -1;
+        private int Minutes = -1;
 
         public Games(Form f, Model m)
         {
@@ -76,6 +77,8 @@ namespace CIS560_Project
             uxCurrGameLabel.Show();
             uxPoints.Show();
             uxPointsLabel.Show();
+            uxThreePoints.Show();
+            uxThreePointsLabel.Show();
             uxFGM.Show();
             uxFGMLabel.Show();
             uxFGA.Show();
@@ -167,7 +170,17 @@ namespace CIS560_Project
 
         private void uxSave_Click(object sender, EventArgs e)
         {
-            
+            Game g = ((Game)uxSelectGame.SelectedItem);
+            Player p = ((Player)uxSelectPlayer.SelectedItem);
+            School s = ((School)uxSelectTeam.SelectedItem);
+            if(g != null && p != null && s != null && Points != -1 && ThreePoints != -1 && FGM != -1 && FGA != -1 && Rebounds != -1 && Minutes != -1)
+            {
+                model.PlayerGameStatisticsRepo.UpdatePlayerGameStatistics(g.GameID, p.PlayerID, s.SchoolID, Points, ThreePoints, FGM, FGA, Rebounds, Minutes); ;
+            }
+            else
+            {
+                MessageBox.Show("You must enter in all statistics to make an update!");
+            }
             uxBack_Click(sender, e);
         }
 
@@ -212,6 +225,11 @@ namespace CIS560_Project
         private void uxMinutes_ValueChanged(object sender, EventArgs e)
         {
             Minutes = (int)uxMinutes.Value;
+        }
+
+        private void uxThreePoints_ValueChanged(object sender, EventArgs e)
+        {
+            ThreePoints = (int)uxThreePoints.Value;
         }
     }
 }

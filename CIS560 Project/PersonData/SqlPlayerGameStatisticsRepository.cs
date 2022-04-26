@@ -15,16 +15,6 @@ namespace PersonData
             executor = new SqlCommandExecutor(connectionString);
         }
 
-        public PlayerGameStatistics GetPlayerGameStatisticsForGame(int gameID)
-        {
-            throw new NotImplementedException();
-        }
-
-        public PlayerGameStatistics GetPlayerGameStatisticsForPlayer(int playerID)
-        {
-            throw new NotImplementedException();
-        }
-
         public PlayerGameStatistics GetPlayerGameStatisticsForPlayerGame(int gameID, int playerID)
         {
             var d = new FetchPlayerGameStatisticsForPlayerGame(gameID, playerID);
@@ -38,9 +28,11 @@ namespace PersonData
             return true;
         }
 
-        public IReadOnlyList<PlayerGameStatistics> RetrievePlayerGameStatisticsForSchool(int schoolID)
+        public bool UpdatePlayerGameStatistics(int gameID, int playerID, int schoolID, int points, int threePoints, int fgm, int fga, int rebounds, int minutes)
         {
-            throw new NotImplementedException();
+            var d = new UpdatePlayerGameStatistics(gameID, playerID, schoolID, points, threePoints, fgm, fga, rebounds, minutes);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
     }
 }

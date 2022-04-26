@@ -201,7 +201,7 @@
     <EmbeddedResource Include="Sql\Procedures\Basketball.FetchPlayerGameStatisticsForPlayerGame.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerGamStatistics.sql" />
+    <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerGameStatistics.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
