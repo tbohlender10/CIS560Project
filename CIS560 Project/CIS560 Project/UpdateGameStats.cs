@@ -35,16 +35,38 @@ namespace CIS560_Project
             Parent = parent;
 
             Home = Model.GameSchoolRepo.RetrieveHomeSchoolForGame(SelectedGame.GameID);
-            Guest = Model.GameSchoolRepo.RetrieveHomeSchoolForGame(SelectedGame.GameID);
+            Guest = Model.GameSchoolRepo.RetrieveGuestSchoolForGame(SelectedGame.GameID);
 
             uxHomeSchoolLabel.Text = "Home School: " + Home.ToString();
             uxGuestSchoolLabel.Text = "Guest School: " + Guest.ToString();
 
-            uxHomeScore.Value = Home.Score;
-            uxGuestScore.Value = Guest.Score;
+            if(Home.Score == -1)
+            {
+                uxHomeScore.Value = 0;
+            }
+            else
+            {
+                uxHomeScore.Value = Home.Score;
+            }
+
+            if(Guest.Score == -1)
+            {
+                uxHomeScore.Value = 0;
+            }
+            else
+            {
+                uxGuestScore.Value = Guest.Score;
+            }
+            
+            
 
             HomeScore = Home.Score;
             GuestScore = Guest.Score;
+        }
+
+        private void UpdateGameStats_Closing(object sender, FormClosingEventArgs e)
+        {
+            Parent.Enabled = true;
         }
 
         private void uxBackButton_Click(object sender, EventArgs e)
@@ -55,12 +77,19 @@ namespace CIS560_Project
 
         private void uxSaveButton_Click(object sender, EventArgs e)
         {
-            if(Model.GameSchoolRepo.UpdateGameScore(Guest.SchoolID, SelectedGame.DateTimeInfo, Guest.TeamTypeID, GuestScore)
-             && Model.GameSchoolRepo.UpdateGameScore(Home.SchoolID, SelectedGame.DateTimeInfo, Home.TeamTypeID, HomeScore))
+            if(HomeScore > 0 && GuestScore > 0)
             {
-                Parent.Enabled = true;
-                this.Close();
-                MessageBox.Show("Game Score Updated!");
+                if (Model.GameSchoolRepo.UpdateGameScore(SelectedGame.GameID, Guest.SchoolID, GuestScore)
+                    && Model.GameSchoolRepo.UpdateGameScore(SelectedGame.GameID, Home.SchoolID, HomeScore))
+                {
+                    Parent.Enabled = true;
+                    this.Close();
+                    MessageBox.Show("Game Score Updated!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid scores! Change the scores before updating!");
             }
         }
 

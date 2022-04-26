@@ -282,10 +282,10 @@
             // uxPlayerStats
             // 
             this.uxPlayerStats.AutoSize = true;
-            this.uxPlayerStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxPlayerStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxPlayerStats.Location = new System.Drawing.Point(370, 231);
             this.uxPlayerStats.Name = "uxPlayerStats";
-            this.uxPlayerStats.Size = new System.Drawing.Size(209, 29);
+            this.uxPlayerStats.Size = new System.Drawing.Size(247, 32);
             this.uxPlayerStats.TabIndex = 73;
             this.uxPlayerStats.Text = "(player stats label)";
             // 

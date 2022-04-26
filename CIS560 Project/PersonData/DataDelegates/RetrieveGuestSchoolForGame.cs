@@ -34,6 +34,7 @@ namespace PersonData.DataDelegates
             return new GameSchool(
                 reader.GetInt32("GameID"),
                 reader.GetInt32("SchoolID"),
+                reader.GetString("Name"),
                 reader.GetInt32("Score"),
                 reader.GetInt32("TeamTypeID"));
         }

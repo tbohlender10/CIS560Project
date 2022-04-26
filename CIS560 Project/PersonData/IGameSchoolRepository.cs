@@ -6,7 +6,7 @@ namespace PersonData
 {
    public interface IGameSchoolRepository
    {
-        bool UpdateGameScore(int schoolID, DateTimeOffset dateTimeInfo, int teamTypeID, int score);
+        bool UpdateGameScore(int gameID, int schoolID, int score);
 
         GameSchool RetrieveHomeSchoolForGame(int gameID);
 

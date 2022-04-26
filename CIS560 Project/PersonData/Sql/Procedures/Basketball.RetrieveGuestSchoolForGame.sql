@@ -2,7 +2,7 @@
 	@GameID int
 AS
 
-SELECT G.GameID, S.SchoolID, GS.Score, GS.TeamTypeID
+SELECT G.GameID, S.SchoolID, S.[Name], GS.Score, GS.TeamTypeID
 FROM Basketball.Game G
 INNER JOIN Basketball.GameSchool GS ON G.GameID = GS.GameID
 INNER JOIN Basketball.School S ON S.SchoolID = GS.SchoolID

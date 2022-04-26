@@ -209,7 +209,21 @@ namespace CIS560_Project
             showViewPlayer();
             uxCurrPlayerLabel.Text = "";
             uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
-            uxPlayerStats.Text = "Team 1 Points: N/A\nTeam 2 Points: N/A\nWinning Team: N/A";
+            GameSchool home = model.GameSchoolRepo.RetrieveHomeSchoolForGame(((Game)uxSelectGame.SelectedItem).GameID);
+            GameSchool guest = model.GameSchoolRepo.RetrieveGuestSchoolForGame(((Game)uxSelectGame.SelectedItem).GameID);
+            
+            string winner;
+
+            if(home.Score > guest.Score)
+            {
+                winner = home.SchoolName;
+            }
+            else
+            {
+                winner = guest.SchoolName;
+            }
+
+            uxPlayerStats.Text = home.SchoolName + " Points: " + home.Score.ToString() + "\n"+ guest.SchoolName + " Points: " + guest.Score.ToString() + "\n" + "Winning Team: " + winner;
         }
 
         private void uxUpdateGame_Click(object sender, EventArgs e)

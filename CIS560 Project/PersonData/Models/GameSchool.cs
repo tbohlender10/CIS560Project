@@ -12,16 +12,24 @@ namespace PersonData.Models
 
         public int SchoolID { get; }
 
+        public string SchoolName { get; }
+
         public int Score { get; }
 
         public int TeamTypeID { get; }
 
-        public GameSchool(int gameID, int schoolID, int score, int teamTypeID)
+        public GameSchool(int gameID, int schoolID, string schoolName, int score, int teamTypeID)
         {
             GameID = gameID;
             SchoolID = schoolID;
+            SchoolName = schoolName;
             Score = score;
             TeamTypeID = teamTypeID;
+        }
+
+        public override string ToString()
+        {
+            return SchoolName;
         }
     }
 }

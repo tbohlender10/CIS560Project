@@ -27,9 +27,9 @@ namespace PersonData
             return executor.ExecuteReader(d);
         }
 
-        public bool UpdateGameScore(int schoolID, DateTimeOffset dateTimeInfo, int teamTypeID, int score)
+        public bool UpdateGameScore(int gameID, int schoolID, int score)
         {
-            var d = new UpdateGameScore(schoolID, dateTimeInfo, teamTypeID, score);
+            var d = new UpdateGameScore(gameID, schoolID, score);
             executor.ExecuteNonQuery(d);
             return true;
         }
