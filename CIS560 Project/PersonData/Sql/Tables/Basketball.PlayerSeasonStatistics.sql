@@ -10,7 +10,8 @@ BEGIN
 		FGM INT NOT NULL,
 		FGA INT NOT NULL,
 		Rebounds INT NOT NULL,
-		[Minutes] INT NOT NULL
+		[Minutes] INT NOT NULL,
+		IsDeleted INT NOT NULL DEFAULT(0) CHECK(IsDeleted = 0 OR IsDeleted = 1)
 
 		UNIQUE(PlayerID)
    );

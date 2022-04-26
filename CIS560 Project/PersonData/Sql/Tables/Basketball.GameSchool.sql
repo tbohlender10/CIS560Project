@@ -8,7 +8,8 @@ BEGIN
 			REFERENCES Basketball.School(SchoolID),
 		TeamTypeID INT NOT NULL FOREIGN KEY
 			REFERENCES Basketball.TeamType(TeamTypeID),
-		Score INT DEFAULT(NULL)
+		Score INT DEFAULT(NULL),
+		IsDeleted INT NOT NULL DEFAULT(0) CHECK(IsDeleted = 0 OR IsDeleted = 1)
 
 		CONSTRAINT PK_Basketball_GameSchool_GameIDSchoolID PRIMARY KEY
 		(
