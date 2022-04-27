@@ -288,6 +288,7 @@ namespace CIS560_Project
             {
                 //Team stuff
                 model.SchoolRepo.UpdateSchoolCoach(currSchool.SchoolID, uxName.Text);
+                uxSelectTeam_SelectedIndexChanged(sender, e);
             }
             else
             {
