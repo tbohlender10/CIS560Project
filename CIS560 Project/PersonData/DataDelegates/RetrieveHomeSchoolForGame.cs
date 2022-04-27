@@ -28,15 +28,22 @@ namespace PersonData.DataDelegates
 
         public override GameSchool Translate(SqlCommand command, IDataRowReader reader)
         {
-            if (!reader.Read())
-                throw new RecordNotFoundException(GameID.ToString());
+            try
+            {
+                if (!reader.Read())
+                    throw new RecordNotFoundException(GameID.ToString());
 
-            return new GameSchool(
-                reader.GetInt32("GameID"),
-                reader.GetInt32("SchoolID"),
-                reader.GetString("Name"),
-                reader.GetInt32("Score"),
-                reader.GetInt32("TeamTypeID"));
+                return new GameSchool(
+                    reader.GetInt32("GameID"),
+                    reader.GetInt32("SchoolID"),
+                    reader.GetString("Name"),
+                    reader.GetInt32("Score"),
+                    reader.GetInt32("TeamTypeID"));
+            }
+            catch (RecordNotFoundException)
+            {
+                return new GameSchool(-1, -1, "", -1, -1);
+            }
         }
     }
 }

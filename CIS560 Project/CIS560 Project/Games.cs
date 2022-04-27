@@ -158,10 +158,17 @@ namespace CIS560_Project
             Game g = ((Game)uxSelectGame.SelectedItem);
             PlayerGameStatistics pgs = model.PlayerGameStatisticsRepo.GetPlayerGameStatisticsForPlayerGame(g.GameID, p.PlayerID);
 
-            showViewPlayer();
-            uxCurrPlayerLabel.Text = "Selected Player: " + uxSelectPlayer.Text;
-            uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
-            uxPlayerStats.Text = "Points: " + pgs.Points.ToString() + "\n" + "3Points: " + pgs.ThreePoints.ToString() + "\n" + "FGM: " + pgs.FGM.ToString() + "\n" + "FGA: " + pgs.FGA.ToString() + "\n" + "Rebounds: " + pgs.Rebounds.ToString() + "\n" + "Minutes: " + pgs.Minutes.ToString();
+            if (pgs.PlayerGameStatisticsID == -1)
+            {
+                MessageBox.Show("No game statistics available for the selected player!");
+            }
+            else
+            {
+                showViewPlayer();
+                uxCurrPlayerLabel.Text = "Selected Player: " + uxSelectPlayer.Text;
+                uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
+                uxPlayerStats.Text = "Points: " + pgs.Points.ToString() + "\n" + "3Points: " + pgs.ThreePoints.ToString() + "\n" + "FGM: " + pgs.FGM.ToString() + "\n" + "FGA: " + pgs.FGA.ToString() + "\n" + "Rebounds: " + pgs.Rebounds.ToString() + "\n" + "Minutes: " + pgs.Minutes.ToString();
+            }
         }
 
         private void uxBack_Click(object sender, EventArgs e)
@@ -206,24 +213,33 @@ namespace CIS560_Project
 
         private void uxViewGame_Click(object sender, EventArgs e)
         {
-            showViewPlayer();
-            uxCurrPlayerLabel.Text = "";
-            uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
             GameSchool home = model.GameSchoolRepo.RetrieveHomeSchoolForGame(((Game)uxSelectGame.SelectedItem).GameID);
             GameSchool guest = model.GameSchoolRepo.RetrieveGuestSchoolForGame(((Game)uxSelectGame.SelectedItem).GameID);
-            
-            string winner;
 
-            if(home.Score > guest.Score)
+            string winner;
+            
+            if(home.SchoolID == -1 || guest.SchoolID == -1)
             {
-                winner = home.SchoolName;
+                MessageBox.Show("No data available for the selected game!");
             }
             else
             {
-                winner = guest.SchoolName;
-            }
+                showViewPlayer();
+                uxCurrPlayerLabel.Text = "";
+                uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
 
-            uxPlayerStats.Text = home.SchoolName + " Points: " + home.Score.ToString() + "\n"+ guest.SchoolName + " Points: " + guest.Score.ToString() + "\n" + "Winning Team: " + winner;
+
+                if (home.Score > guest.Score)
+                {
+                    winner = home.SchoolName;
+                }
+                else
+                {
+                    winner = guest.SchoolName;
+                }
+
+                uxPlayerStats.Text = home.SchoolName + " Points: " + home.Score.ToString() + "\n" + guest.SchoolName + " Points: " + guest.Score.ToString() + "\n" + "Winning Team: " + winner;
+            }
         }
 
         private void uxUpdateGame_Click(object sender, EventArgs e)
@@ -261,6 +277,16 @@ namespace CIS560_Project
         private void uxThreePoints_ValueChanged(object sender, EventArgs e)
         {
             ThreePoints = (int)uxThreePoints.Value;
+        }
+
+        private void uxDeleteGameStats_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uxDeletePlayerStats_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

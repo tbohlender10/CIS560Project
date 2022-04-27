@@ -55,6 +55,8 @@
             this.uxMinutes = new System.Windows.Forms.NumericUpDown();
             this.uxThreePoints = new System.Windows.Forms.NumericUpDown();
             this.uxThreePointsLabel = new System.Windows.Forms.Label();
+            this.uxDeletePlayerStats = new System.Windows.Forms.Button();
+            this.uxDeleteGameStats = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxFGM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxFGA)).BeginInit();
@@ -67,7 +69,7 @@
             // 
             this.uxCurrGameLabel.AutoSize = true;
             this.uxCurrGameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxCurrGameLabel.Location = new System.Drawing.Point(437, 14);
+            this.uxCurrGameLabel.Location = new System.Drawing.Point(403, 14);
             this.uxCurrGameLabel.Name = "uxCurrGameLabel";
             this.uxCurrGameLabel.Size = new System.Drawing.Size(153, 25);
             this.uxCurrGameLabel.TabIndex = 69;
@@ -100,7 +102,7 @@
             // 
             this.uxCurrPlayerLabel.AutoSize = true;
             this.uxCurrPlayerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxCurrPlayerLabel.Location = new System.Drawing.Point(66, 14);
+            this.uxCurrPlayerLabel.Location = new System.Drawing.Point(28, 14);
             this.uxCurrPlayerLabel.Name = "uxCurrPlayerLabel";
             this.uxCurrPlayerLabel.Size = new System.Drawing.Size(155, 25);
             this.uxCurrPlayerLabel.TabIndex = 66;
@@ -110,7 +112,7 @@
             // uxEditPlayer
             // 
             this.uxEditPlayer.Enabled = false;
-            this.uxEditPlayer.Location = new System.Drawing.Point(668, 355);
+            this.uxEditPlayer.Location = new System.Drawing.Point(669, 259);
             this.uxEditPlayer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.uxEditPlayer.Name = "uxEditPlayer";
             this.uxEditPlayer.Size = new System.Drawing.Size(114, 68);
@@ -146,7 +148,7 @@
             // uxViewGame
             // 
             this.uxViewGame.Enabled = false;
-            this.uxViewGame.Location = new System.Drawing.Point(100, 212);
+            this.uxViewGame.Location = new System.Drawing.Point(101, 156);
             this.uxViewGame.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.uxViewGame.Name = "uxViewGame";
             this.uxViewGame.Size = new System.Drawing.Size(114, 68);
@@ -158,7 +160,7 @@
             // uxUpdateGame
             // 
             this.uxUpdateGame.Enabled = false;
-            this.uxUpdateGame.Location = new System.Drawing.Point(100, 351);
+            this.uxUpdateGame.Location = new System.Drawing.Point(101, 259);
             this.uxUpdateGame.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.uxUpdateGame.Name = "uxUpdateGame";
             this.uxUpdateGame.Size = new System.Drawing.Size(114, 68);
@@ -170,7 +172,7 @@
             // uxViewPlayer
             // 
             this.uxViewPlayer.Enabled = false;
-            this.uxViewPlayer.Location = new System.Drawing.Point(668, 212);
+            this.uxViewPlayer.Location = new System.Drawing.Point(669, 156);
             this.uxViewPlayer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.uxViewPlayer.Name = "uxViewPlayer";
             this.uxViewPlayer.Size = new System.Drawing.Size(114, 68);
@@ -353,11 +355,37 @@
             this.uxThreePointsLabel.Text = "3PT:";
             this.uxThreePointsLabel.Visible = false;
             // 
+            // uxDeletePlayerStats
+            // 
+            this.uxDeletePlayerStats.Enabled = false;
+            this.uxDeletePlayerStats.Location = new System.Drawing.Point(669, 374);
+            this.uxDeletePlayerStats.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uxDeletePlayerStats.Name = "uxDeletePlayerStats";
+            this.uxDeletePlayerStats.Size = new System.Drawing.Size(114, 68);
+            this.uxDeletePlayerStats.TabIndex = 81;
+            this.uxDeletePlayerStats.Text = "Delete Player Stats";
+            this.uxDeletePlayerStats.UseVisualStyleBackColor = true;
+            this.uxDeletePlayerStats.Click += new System.EventHandler(this.uxDeletePlayerStats_Click);
+            // 
+            // uxDeleteGameStats
+            // 
+            this.uxDeleteGameStats.Enabled = false;
+            this.uxDeleteGameStats.Location = new System.Drawing.Point(101, 374);
+            this.uxDeleteGameStats.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uxDeleteGameStats.Name = "uxDeleteGameStats";
+            this.uxDeleteGameStats.Size = new System.Drawing.Size(114, 68);
+            this.uxDeleteGameStats.TabIndex = 82;
+            this.uxDeleteGameStats.Text = "Delete Game Stats";
+            this.uxDeleteGameStats.UseVisualStyleBackColor = true;
+            this.uxDeleteGameStats.Click += new System.EventHandler(this.uxDeleteGameStats_Click);
+            // 
             // Games
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.uxDeleteGameStats);
+            this.Controls.Add(this.uxDeletePlayerStats);
             this.Controls.Add(this.uxThreePoints);
             this.Controls.Add(this.uxThreePointsLabel);
             this.Controls.Add(this.uxMinutes);
@@ -429,5 +457,7 @@
         private System.Windows.Forms.NumericUpDown uxMinutes;
         private System.Windows.Forms.NumericUpDown uxThreePoints;
         private System.Windows.Forms.Label uxThreePointsLabel;
+        private System.Windows.Forms.Button uxDeletePlayerStats;
+        private System.Windows.Forms.Button uxDeleteGameStats;
     }
 }

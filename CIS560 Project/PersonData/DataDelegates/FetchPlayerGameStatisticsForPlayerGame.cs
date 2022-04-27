@@ -32,20 +32,28 @@ namespace PersonData.DataDelegates
 
         public override PlayerGameStatistics Translate(SqlCommand command, IDataRowReader reader)
         {
-            if (!reader.Read())
-                throw new RecordNotFoundException(PlayerID.ToString());
+            try
+            {
+                if (!reader.Read())
+                    throw new RecordNotFoundException(PlayerID.ToString());
 
-            return new PlayerGameStatistics(
-                reader.GetInt32("PlayerGameStatisticsID"),
-                GameID,
-                reader.GetInt32("SchoolID"),
-                PlayerID,
-                reader.GetInt32("Points"),
-                reader.GetInt32("3PT"),
-                reader.GetInt32("FGM"),
-                reader.GetInt32("FGA"),
-                reader.GetInt32("Rebounds"),
-                reader.GetInt32("Minutes"));
+                return new PlayerGameStatistics(
+                    reader.GetInt32("PlayerGameStatisticsID"),
+                    GameID,
+                    reader.GetInt32("SchoolID"),
+                    PlayerID,
+                    reader.GetInt32("Points"),
+                    reader.GetInt32("3PT"),
+                    reader.GetInt32("FGM"),
+                    reader.GetInt32("FGA"),
+                    reader.GetInt32("Rebounds"),
+                    reader.GetInt32("Minutes"));
+            }
+            catch (RecordNotFoundException)
+            {
+                return new PlayerGameStatistics(-1, -1, -1, -1, -1, -1, -1, -1, -1, -1);
+            }
+            
         }
     }
 }
