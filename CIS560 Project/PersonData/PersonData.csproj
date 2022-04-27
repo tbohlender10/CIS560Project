@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataDelegates\CreatePlayerDataDelegate.cs" />
+    <Compile Include="DataDelegates\InsertGameSchoolStatistics.cs" />
     <Compile Include="DataDelegates\DeleteGameStatistics.cs" />
     <Compile Include="DataDelegates\FetchPlayerDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerGameStatisticsForPlayerGame.cs" />
@@ -227,6 +227,9 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.UpdateSchoolSeed.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.InsertGameSchoolStatistics.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

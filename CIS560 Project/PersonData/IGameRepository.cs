@@ -11,5 +11,7 @@ namespace PersonData
         BindingList<School> RetrieveSchoolsForGame(int gameID);
 
         bool DeleteGameStats(int gameID);
+
+        bool InsertGameSchoolStatistics(int gameID, int schoolID, int teamTypeID, int score);
    }
 }
