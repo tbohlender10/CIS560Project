@@ -11,6 +11,7 @@ namespace CIS560_Project
         Form parent;
         Model model;
         int schoolID = 0;
+        int prevSchoolID = -1;
 
         bool team = true;
 
@@ -31,14 +32,6 @@ namespace CIS560_Project
             }
             uxSelectTeam.DataSource = allTeams;
 
-
-            uxRegion.DataSource = new string[]
-            {
-                "East",
-                "West",
-                "South",
-                "Midwest"
-            };
 
             uxPosition.DataSource = new string[]
             {
@@ -99,14 +92,8 @@ namespace CIS560_Project
             }
             uxName.Show();
             uxNameLabel.Show();
-            uxSeed.Show();
-            uxSeedLabel.Show();
-            uxRegion.Show();
-            uxRegionLabel.Show();
             uxBack.Show();
             uxSaveName.Show();
-            uxSaveRegion.Show();
-            uxSaveSeed.Show();
 
             uxNameLabel.Text = "Coach:";
 
@@ -137,7 +124,6 @@ namespace CIS560_Project
             uxSaveNumber.Show();
 
             uxNameLabel.Text = "Player Name:";
-            uxRegionLabel.Text = "Grade:";
         }
 
         private void uxSelectTeam_SelectedIndexChanged(object sender, EventArgs e)
@@ -145,7 +131,6 @@ namespace CIS560_Project
             uxSelectPlayer.Enabled = true;
             uxViewTeam.Enabled = true;
             uxUpdateTeam.Enabled = true;
-            players.Clear();
             BindingSource bs = new BindingSource();
 
             foreach (School s in model.Schools)
@@ -156,14 +141,23 @@ namespace CIS560_Project
                     break;
                 }
             }
+            currSchool = model.SchoolRepo.GetSchool(schoolID);
+            bs.DataSource = players;
+            uxSelectPlayer.DataSource = bs;
             foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(schoolID))
             {
                 players.Add(p.Name);
             }
-            bs.DataSource = players;
-            uxSelectPlayer.DataBindings.Clear();
-            uxSelectPlayer.DataSource = bs;
 
+            if (prevSchoolID != -1)
+            {
+                foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(prevSchoolID))
+                {
+                    players.Remove(p.Name);
+                }
+            }
+            prevSchoolID = schoolID;
+            uxSelectPlayer_SelectedIndexChanged(sender, e);
 
         }
 
@@ -214,8 +208,6 @@ namespace CIS560_Project
             team = true;
             currSchool = model.SchoolRepo.GetSchool(schoolID);
             uxName.Text = currSchool.Coach;
-            uxSeed.Value = currSchool.Seed;
-            uxRegion.SelectedIndex = currSchool.RegionId - 1;
         }
 
         private void uxViewPlayer_Click(object sender, EventArgs e)
@@ -276,8 +268,14 @@ namespace CIS560_Project
 
         private void uxSaveNumber_Click(object sender, EventArgs e)
         {
-
-            model.PlayerRepo.UpdatePlayerNumber(currSchool.Name, currPlayer.Name, (int)uxNumber.Value);
+            try
+            {
+                model.PlayerRepo.UpdatePlayerNumber(currSchool.Name, currPlayer.Name, (int)uxNumber.Value);
+            }
+            catch
+            {
+                MessageBox.Show("Someone on this team already has this number, try a different number");
+            }
             //uxSelectTeam_SelectedIndexChanged(sender, e);
             Save(sender, e);
 
@@ -289,6 +287,7 @@ namespace CIS560_Project
             if (team)
             {
                 //Team stuff
+                model.SchoolRepo.UpdateSchoolCoach(currSchool.SchoolID, uxName.Text);
             }
             else
             {
@@ -297,16 +296,6 @@ namespace CIS560_Project
                 Save(sender, e);
             }
 
-        }
-
-        private void uxSaveSeed_Click(object sender, EventArgs e)
-        {
-            //Team thing
-        }
-
-        private void uxSaveRegion_Click(object sender, EventArgs e)
-        {
-            //Team thing
         }
 
         private void uxSaveGrade_Click(object sender, EventArgs e)

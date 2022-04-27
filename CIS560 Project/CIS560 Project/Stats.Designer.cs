@@ -34,17 +34,11 @@
             this.uxSavePosition = new System.Windows.Forms.Button();
             this.uxPosition = new System.Windows.Forms.ComboBox();
             this.uxPositionLabel = new System.Windows.Forms.Label();
-            this.uxSaveSeed = new System.Windows.Forms.Button();
-            this.uxSaveRegion = new System.Windows.Forms.Button();
             this.uxSaveName = new System.Windows.Forms.Button();
             this.uxSaveGrade = new System.Windows.Forms.Button();
             this.uxBack = new System.Windows.Forms.Button();
             this.uxGradeLabel = new System.Windows.Forms.Label();
             this.uxGrade = new System.Windows.Forms.ComboBox();
-            this.uxRegionLabel = new System.Windows.Forms.Label();
-            this.uxRegion = new System.Windows.Forms.ComboBox();
-            this.uxSeedLabel = new System.Windows.Forms.Label();
-            this.uxSeed = new System.Windows.Forms.NumericUpDown();
             this.uxNameLabel = new System.Windows.Forms.Label();
             this.uxName = new System.Windows.Forms.TextBox();
             this.uxInfo = new System.Windows.Forms.Label();
@@ -57,7 +51,6 @@
             this.uxSelectTeam = new System.Windows.Forms.ComboBox();
             this.uxViewPlayer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxNumber)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uxSeed)).BeginInit();
             this.SuspendLayout();
             // 
             // uxSaveNumber
@@ -141,30 +134,6 @@
             this.uxPositionLabel.Text = "Position:";
             this.uxPositionLabel.Visible = false;
             // 
-            // uxSaveSeed
-            // 
-            this.uxSaveSeed.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxSaveSeed.Location = new System.Drawing.Point(503, 161);
-            this.uxSaveSeed.Name = "uxSaveSeed";
-            this.uxSaveSeed.Size = new System.Drawing.Size(116, 24);
-            this.uxSaveSeed.TabIndex = 72;
-            this.uxSaveSeed.Text = "Save Seed";
-            this.uxSaveSeed.UseVisualStyleBackColor = true;
-            this.uxSaveSeed.Visible = false;
-            this.uxSaveSeed.Click += new System.EventHandler(this.uxSaveSeed_Click);
-            // 
-            // uxSaveRegion
-            // 
-            this.uxSaveRegion.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxSaveRegion.Location = new System.Drawing.Point(503, 273);
-            this.uxSaveRegion.Name = "uxSaveRegion";
-            this.uxSaveRegion.Size = new System.Drawing.Size(116, 24);
-            this.uxSaveRegion.TabIndex = 71;
-            this.uxSaveRegion.Text = "Save Region";
-            this.uxSaveRegion.UseVisualStyleBackColor = true;
-            this.uxSaveRegion.Visible = false;
-            this.uxSaveRegion.Click += new System.EventHandler(this.uxSaveRegion_Click);
-            // 
             // uxSaveName
             // 
             this.uxSaveName.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -221,63 +190,6 @@
             this.uxGrade.Size = new System.Drawing.Size(150, 23);
             this.uxGrade.TabIndex = 66;
             this.uxGrade.Visible = false;
-            // 
-            // uxRegionLabel
-            // 
-            this.uxRegionLabel.AutoSize = true;
-            this.uxRegionLabel.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxRegionLabel.Location = new System.Drawing.Point(367, 253);
-            this.uxRegionLabel.Name = "uxRegionLabel";
-            this.uxRegionLabel.Size = new System.Drawing.Size(55, 16);
-            this.uxRegionLabel.TabIndex = 65;
-            this.uxRegionLabel.Text = "Region:";
-            this.uxRegionLabel.Visible = false;
-            // 
-            // uxRegion
-            // 
-            this.uxRegion.AllowDrop = true;
-            this.uxRegion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.uxRegion.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxRegion.FormattingEnabled = true;
-            this.uxRegion.Location = new System.Drawing.Point(323, 273);
-            this.uxRegion.Name = "uxRegion";
-            this.uxRegion.Size = new System.Drawing.Size(150, 23);
-            this.uxRegion.TabIndex = 64;
-            this.uxRegion.Visible = false;
-            // 
-            // uxSeedLabel
-            // 
-            this.uxSeedLabel.AutoSize = true;
-            this.uxSeedLabel.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxSeedLabel.Location = new System.Drawing.Point(372, 143);
-            this.uxSeedLabel.Name = "uxSeedLabel";
-            this.uxSeedLabel.Size = new System.Drawing.Size(40, 16);
-            this.uxSeedLabel.TabIndex = 63;
-            this.uxSeedLabel.Text = "Seed:";
-            this.uxSeedLabel.Visible = false;
-            // 
-            // uxSeed
-            // 
-            this.uxSeed.Location = new System.Drawing.Point(339, 163);
-            this.uxSeed.Maximum = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
-            this.uxSeed.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.uxSeed.Name = "uxSeed";
-            this.uxSeed.Size = new System.Drawing.Size(120, 22);
-            this.uxSeed.TabIndex = 62;
-            this.uxSeed.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.uxSeed.Visible = false;
             // 
             // uxNameLabel
             // 
@@ -418,17 +330,11 @@
             this.Controls.Add(this.uxSavePosition);
             this.Controls.Add(this.uxPosition);
             this.Controls.Add(this.uxPositionLabel);
-            this.Controls.Add(this.uxSaveSeed);
-            this.Controls.Add(this.uxSaveRegion);
             this.Controls.Add(this.uxSaveName);
             this.Controls.Add(this.uxSaveGrade);
             this.Controls.Add(this.uxBack);
             this.Controls.Add(this.uxGradeLabel);
             this.Controls.Add(this.uxGrade);
-            this.Controls.Add(this.uxRegionLabel);
-            this.Controls.Add(this.uxRegion);
-            this.Controls.Add(this.uxSeedLabel);
-            this.Controls.Add(this.uxSeed);
             this.Controls.Add(this.uxNameLabel);
             this.Controls.Add(this.uxName);
             this.Controls.Add(this.uxInfo);
@@ -444,7 +350,6 @@
             this.Text = "Stats";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Stats_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.uxNumber)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uxSeed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -458,17 +363,11 @@
         private System.Windows.Forms.Button uxSavePosition;
         private System.Windows.Forms.ComboBox uxPosition;
         private System.Windows.Forms.Label uxPositionLabel;
-        private System.Windows.Forms.Button uxSaveSeed;
-        private System.Windows.Forms.Button uxSaveRegion;
         private System.Windows.Forms.Button uxSaveName;
         private System.Windows.Forms.Button uxSaveGrade;
         private System.Windows.Forms.Button uxBack;
         private System.Windows.Forms.Label uxGradeLabel;
         private System.Windows.Forms.ComboBox uxGrade;
-        private System.Windows.Forms.Label uxRegionLabel;
-        private System.Windows.Forms.ComboBox uxRegion;
-        private System.Windows.Forms.Label uxSeedLabel;
-        private System.Windows.Forms.NumericUpDown uxSeed;
         private System.Windows.Forms.Label uxNameLabel;
         private System.Windows.Forms.TextBox uxName;
         private System.Windows.Forms.Label uxInfo;

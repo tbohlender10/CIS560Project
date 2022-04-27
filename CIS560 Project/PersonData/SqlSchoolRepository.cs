@@ -29,7 +29,22 @@ namespace PersonData
 
         public bool UpdateSchoolCoach(int schoolID, string coach)
         {
-            throw new NotImplementedException();
+            var d = new UpdateSchoolCoach(schoolID, coach);
+            executor.ExecuteNonQuery(d);
+            return true;
+        }
+        public bool UpdateSchoolSeed(int schoolID, int seed)
+        {
+            var d = new UpdateSchoolSeed(schoolID, seed);
+            executor.ExecuteNonQuery(d);
+            return true;
+        }
+
+        public bool UpdateSchoolRegion(int schoolID, int RegionID)
+        {
+            var d = new UpdateSchoolRegion(schoolID, RegionID);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
     }
 }
