@@ -107,7 +107,7 @@ namespace CIS560_Project
             uxPlayerStats.Show();
             uxBack.Show();
         }
-
+        //
         private void uxSelectGame_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (uxSelectGame.SelectedItem != null)

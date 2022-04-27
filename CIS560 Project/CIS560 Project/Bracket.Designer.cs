@@ -36,21 +36,23 @@ namespace CIS560_Project
             // 
             // uxTourney
             // 
-            this.uxTourney.Location = new System.Drawing.Point(162, 186);
-            this.uxTourney.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uxTourney.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxTourney.Location = new System.Drawing.Point(108, 121);
+            this.uxTourney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.uxTourney.Name = "uxTourney";
-            this.uxTourney.Size = new System.Drawing.Size(170, 106);
+            this.uxTourney.Size = new System.Drawing.Size(113, 69);
             this.uxTourney.TabIndex = 134;
-            this.uxTourney.Text = "View Tournament Stats";
+            this.uxTourney.Text = "View Tournament Statistics";
             this.uxTourney.UseVisualStyleBackColor = true;
             this.uxTourney.Click += new System.EventHandler(this.uxTourney_Click);
             // 
             // uxGames
             // 
-            this.uxGames.Location = new System.Drawing.Point(299, 24);
-            this.uxGames.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uxGames.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxGames.Location = new System.Drawing.Point(199, 16);
+            this.uxGames.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.uxGames.Name = "uxGames";
-            this.uxGames.Size = new System.Drawing.Size(170, 106);
+            this.uxGames.Size = new System.Drawing.Size(113, 69);
             this.uxGames.TabIndex = 133;
             this.uxGames.Text = "Edit Games";
             this.uxGames.UseVisualStyleBackColor = true;
@@ -58,28 +60,29 @@ namespace CIS560_Project
             // 
             // uxStats
             // 
-            this.uxStats.Location = new System.Drawing.Point(30, 24);
-            this.uxStats.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uxStats.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxStats.Location = new System.Drawing.Point(20, 16);
+            this.uxStats.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.uxStats.Name = "uxStats";
-            this.uxStats.Size = new System.Drawing.Size(170, 106);
+            this.uxStats.Size = new System.Drawing.Size(113, 69);
             this.uxStats.TabIndex = 132;
-            this.uxStats.Text = "Player/Team Info";
+            this.uxStats.Text = "Player/Team Information";
             this.uxStats.UseVisualStyleBackColor = true;
             this.uxStats.Click += new System.EventHandler(this.uxStats_Click);
             // 
             // Bracket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(517, 346);
+            this.ClientSize = new System.Drawing.Size(345, 225);
             this.Controls.Add(this.uxTourney);
             this.Controls.Add(this.uxGames);
             this.Controls.Add(this.uxStats);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "Bracket";
-            this.Text = "March Madness";
+            this.Text = "March Madness Stats Tracker";
             this.ResumeLayout(false);
 
         }
