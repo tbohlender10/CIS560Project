@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataDelegates\CreatePlayerDataDelegate.cs" />
+    <Compile Include="DataDelegates\DeleteGameStatistics.cs" />
     <Compile Include="DataDelegates\FetchPlayerDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerGameStatisticsForPlayerGame.cs" />
     <Compile Include="DataDelegates\InsertPlayerGameStatistics.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="DataDelegates\UpdatePlayerName.cs" />
     <Compile Include="DataDelegates\UpdatePlayerNumber.cs" />
     <Compile Include="DataDelegates\UpdatePlayerPosition.cs" />
+    <Compile Include="DataDelegates\DeletePlayerGameStatistics.cs" />
     <Compile Include="DataDelegates\UpdateSchoolCoach.cs" />
     <Compile Include="IGameSchoolRepository.cs" />
     <Compile Include="IPlayerSeasonStatisticsRepository.cs" />
@@ -214,6 +216,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.UpdateSchoolCoach.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.DeletePlayerGameStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.DeleteGameStatistics.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

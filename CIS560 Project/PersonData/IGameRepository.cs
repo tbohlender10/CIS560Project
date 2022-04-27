@@ -9,5 +9,7 @@ namespace PersonData
         BindingList<Game> RetrieveAllGames();
 
         BindingList<School> RetrieveSchoolsForGame(int gameID);
+
+        bool DeleteGameStats(int gameID);
    }
 }

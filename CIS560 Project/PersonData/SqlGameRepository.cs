@@ -27,5 +27,12 @@ namespace PersonData
             var d = new RetrieveAllGamesDataReaderDelegate();
             return executor.ExecuteReader(d);
         }
+
+        public bool DeleteGameStats(int gameID)
+        {
+            var d = new DeleteGameStatistics(gameID);
+            executor.ExecuteNonQuery(d);
+            return true;
+        }
     }
 }

@@ -59,6 +59,9 @@ namespace CIS560_Project
             uxSelectTeam.Show();
             uxSelectPlayer.Show();
             uxEditPlayer.Show();
+            uxDeletePlayerStats.Show();
+            uxDeleteGameStats.Show();
+            uxChangeGameTeams.Show();
 
             uxViewPlayer.Show();
             uxViewGame.Show();
@@ -112,6 +115,8 @@ namespace CIS560_Project
                 uxSelectTeam.Enabled = true;
                 uxViewGame.Enabled = true;
                 uxUpdateGame.Enabled = true;
+                uxDeleteGameStats.Enabled = true;
+                uxChangeGameTeams.Enabled = true;
 
                 ((BindingList<School>)uxSelectTeam.DataSource).Clear();
 
@@ -143,6 +148,7 @@ namespace CIS560_Project
             {
                 uxEditPlayer.Enabled = true;
                 uxViewPlayer.Enabled = true;
+                uxDeletePlayerStats.Enabled = true;
             }
         }
 
@@ -281,10 +287,29 @@ namespace CIS560_Project
 
         private void uxDeleteGameStats_Click(object sender, EventArgs e)
         {
-
+            if (uxSelectGame.SelectedItem != null)
+            {
+                model.GameRepo.DeleteGameStats(((Game)uxSelectGame.SelectedItem).GameID);
+            }
+            else
+            {
+                MessageBox.Show("Please select a game!");
+            }
         }
 
         private void uxDeletePlayerStats_Click(object sender, EventArgs e)
+        {
+            if(uxSelectGame.SelectedItem != null && uxSelectPlayer.SelectedItem != null && uxSelectTeam.SelectedItem != null)
+            {
+                model.PlayerGameStatisticsRepo.DeletePlayerGameStatistics(((Game)uxSelectGame.SelectedItem).GameID, ((Player)uxSelectPlayer.SelectedItem).PlayerID, ((School)uxSelectTeam.SelectedItem).SchoolID);
+            }
+            else
+            {
+                MessageBox.Show("Please select a game, team, and player!");
+            }
+        }
+
+        private void uxChangeGameTeams_Click(object sender, EventArgs e)
         {
 
         }

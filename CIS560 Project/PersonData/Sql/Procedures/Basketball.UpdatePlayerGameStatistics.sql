@@ -22,7 +22,7 @@ WITH SourceCte(GameID, PlayerID, SchoolID, Points, ThreePoints, FGM, FGA, Reboun
 )
 
 MERGE Basketball.PlayerGameStatistics T
-USING SourceCte S ON S.GameID = T.GameID AND S.PlayerID = T.PlayerID AND S.SchoolID = T.SchoolID AND T.IsDeleted = 0
+USING SourceCte S ON S.GameID = T.GameID AND S.PlayerID = T.PlayerID AND S.SchoolID = T.SchoolID
 WHEN MATCHED THEN
 	UPDATE 
 	SET Points = S.Points,
@@ -30,7 +30,8 @@ WHEN MATCHED THEN
 		FGM = S.FGM,
 		FGA = S.FGA,
 		Rebounds = S.Rebounds,
-		[Minutes] = S.[Minutes]
+		[Minutes] = S.[Minutes],
+		IsDeleted = 0
 WHEN NOT MATCHED THEN
 	INSERT(GameID, PlayerID, SchoolID, Points, [3PT], FGM, FGA, Rebounds, [Minutes])
 	VALUES(S.GameID, S.PlayerID, S.SchoolID, S.Points, S.ThreePoints, S.FGM, S.FGA, S.Rebounds, S.[Minutes]);

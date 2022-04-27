@@ -57,6 +57,7 @@
             this.uxThreePointsLabel = new System.Windows.Forms.Label();
             this.uxDeletePlayerStats = new System.Windows.Forms.Button();
             this.uxDeleteGameStats = new System.Windows.Forms.Button();
+            this.uxChangeGameTeams = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.uxPoints)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxFGM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxFGA)).BeginInit();
@@ -379,11 +380,24 @@
             this.uxDeleteGameStats.UseVisualStyleBackColor = true;
             this.uxDeleteGameStats.Click += new System.EventHandler(this.uxDeleteGameStats_Click);
             // 
+            // uxChangeGameTeams
+            // 
+            this.uxChangeGameTeams.Enabled = false;
+            this.uxChangeGameTeams.Location = new System.Drawing.Point(406, 215);
+            this.uxChangeGameTeams.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.uxChangeGameTeams.Name = "uxChangeGameTeams";
+            this.uxChangeGameTeams.Size = new System.Drawing.Size(114, 68);
+            this.uxChangeGameTeams.TabIndex = 83;
+            this.uxChangeGameTeams.Text = "Change Game Schools";
+            this.uxChangeGameTeams.UseVisualStyleBackColor = true;
+            this.uxChangeGameTeams.Click += new System.EventHandler(this.uxChangeGameTeams_Click);
+            // 
             // Games
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(900, 562);
+            this.Controls.Add(this.uxChangeGameTeams);
             this.Controls.Add(this.uxDeleteGameStats);
             this.Controls.Add(this.uxDeletePlayerStats);
             this.Controls.Add(this.uxThreePoints);
@@ -459,5 +473,6 @@
         private System.Windows.Forms.Label uxThreePointsLabel;
         private System.Windows.Forms.Button uxDeletePlayerStats;
         private System.Windows.Forms.Button uxDeleteGameStats;
+        private System.Windows.Forms.Button uxChangeGameTeams;
     }
 }

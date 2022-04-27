@@ -33,6 +33,14 @@ namespace PersonData
             var d = new UpdatePlayerGameStatistics(gameID, playerID, schoolID, points, threePoints, fgm, fga, rebounds, minutes);
             executor.ExecuteNonQuery(d);
             return true;
+        
+        }
+
+        public bool DeletePlayerGameStatistics(int gameID, int playerID, int schoolID)
+        {
+            var d = new DeletePlayerGameStatistics(gameID, playerID, schoolID);
+            executor.ExecuteNonQuery(d);
+            return true;
         }
     }
 }

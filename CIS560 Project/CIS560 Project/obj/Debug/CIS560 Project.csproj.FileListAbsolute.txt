@@ -106,3 +106,4 @@ C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debu
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
+C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.ChangeGameTeams.resources

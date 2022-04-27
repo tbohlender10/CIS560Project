@@ -5,6 +5,7 @@
 AS
 
 UPDATE Basketball.GameSchool 
-SET Score = @Score
-WHERE GameID = @GameID AND SchoolID = @SchoolID AND IsDeleted = 0;
+SET Score = @Score,
+	IsDeleted = 0
+WHERE GameID = @GameID AND SchoolID = @SchoolID
 GO
