@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.InsertPlayerGameStatistics
+﻿-- This procedure inserts a player's game statistics into the PlayerGameStatistics table.
+CREATE OR ALTER PROCEDURE Basketball.InsertPlayerGameStatistics
 	@DateTimeInfo DATETIMEOFFSET,
 	@School NVARCHAR(64),
 	@PlayerName NVARCHAR(128),

@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerPosition
+﻿-- This procedure updates the position of a player in the Player table.
+CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerPosition
 	@PlayerName NVARCHAR(128),
 	@School NVARCHAR(64),
 	@Position NVARCHAR(64)

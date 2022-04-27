@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerGrade
+﻿-- This procedure updates the grade of a player in the Player table.
+CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerGrade
 	@PlayerName NVARCHAR(128),
 	@School NVARCHAR(64),
 	@Grade NVARCHAR(64)

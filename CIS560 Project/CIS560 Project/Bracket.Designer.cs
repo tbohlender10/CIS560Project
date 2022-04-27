@@ -32,12 +32,13 @@ namespace CIS560_Project
             this.uxTourney = new System.Windows.Forms.Button();
             this.uxGames = new System.Windows.Forms.Button();
             this.uxStats = new System.Windows.Forms.Button();
+            this.uxMarchCalendar = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // uxTourney
             // 
             this.uxTourney.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxTourney.Location = new System.Drawing.Point(108, 121);
+            this.uxTourney.Location = new System.Drawing.Point(20, 226);
             this.uxTourney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.uxTourney.Name = "uxTourney";
             this.uxTourney.Size = new System.Drawing.Size(113, 69);
@@ -49,7 +50,7 @@ namespace CIS560_Project
             // uxGames
             // 
             this.uxGames.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxGames.Location = new System.Drawing.Point(199, 16);
+            this.uxGames.Location = new System.Drawing.Point(20, 115);
             this.uxGames.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.uxGames.Name = "uxGames";
             this.uxGames.Size = new System.Drawing.Size(113, 69);
@@ -70,13 +71,23 @@ namespace CIS560_Project
             this.uxStats.UseVisualStyleBackColor = true;
             this.uxStats.Click += new System.EventHandler(this.uxStats_Click);
             // 
+            // uxMarchCalendar
+            // 
+            this.uxMarchCalendar.Location = new System.Drawing.Point(186, 90);
+            this.uxMarchCalendar.MaxDate = new System.DateTime(2022, 3, 31, 0, 0, 0, 0);
+            this.uxMarchCalendar.MaxSelectionCount = 1;
+            this.uxMarchCalendar.MinDate = new System.DateTime(2022, 3, 1, 0, 0, 0, 0);
+            this.uxMarchCalendar.Name = "uxMarchCalendar";
+            this.uxMarchCalendar.TabIndex = 135;
+            // 
             // Bracket
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(345, 225);
+            this.ClientSize = new System.Drawing.Size(440, 326);
+            this.Controls.Add(this.uxMarchCalendar);
             this.Controls.Add(this.uxTourney);
             this.Controls.Add(this.uxGames);
             this.Controls.Add(this.uxStats);
@@ -91,6 +102,7 @@ namespace CIS560_Project
         private System.Windows.Forms.Button uxTourney;
         private System.Windows.Forms.Button uxGames;
         private System.Windows.Forms.Button uxStats;
+        private System.Windows.Forms.MonthCalendar uxMarchCalendar;
     }
 }
 

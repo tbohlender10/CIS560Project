@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerName
+﻿-- This procedure updates the name of a player in the Player table.
+CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerName
 	@PlayerName NVARCHAR(128),
 	@School NVARCHAR(64),
 	@Number INT

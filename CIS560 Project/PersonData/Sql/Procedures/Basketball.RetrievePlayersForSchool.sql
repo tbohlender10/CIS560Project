@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.RetrievePlayersForSchool
+﻿-- This procedure retrieves all players' information for a school from the Player table.
+CREATE OR ALTER PROCEDURE Basketball.RetrievePlayersForSchool
    @SchoolID INT
 AS
 

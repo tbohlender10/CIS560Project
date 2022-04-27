@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.FetchGameInfoForSchool
+﻿-- This procedure fetches information about two schools for a specific game, including their names, their scores, and the winning school.
+CREATE OR ALTER PROCEDURE Basketball.FetchGameInfoForSchool
 	@SchoolName NVARCHAR(64)
 AS
 
