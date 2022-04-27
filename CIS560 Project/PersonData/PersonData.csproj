@@ -148,9 +148,6 @@
     <EmbeddedResource Include="Sql\Procedures\Basketball.FetchPlayerSeasonStatistics.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Basketball.GetTopPlayers.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Sql\Tables\Basketball.Round.sql" />
   </ItemGroup>
   <ItemGroup>

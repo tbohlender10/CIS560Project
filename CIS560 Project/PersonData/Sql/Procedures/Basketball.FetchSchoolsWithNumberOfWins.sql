@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.FetchSchoolsWithNumberOfWins
+﻿-- This procedure fetches the number of wins for a school with the schoolID from the table School.
+CREATE OR ALTER PROCEDURE Basketball.FetchSchoolsWithNumberOfWins
 AS
 
 SELECT S.SchoolID, S.[Name] AS School, COUNT(IIF(GS.Score > GSO.Score, 1, 0)) AS Wins

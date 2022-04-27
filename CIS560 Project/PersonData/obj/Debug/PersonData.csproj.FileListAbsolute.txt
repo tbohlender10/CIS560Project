@@ -52,3 +52,12 @@ C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\Pe
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.dll
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\PersonData\obj\Debug\PersonData.pdb
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\bin\Debug\PersonData.dll
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\bin\Debug\PersonData.pdb
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\bin\Debug\DataAccess.dll
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\bin\Debug\DataAccess.pdb
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\obj\Debug\PersonData.csproj.AssemblyReference.cache
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\obj\Debug\PersonData.csproj.CoreCompileInputs.cache
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\obj\Debug\PersonData.csproj.CopyComplete
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\obj\Debug\PersonData.dll
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\PersonData\obj\Debug\PersonData.pdb

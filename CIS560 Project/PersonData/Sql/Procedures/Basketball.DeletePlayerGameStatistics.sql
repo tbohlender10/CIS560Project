@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.DeletePlayerGameStatistics
+﻿-- This procedure deletes a certain player's statistics with GameID, PlayerID, and SchoolID in the table PlayerGameStatistics.
+CREATE OR ALTER PROCEDURE Basketball.DeletePlayerGameStatistics
 	@GameID int,
 	@PlayerID int,
 	@SchoolID int

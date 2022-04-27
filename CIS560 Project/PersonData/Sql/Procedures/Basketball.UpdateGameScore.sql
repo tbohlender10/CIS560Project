@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.UpdateGameScore
+﻿-- This procedure updates the score of a game in the GameSchool table.
+CREATE OR ALTER PROCEDURE Basketball.UpdateGameScore
 	@GameID int,
 	@SchoolID int,
 	@Score INT

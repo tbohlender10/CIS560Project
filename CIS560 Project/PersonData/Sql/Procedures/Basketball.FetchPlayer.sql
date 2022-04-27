@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.FetchPlayer
+﻿-- This procedure fetches information for a player, inclduing their schoolID, name, number, grade, and position.
+CREATE OR ALTER PROCEDURE Basketball.FetchPlayer
    @PlayerID INT
 AS
 
