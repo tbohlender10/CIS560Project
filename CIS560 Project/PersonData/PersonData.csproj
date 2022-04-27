@@ -199,9 +199,6 @@
     <EmbeddedResource Include="Sql\Procedures\Basketball.UpdatePlayerName.sql" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Sql\Procedures\Basketball.CreateNewPlayer.sql" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.RetrieveAllGames.sql" />
   </ItemGroup>
   <ItemGroup>

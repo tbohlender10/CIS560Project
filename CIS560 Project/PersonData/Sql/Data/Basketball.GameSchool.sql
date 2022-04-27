@@ -31,7 +31,7 @@ FROM
 	 (N'Arkansas', '2022-03-17 18:00:00', N'Guest', 75 ),
 	 (N'Akron', '2022-03-17 18:30:00', N'Home', 53 ),
 	 (N'UCLA', '2022-03-17 18:30:00', N'Guest', 57 ),
-	 (N'San Francisco State', '2022-03-17 19:00:00', N'Guest', 87 ),
+	 (N'San Francisco', '2022-03-17 19:00:00', N'Guest', 87 ),
 	 (N'Murray State', '2022-03-17 19:00:00', N'Home', 92 ),
 	 (N'Texas Southern', '2022-03-17 19:30:00', N'Guest', 56 ),
 	 (N'Kansas', '2022-03-17 19:30:00', N'Home', 83 ),
