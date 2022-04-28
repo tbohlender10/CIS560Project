@@ -297,7 +297,7 @@
             // 
             this.uxPlayerStats.AutoSize = true;
             this.uxPlayerStats.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPlayerStats.Location = new System.Drawing.Point(159, 144);
+            this.uxPlayerStats.Location = new System.Drawing.Point(160, 71);
             this.uxPlayerStats.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxPlayerStats.Name = "uxPlayerStats";
             this.uxPlayerStats.Size = new System.Drawing.Size(160, 21);

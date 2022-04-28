@@ -284,7 +284,7 @@ namespace CIS560_Project
             {
                 if (model.GameRepo.DeleteGameStats(((Game)uxSelectGame.SelectedItem).GameID))
                 {
-                    MessageBox.Show("Game statistics deleted!");
+                    MessageBox.Show("Game statistics deleted successfully!");
                 }
             }
             else
@@ -298,6 +298,8 @@ namespace CIS560_Project
             if(uxSelectGame.SelectedItem != null && uxSelectPlayer.SelectedItem != null && uxSelectTeam.SelectedItem != null)
             {
                 model.PlayerGameStatisticsRepo.DeletePlayerGameStatistics(((Game)uxSelectGame.SelectedItem).GameID, ((Player)uxSelectPlayer.SelectedItem).PlayerID, ((School)uxSelectTeam.SelectedItem).SchoolID);
+                model.AllPPG = model.PPGRepo.RetrieveAllPPG();
+                MessageBox.Show("Player statistics deleted successfully!");            
             }
             else
             {
