@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.FetchPlayerSeasonStatistics
+﻿-- This procedure fetches a player's seasonal stats, including their PPG, 3-pointer percentage, FGM, FGA, rebounds, and minutes.
+CREATE OR ALTER PROCEDURE Basketball.FetchPlayerSeasonStatistics
    @PlayerID INT
 AS
 

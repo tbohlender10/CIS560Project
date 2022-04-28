@@ -24,8 +24,6 @@ namespace CIS560_Project
             Model = model;
 
             Controller = controller;
-
-            int i = 0;
         }
 
         private void uxStats_Click(object sender, EventArgs e)

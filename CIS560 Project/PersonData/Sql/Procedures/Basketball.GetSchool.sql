@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.GetSchool
+﻿-- This procedure gets information about a school with SchoolID from the table School.
+CREATE OR ALTER PROCEDURE Basketball.GetSchool
    @SchoolID int
 AS
 

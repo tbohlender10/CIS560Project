@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerGameStatistics
+﻿-- This procedure updates the player's statistics for a specific game in the PlayerGameStatistics table.
+CREATE OR ALTER PROCEDURE Basketball.UpdatePlayerGameStatistics
 	@GameID int,
 	@PlayerID int,
 	@SchoolID int,

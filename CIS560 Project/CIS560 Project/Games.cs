@@ -61,7 +61,7 @@ namespace CIS560_Project
             uxEditPlayer.Show();
             uxDeletePlayerStats.Show();
             uxDeleteGameStats.Show();
-            uxChangeGameTeams.Show();
+            uxInsertGameStats.Show();
 
             uxViewPlayer.Show();
             uxViewGame.Show();
@@ -116,7 +116,7 @@ namespace CIS560_Project
                 uxViewGame.Enabled = true;
                 uxUpdateGame.Enabled = true;
                 uxDeleteGameStats.Enabled = true;
-                uxChangeGameTeams.Enabled = true;
+                uxInsertGameStats.Enabled = true;
 
                 ((BindingList<School>)uxSelectTeam.DataSource).Clear();
 
@@ -197,7 +197,8 @@ namespace CIS560_Project
             School s = ((School)uxSelectTeam.SelectedItem);
             if (g != null && p != null && s != null && Points != -1 && ThreePoints != -1 && FGM != -1 && FGA != -1 && Rebounds != -1 && Minutes != -1)
             {
-                model.PlayerGameStatisticsRepo.UpdatePlayerGameStatistics(g.GameID, p.PlayerID, s.SchoolID, Points, ThreePoints, FGM, FGA, Rebounds, Minutes); ;
+                model.PlayerGameStatisticsRepo.UpdatePlayerGameStatistics(g.GameID, p.PlayerID, s.SchoolID, Points, ThreePoints, FGM, FGA, Rebounds, Minutes);
+                MessageBox.Show("Player info updated!");
             }
             else
             {
@@ -250,9 +251,16 @@ namespace CIS560_Project
 
         private void uxUpdateGame_Click(object sender, EventArgs e)
         {
-            UpdateGameStats form = new UpdateGameStats(model, ((Game)uxSelectGame.SelectedItem), this);
-            this.Enabled = false;
-            form.Show();
+            if (uxSelectGame.SelectedItem != null)
+            {
+                UpdateGameStats form = new UpdateGameStats(model, ((Game)uxSelectGame.SelectedItem), this);
+                this.Enabled = false;
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select a game to update!");
+            }
         }
 
         private void uxPoints_ValueChanged(object sender, EventArgs e)
@@ -289,7 +297,10 @@ namespace CIS560_Project
         {
             if (uxSelectGame.SelectedItem != null)
             {
-                model.GameRepo.DeleteGameStats(((Game)uxSelectGame.SelectedItem).GameID);
+                if (model.GameRepo.DeleteGameStats(((Game)uxSelectGame.SelectedItem).GameID))
+                {
+                    MessageBox.Show("Game statistics delted!");
+                }
             }
             else
             {
@@ -309,9 +320,18 @@ namespace CIS560_Project
             }
         }
 
-        private void uxChangeGameTeams_Click(object sender, EventArgs e)
+        private void uxInsertGameStats_Click(object sender, EventArgs e)
         {
-
+            if (uxSelectGame.SelectedItem != null)
+            {
+                InsertGameSchoolStatistics form = new InsertGameSchoolStatistics(model, this, ((Game)uxSelectGame.SelectedItem));
+                this.Enabled = false;
+                form.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select a game to insert data for!");
+            }
         }
     }
 }

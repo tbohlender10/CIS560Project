@@ -24,8 +24,6 @@ namespace PersonData
         /// </exception>
         Player FetchPlayer(int personID);
 
-        bool CreateNewPlayer(string school, string playerName, int number, string grade, string position);
-
         bool UpdatePlayerNumber(string playerName, string school, int number);
 
         bool UpdatePlayerGrade(string playerName, string school, string grade);

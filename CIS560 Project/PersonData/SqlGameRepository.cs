@@ -34,5 +34,12 @@ namespace PersonData
             executor.ExecuteNonQuery(d);
             return true;
         }
+
+        public bool InsertGameSchoolStatistics(int gameID, int schoolID, int teamTypeID, int score)
+        {
+            var d = new InsertGameSchoolStatistics(gameID, schoolID, teamTypeID, score);
+            executor.ExecuteNonQuery(d);
+            return true;
+        }
     }
 }

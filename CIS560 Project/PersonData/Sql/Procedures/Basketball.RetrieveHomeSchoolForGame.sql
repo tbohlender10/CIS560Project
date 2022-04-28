@@ -1,4 +1,5 @@
-﻿CREATE OR ALTER PROCEDURE Basketball.RetrieveHomeSchoolForGame
+﻿-- This procedure retrieves information about the home school for a game.
+CREATE OR ALTER PROCEDURE Basketball.RetrieveHomeSchoolForGame
 	@GameID int
 AS
 

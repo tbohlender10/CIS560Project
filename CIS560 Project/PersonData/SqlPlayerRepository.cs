@@ -15,13 +15,6 @@ namespace PersonData
          executor = new SqlCommandExecutor(connectionString);
       }
 
-        public bool CreateNewPlayer(string school, string playerName, int number, string grade, string position)
-        {
-            var d = new CreatePlayerDataDelegate(school, playerName, number, grade, position);
-            executor.ExecuteNonQuery(d);
-            return true;
-        }
-
         public Player FetchPlayer(int playerID)
       {
          var d = new FetchPlayerDataReaderDelegate(playerID);
