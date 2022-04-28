@@ -155,7 +155,6 @@ FROM
 	 (N'David Kristensen', 3, 24, 169, 553, 355, 15),
 	 (N'Michael Jones', 6, 33, 290, 487, 101, 13),
 	 (N'Drew Dibble', 12, 32, 185, 330, 209, 9),
-	 (N'Chris Ford', 23, 38, 249, 297, 62, 25),
 	 (N'Nelson Boachie-Yiadom', 7, 1, 15, 392, 167, 13),
 	 (N'Styrmir Thrastarson', 13, 15, 10, 542, 399, 19),
 	 (N'Luka Brajkovic', 15, 37, 44, 83, 242, 20),
@@ -762,7 +761,6 @@ FROM
 	 (N'Jalen Coleman-Lands', 19, 39, 290, 508, 282, 25),
 	 (N'K.D. Johnson', 28, 40, 135, 299, 236, 17),
 	 (N'Wendell Green Jr.', 17, 1, 268, 290, 92, 34),
-	 (N'Jaylin Williams', 5, 8, 263, 509, 97, 34),
 	 (N'Chris Moore', 7, 32, 175, 46, 36, 8),
 	 (N'Jabari Smith', 9, 25, 265, 53, 341, 31),
 	 (N'Zep Jasper', 11, 44, 46, 388, 280, 4),
@@ -999,4 +997,5 @@ INNER JOIN Basketball.Player P ON P.[Name] = PlayerStatistics.[Name]
 INNER JOIN Basketball.School S ON S.SchoolID = P.SchoolID
 INNER JOIN Basketball.GameSchool GS ON GS.SchoolID = S.SchoolID
 INNER JOIN Basketball.Game G ON G.GameID = GS.GameID
-WHERE G.RoundID = 1;
+WHERE G.RoundID = 1
+GO

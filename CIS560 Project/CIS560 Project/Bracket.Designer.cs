@@ -32,16 +32,15 @@ namespace CIS560_Project
             this.uxTourney = new System.Windows.Forms.Button();
             this.uxGames = new System.Windows.Forms.Button();
             this.uxStats = new System.Windows.Forms.Button();
-            this.uxMarchCalendar = new System.Windows.Forms.MonthCalendar();
             this.SuspendLayout();
             // 
             // uxTourney
             // 
             this.uxTourney.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxTourney.Location = new System.Drawing.Point(20, 226);
-            this.uxTourney.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.uxTourney.Location = new System.Drawing.Point(236, 25);
+            this.uxTourney.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.uxTourney.Name = "uxTourney";
-            this.uxTourney.Size = new System.Drawing.Size(113, 69);
+            this.uxTourney.Size = new System.Drawing.Size(170, 106);
             this.uxTourney.TabIndex = 134;
             this.uxTourney.Text = "View Tournament Statistics";
             this.uxTourney.UseVisualStyleBackColor = true;
@@ -50,10 +49,10 @@ namespace CIS560_Project
             // uxGames
             // 
             this.uxGames.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxGames.Location = new System.Drawing.Point(20, 115);
-            this.uxGames.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.uxGames.Location = new System.Drawing.Point(436, 25);
+            this.uxGames.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.uxGames.Name = "uxGames";
-            this.uxGames.Size = new System.Drawing.Size(113, 69);
+            this.uxGames.Size = new System.Drawing.Size(170, 106);
             this.uxGames.TabIndex = 133;
             this.uxGames.Text = "Edit Games";
             this.uxGames.UseVisualStyleBackColor = true;
@@ -62,36 +61,26 @@ namespace CIS560_Project
             // uxStats
             // 
             this.uxStats.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxStats.Location = new System.Drawing.Point(20, 16);
-            this.uxStats.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.uxStats.Location = new System.Drawing.Point(30, 25);
+            this.uxStats.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.uxStats.Name = "uxStats";
-            this.uxStats.Size = new System.Drawing.Size(113, 69);
+            this.uxStats.Size = new System.Drawing.Size(170, 106);
             this.uxStats.TabIndex = 132;
             this.uxStats.Text = "Player/Team Information";
             this.uxStats.UseVisualStyleBackColor = true;
             this.uxStats.Click += new System.EventHandler(this.uxStats_Click);
             // 
-            // uxMarchCalendar
-            // 
-            this.uxMarchCalendar.Location = new System.Drawing.Point(186, 90);
-            this.uxMarchCalendar.MaxDate = new System.DateTime(2022, 3, 31, 0, 0, 0, 0);
-            this.uxMarchCalendar.MaxSelectionCount = 1;
-            this.uxMarchCalendar.MinDate = new System.DateTime(2022, 3, 1, 0, 0, 0, 0);
-            this.uxMarchCalendar.Name = "uxMarchCalendar";
-            this.uxMarchCalendar.TabIndex = 135;
-            // 
             // Bracket
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.ClientSize = new System.Drawing.Size(440, 326);
-            this.Controls.Add(this.uxMarchCalendar);
+            this.ClientSize = new System.Drawing.Size(660, 175);
             this.Controls.Add(this.uxTourney);
             this.Controls.Add(this.uxGames);
             this.Controls.Add(this.uxStats);
-            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Bracket";
             this.Text = "March Madness Stats Tracker";
             this.ResumeLayout(false);
@@ -102,7 +91,6 @@ namespace CIS560_Project
         private System.Windows.Forms.Button uxTourney;
         private System.Windows.Forms.Button uxGames;
         private System.Windows.Forms.Button uxStats;
-        private System.Windows.Forms.MonthCalendar uxMarchCalendar;
     }
 }
 
