@@ -193,8 +193,7 @@ namespace CIS560_Project
             showViewStats();
 
             PersonData.Models.Region region = (PersonData.Models.Region)currSchool.RegionId;
-            uxInfo.Text = "School: " + uxSelectTeam.Text + "\n\nGames Won: " + currSchoolWins + "\n\nSeed: " + currSchool.Seed + "\n\nCoach: " + currSchool.Coach + "\n\nRegion: " + region.ToString();
-
+            uxInfo.Text = "-School: " + uxSelectTeam.Text + "\n\n-Games Won: " + currSchoolWins + "\n\n-Seed: " + currSchool.Seed + "\n\n-Coach: " + currSchool.Coach + "\n\n-Region: " + region.ToString();
         }
 
 
@@ -222,7 +221,7 @@ namespace CIS560_Project
         private void uxViewPlayer_Click(object sender, EventArgs e)
         {
             showViewStats();
-            uxInfo.Text = "Player: " + currPlayer.Name + "\n\nPlays for: " + currSchool.Name + "\n\nGrade: " + currPlayer.Grade + "\n\nNumber: " + currPlayer.Number + "\n\nPosition: " + currPlayer.Position;
+            uxInfo.Text = "-Player: " + currPlayer.Name + "\n\n-Plays for: " + currSchool.Name + "\n\n-Grade: " + currPlayer.Grade + "\n\n-Number: " + currPlayer.Number + "\n\n-Position: " + currPlayer.Position;
         }
 
         private void uxUpdatePlayer_Click(object sender, EventArgs e)

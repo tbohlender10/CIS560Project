@@ -48,7 +48,7 @@ namespace PersonData.Models
                 round = "ERROR";
             }
 
-            return DateTimeInfo.ToString() + " " + round;
+            return DateTimeInfo.ToString("MM/dd/yy hh:mm") + " pm" + " -- " + round;
         }
     }
 }

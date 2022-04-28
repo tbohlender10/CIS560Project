@@ -56,10 +56,10 @@
             // uxSaveNumber
             // 
             this.uxSaveNumber.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxSaveNumber.Location = new System.Drawing.Point(503, 210);
-            this.uxSaveNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxSaveNumber.Location = new System.Drawing.Point(377, 171);
+            this.uxSaveNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxSaveNumber.Name = "uxSaveNumber";
-            this.uxSaveNumber.Size = new System.Drawing.Size(116, 25);
+            this.uxSaveNumber.Size = new System.Drawing.Size(87, 20);
             this.uxSaveNumber.TabIndex = 78;
             this.uxSaveNumber.Text = "Save Number";
             this.uxSaveNumber.UseVisualStyleBackColor = true;
@@ -70,34 +70,35 @@
             // 
             this.uxNumberLabel.AutoSize = true;
             this.uxNumberLabel.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxNumberLabel.Location = new System.Drawing.Point(364, 191);
+            this.uxNumberLabel.Location = new System.Drawing.Point(273, 155);
+            this.uxNumberLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxNumberLabel.Name = "uxNumberLabel";
-            this.uxNumberLabel.Size = new System.Drawing.Size(64, 17);
+            this.uxNumberLabel.Size = new System.Drawing.Size(53, 13);
             this.uxNumberLabel.TabIndex = 77;
             this.uxNumberLabel.Text = "Number:";
             this.uxNumberLabel.Visible = false;
             // 
             // uxNumber
             // 
-            this.uxNumber.Location = new System.Drawing.Point(339, 210);
-            this.uxNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxNumber.Location = new System.Drawing.Point(254, 171);
+            this.uxNumber.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxNumber.Maximum = new decimal(new int[] {
             99,
             0,
             0,
             0});
             this.uxNumber.Name = "uxNumber";
-            this.uxNumber.Size = new System.Drawing.Size(120, 22);
+            this.uxNumber.Size = new System.Drawing.Size(90, 20);
             this.uxNumber.TabIndex = 76;
             this.uxNumber.Visible = false;
             // 
             // uxSavePosition
             // 
             this.uxSavePosition.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxSavePosition.Location = new System.Drawing.Point(503, 379);
-            this.uxSavePosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxSavePosition.Location = new System.Drawing.Point(377, 308);
+            this.uxSavePosition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxSavePosition.Name = "uxSavePosition";
-            this.uxSavePosition.Size = new System.Drawing.Size(116, 25);
+            this.uxSavePosition.Size = new System.Drawing.Size(87, 20);
             this.uxSavePosition.TabIndex = 75;
             this.uxSavePosition.Text = "Save Position";
             this.uxSavePosition.UseVisualStyleBackColor = true;
@@ -110,10 +111,10 @@
             this.uxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxPosition.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxPosition.FormattingEnabled = true;
-            this.uxPosition.Location = new System.Drawing.Point(323, 379);
-            this.uxPosition.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxPosition.Location = new System.Drawing.Point(242, 308);
+            this.uxPosition.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxPosition.Name = "uxPosition";
-            this.uxPosition.Size = new System.Drawing.Size(151, 23);
+            this.uxPosition.Size = new System.Drawing.Size(114, 19);
             this.uxPosition.TabIndex = 74;
             this.uxPosition.Visible = false;
             // 
@@ -121,9 +122,10 @@
             // 
             this.uxPositionLabel.AutoSize = true;
             this.uxPositionLabel.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPositionLabel.Location = new System.Drawing.Point(360, 359);
+            this.uxPositionLabel.Location = new System.Drawing.Point(270, 292);
+            this.uxPositionLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxPositionLabel.Name = "uxPositionLabel";
-            this.uxPositionLabel.Size = new System.Drawing.Size(60, 17);
+            this.uxPositionLabel.Size = new System.Drawing.Size(47, 13);
             this.uxPositionLabel.TabIndex = 73;
             this.uxPositionLabel.Text = "Position:";
             this.uxPositionLabel.Visible = false;
@@ -131,10 +133,10 @@
             // uxSaveName
             // 
             this.uxSaveName.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxSaveName.Location = new System.Drawing.Point(503, 96);
-            this.uxSaveName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxSaveName.Location = new System.Drawing.Point(377, 78);
+            this.uxSaveName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxSaveName.Name = "uxSaveName";
-            this.uxSaveName.Size = new System.Drawing.Size(116, 30);
+            this.uxSaveName.Size = new System.Drawing.Size(87, 24);
             this.uxSaveName.TabIndex = 70;
             this.uxSaveName.Text = "Save Name";
             this.uxSaveName.UseVisualStyleBackColor = true;
@@ -144,10 +146,10 @@
             // uxSaveGrade
             // 
             this.uxSaveGrade.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxSaveGrade.Location = new System.Drawing.Point(503, 325);
-            this.uxSaveGrade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxSaveGrade.Location = new System.Drawing.Point(377, 264);
+            this.uxSaveGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxSaveGrade.Name = "uxSaveGrade";
-            this.uxSaveGrade.Size = new System.Drawing.Size(116, 25);
+            this.uxSaveGrade.Size = new System.Drawing.Size(87, 20);
             this.uxSaveGrade.TabIndex = 69;
             this.uxSaveGrade.Text = "Save Grade";
             this.uxSaveGrade.UseVisualStyleBackColor = true;
@@ -157,10 +159,10 @@
             // uxBack
             // 
             this.uxBack.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxBack.Location = new System.Drawing.Point(16, 393);
-            this.uxBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxBack.Location = new System.Drawing.Point(12, 319);
+            this.uxBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxBack.Name = "uxBack";
-            this.uxBack.Size = new System.Drawing.Size(116, 46);
+            this.uxBack.Size = new System.Drawing.Size(87, 37);
             this.uxBack.TabIndex = 68;
             this.uxBack.Text = "Back";
             this.uxBack.UseVisualStyleBackColor = true;
@@ -170,9 +172,10 @@
             // 
             this.uxGradeLabel.AutoSize = true;
             this.uxGradeLabel.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxGradeLabel.Location = new System.Drawing.Point(367, 306);
+            this.uxGradeLabel.Location = new System.Drawing.Point(275, 249);
+            this.uxGradeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxGradeLabel.Name = "uxGradeLabel";
-            this.uxGradeLabel.Size = new System.Drawing.Size(50, 17);
+            this.uxGradeLabel.Size = new System.Drawing.Size(42, 13);
             this.uxGradeLabel.TabIndex = 67;
             this.uxGradeLabel.Text = "Grade:";
             this.uxGradeLabel.Visible = false;
@@ -183,10 +186,10 @@
             this.uxGrade.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxGrade.Font = new System.Drawing.Font("Calisto MT", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxGrade.FormattingEnabled = true;
-            this.uxGrade.Location = new System.Drawing.Point(323, 326);
-            this.uxGrade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxGrade.Location = new System.Drawing.Point(242, 265);
+            this.uxGrade.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxGrade.Name = "uxGrade";
-            this.uxGrade.Size = new System.Drawing.Size(151, 23);
+            this.uxGrade.Size = new System.Drawing.Size(114, 19);
             this.uxGrade.TabIndex = 66;
             this.uxGrade.Visible = false;
             // 
@@ -194,41 +197,43 @@
             // 
             this.uxNameLabel.AutoSize = true;
             this.uxNameLabel.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxNameLabel.Location = new System.Drawing.Point(372, 78);
+            this.uxNameLabel.Location = new System.Drawing.Point(279, 63);
+            this.uxNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxNameLabel.Name = "uxNameLabel";
-            this.uxNameLabel.Size = new System.Drawing.Size(51, 17);
+            this.uxNameLabel.Size = new System.Drawing.Size(41, 13);
             this.uxNameLabel.TabIndex = 61;
             this.uxNameLabel.Text = "Coach:";
             this.uxNameLabel.Visible = false;
             // 
             // uxName
             // 
-            this.uxName.Location = new System.Drawing.Point(311, 98);
-            this.uxName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxName.Location = new System.Drawing.Point(233, 80);
+            this.uxName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxName.Name = "uxName";
-            this.uxName.Size = new System.Drawing.Size(175, 22);
+            this.uxName.Size = new System.Drawing.Size(132, 20);
             this.uxName.TabIndex = 60;
             this.uxName.Visible = false;
             // 
             // uxInfo
             // 
             this.uxInfo.AutoSize = true;
-            this.uxInfo.Font = new System.Drawing.Font("Calisto MT", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxInfo.Location = new System.Drawing.Point(245, 9);
+            this.uxInfo.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxInfo.Location = new System.Drawing.Point(210, 76);
+            this.uxInfo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxInfo.Name = "uxInfo";
-            this.uxInfo.Size = new System.Drawing.Size(260, 44);
+            this.uxInfo.Size = new System.Drawing.Size(134, 21);
             this.uxInfo.TabIndex = 59;
             this.uxInfo.Text = "(Stats text box)";
-            this.uxInfo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.uxInfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uxUpdatePlayer
             // 
             this.uxUpdatePlayer.Enabled = false;
             this.uxUpdatePlayer.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxUpdatePlayer.Location = new System.Drawing.Point(591, 305);
-            this.uxUpdatePlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxUpdatePlayer.Location = new System.Drawing.Point(443, 248);
+            this.uxUpdatePlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxUpdatePlayer.Name = "uxUpdatePlayer";
-            this.uxUpdatePlayer.Size = new System.Drawing.Size(116, 46);
+            this.uxUpdatePlayer.Size = new System.Drawing.Size(87, 37);
             this.uxUpdatePlayer.TabIndex = 58;
             this.uxUpdatePlayer.Text = "Update Player Info";
             this.uxUpdatePlayer.UseVisualStyleBackColor = true;
@@ -238,10 +243,10 @@
             // 
             this.uxUpdateTeam.Enabled = false;
             this.uxUpdateTeam.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxUpdateTeam.Location = new System.Drawing.Point(79, 305);
-            this.uxUpdateTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxUpdateTeam.Location = new System.Drawing.Point(59, 248);
+            this.uxUpdateTeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxUpdateTeam.Name = "uxUpdateTeam";
-            this.uxUpdateTeam.Size = new System.Drawing.Size(116, 46);
+            this.uxUpdateTeam.Size = new System.Drawing.Size(87, 37);
             this.uxUpdateTeam.TabIndex = 57;
             this.uxUpdateTeam.Text = "Update Team Info";
             this.uxUpdateTeam.UseVisualStyleBackColor = true;
@@ -251,10 +256,10 @@
             // 
             this.uxViewTeam.Enabled = false;
             this.uxViewTeam.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxViewTeam.Location = new System.Drawing.Point(79, 210);
-            this.uxViewTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxViewTeam.Location = new System.Drawing.Point(59, 171);
+            this.uxViewTeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxViewTeam.Name = "uxViewTeam";
-            this.uxViewTeam.Size = new System.Drawing.Size(116, 46);
+            this.uxViewTeam.Size = new System.Drawing.Size(87, 37);
             this.uxViewTeam.TabIndex = 56;
             this.uxViewTeam.Text = "View Team Info";
             this.uxViewTeam.UseVisualStyleBackColor = true;
@@ -264,9 +269,10 @@
             // 
             this.uxPlayerLabel.AutoSize = true;
             this.uxPlayerLabel.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPlayerLabel.Location = new System.Drawing.Point(592, 31);
+            this.uxPlayerLabel.Location = new System.Drawing.Point(444, 25);
+            this.uxPlayerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxPlayerLabel.Name = "uxPlayerLabel";
-            this.uxPlayerLabel.Size = new System.Drawing.Size(112, 21);
+            this.uxPlayerLabel.Size = new System.Drawing.Size(86, 17);
             this.uxPlayerLabel.TabIndex = 55;
             this.uxPlayerLabel.Text = "Select Player";
             // 
@@ -274,9 +280,10 @@
             // 
             this.uxTeamLabel.AutoSize = true;
             this.uxTeamLabel.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxTeamLabel.Location = new System.Drawing.Point(97, 31);
+            this.uxTeamLabel.Location = new System.Drawing.Point(73, 25);
+            this.uxTeamLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxTeamLabel.Name = "uxTeamLabel";
-            this.uxTeamLabel.Size = new System.Drawing.Size(107, 21);
+            this.uxTeamLabel.Size = new System.Drawing.Size(83, 17);
             this.uxTeamLabel.TabIndex = 54;
             this.uxTeamLabel.Text = "Select Team";
             // 
@@ -288,10 +295,10 @@
             this.uxSelectPlayer.Enabled = false;
             this.uxSelectPlayer.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxSelectPlayer.FormattingEnabled = true;
-            this.uxSelectPlayer.Location = new System.Drawing.Point(548, 60);
-            this.uxSelectPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxSelectPlayer.Location = new System.Drawing.Point(411, 49);
+            this.uxSelectPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxSelectPlayer.Name = "uxSelectPlayer";
-            this.uxSelectPlayer.Size = new System.Drawing.Size(205, 25);
+            this.uxSelectPlayer.Size = new System.Drawing.Size(155, 21);
             this.uxSelectPlayer.Sorted = true;
             this.uxSelectPlayer.TabIndex = 53;
             this.uxSelectPlayer.SelectedIndexChanged += new System.EventHandler(this.uxSelectPlayer_SelectedIndexChanged);
@@ -303,11 +310,11 @@
             this.uxSelectTeam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxSelectTeam.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxSelectTeam.FormattingEnabled = true;
-            this.uxSelectTeam.Location = new System.Drawing.Point(45, 60);
-            this.uxSelectTeam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxSelectTeam.Location = new System.Drawing.Point(34, 49);
+            this.uxSelectTeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxSelectTeam.MaxDropDownItems = 10;
             this.uxSelectTeam.Name = "uxSelectTeam";
-            this.uxSelectTeam.Size = new System.Drawing.Size(217, 25);
+            this.uxSelectTeam.Size = new System.Drawing.Size(164, 21);
             this.uxSelectTeam.Sorted = true;
             this.uxSelectTeam.TabIndex = 52;
             this.uxSelectTeam.SelectedIndexChanged += new System.EventHandler(this.uxSelectTeam_SelectedIndexChanged);
@@ -316,10 +323,10 @@
             // 
             this.uxViewPlayer.Enabled = false;
             this.uxViewPlayer.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxViewPlayer.Location = new System.Drawing.Point(591, 210);
-            this.uxViewPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.uxViewPlayer.Location = new System.Drawing.Point(443, 171);
+            this.uxViewPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.uxViewPlayer.Name = "uxViewPlayer";
-            this.uxViewPlayer.Size = new System.Drawing.Size(116, 46);
+            this.uxViewPlayer.Size = new System.Drawing.Size(87, 37);
             this.uxViewPlayer.TabIndex = 51;
             this.uxViewPlayer.Text = "View Player Info";
             this.uxViewPlayer.UseVisualStyleBackColor = true;
@@ -327,9 +334,9 @@
             // 
             // Stats
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.uxSaveNumber);
             this.Controls.Add(this.uxNumberLabel);
             this.Controls.Add(this.uxNumber);
@@ -352,7 +359,7 @@
             this.Controls.Add(this.uxSelectPlayer);
             this.Controls.Add(this.uxSelectTeam);
             this.Controls.Add(this.uxViewPlayer);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Stats";
             this.Text = "Team & Player Statistics";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Stats_FormClosing);

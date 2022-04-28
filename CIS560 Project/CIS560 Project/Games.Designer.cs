@@ -69,7 +69,7 @@
             // 
             this.uxCurrGameLabel.AutoSize = true;
             this.uxCurrGameLabel.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxCurrGameLabel.Location = new System.Drawing.Point(110, 9);
+            this.uxCurrGameLabel.Location = new System.Drawing.Point(19, 9);
             this.uxCurrGameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxCurrGameLabel.Name = "uxCurrGameLabel";
             this.uxCurrGameLabel.Size = new System.Drawing.Size(104, 17);
@@ -130,7 +130,7 @@
             // 
             this.uxGameLabel.AutoSize = true;
             this.uxGameLabel.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxGameLabel.Location = new System.Drawing.Point(55, 36);
+            this.uxGameLabel.Location = new System.Drawing.Point(94, 37);
             this.uxGameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxGameLabel.Name = "uxGameLabel";
             this.uxGameLabel.Size = new System.Drawing.Size(89, 17);
@@ -144,11 +144,11 @@
             this.uxSelectGame.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxSelectGame.DropDownWidth = 120;
             this.uxSelectGame.FormattingEnabled = true;
-            this.uxSelectGame.Location = new System.Drawing.Point(22, 61);
+            this.uxSelectGame.Location = new System.Drawing.Point(11, 61);
             this.uxSelectGame.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.uxSelectGame.MaxDropDownItems = 5;
             this.uxSelectGame.Name = "uxSelectGame";
-            this.uxSelectGame.Size = new System.Drawing.Size(151, 21);
+            this.uxSelectGame.Size = new System.Drawing.Size(245, 21);
             this.uxSelectGame.Sorted = true;
             this.uxSelectGame.TabIndex = 53;
             this.uxSelectGame.SelectedIndexChanged += new System.EventHandler(this.uxSelectGame_SelectedIndexChanged);
@@ -213,7 +213,7 @@
             this.uxSelectTeam.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.uxSelectTeam.Enabled = false;
             this.uxSelectTeam.FormattingEnabled = true;
-            this.uxSelectTeam.Location = new System.Drawing.Point(225, 61);
+            this.uxSelectTeam.Location = new System.Drawing.Point(238, 166);
             this.uxSelectTeam.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.uxSelectTeam.MaxDropDownItems = 10;
             this.uxSelectTeam.Name = "uxSelectTeam";
@@ -226,7 +226,7 @@
             // 
             this.uxTeamLabel.AutoSize = true;
             this.uxTeamLabel.Font = new System.Drawing.Font("Berlin Sans FB", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxTeamLabel.Location = new System.Drawing.Point(260, 36);
+            this.uxTeamLabel.Location = new System.Drawing.Point(269, 142);
             this.uxTeamLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxTeamLabel.Name = "uxTeamLabel";
             this.uxTeamLabel.Size = new System.Drawing.Size(87, 17);
@@ -296,18 +296,19 @@
             // uxPlayerStats
             // 
             this.uxPlayerStats.AutoSize = true;
-            this.uxPlayerStats.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uxPlayerStats.Location = new System.Drawing.Point(247, 150);
+            this.uxPlayerStats.Font = new System.Drawing.Font("Berlin Sans FB", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uxPlayerStats.Location = new System.Drawing.Point(159, 144);
             this.uxPlayerStats.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.uxPlayerStats.Name = "uxPlayerStats";
-            this.uxPlayerStats.Size = new System.Drawing.Size(159, 24);
+            this.uxPlayerStats.Size = new System.Drawing.Size(160, 21);
             this.uxPlayerStats.TabIndex = 73;
             this.uxPlayerStats.Text = "(player stats label)";
+            this.uxPlayerStats.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // uxPoints
             // 
             this.uxPoints.Location = new System.Drawing.Point(272, 94);
-            this.uxPoints.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxPoints.Margin = new System.Windows.Forms.Padding(2);
             this.uxPoints.Name = "uxPoints";
             this.uxPoints.Size = new System.Drawing.Size(80, 20);
             this.uxPoints.TabIndex = 74;
@@ -317,7 +318,7 @@
             // uxFGM
             // 
             this.uxFGM.Location = new System.Drawing.Point(272, 167);
-            this.uxFGM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxFGM.Margin = new System.Windows.Forms.Padding(2);
             this.uxFGM.Name = "uxFGM";
             this.uxFGM.Size = new System.Drawing.Size(80, 20);
             this.uxFGM.TabIndex = 75;
@@ -327,7 +328,7 @@
             // uxFGA
             // 
             this.uxFGA.Location = new System.Drawing.Point(272, 205);
-            this.uxFGA.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxFGA.Margin = new System.Windows.Forms.Padding(2);
             this.uxFGA.Name = "uxFGA";
             this.uxFGA.Size = new System.Drawing.Size(80, 20);
             this.uxFGA.TabIndex = 76;
@@ -337,7 +338,7 @@
             // uxRebounds
             // 
             this.uxRebounds.Location = new System.Drawing.Point(272, 243);
-            this.uxRebounds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxRebounds.Margin = new System.Windows.Forms.Padding(2);
             this.uxRebounds.Name = "uxRebounds";
             this.uxRebounds.Size = new System.Drawing.Size(80, 20);
             this.uxRebounds.TabIndex = 77;
@@ -347,7 +348,7 @@
             // uxMinutes
             // 
             this.uxMinutes.Location = new System.Drawing.Point(272, 285);
-            this.uxMinutes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxMinutes.Margin = new System.Windows.Forms.Padding(2);
             this.uxMinutes.Name = "uxMinutes";
             this.uxMinutes.Size = new System.Drawing.Size(80, 20);
             this.uxMinutes.TabIndex = 78;
@@ -357,7 +358,7 @@
             // uxThreePoints
             // 
             this.uxThreePoints.Location = new System.Drawing.Point(272, 129);
-            this.uxThreePoints.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxThreePoints.Margin = new System.Windows.Forms.Padding(2);
             this.uxThreePoints.Name = "uxThreePoints";
             this.uxThreePoints.Size = new System.Drawing.Size(80, 20);
             this.uxThreePoints.TabIndex = 80;

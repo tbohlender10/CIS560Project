@@ -85,7 +85,7 @@ namespace CIS560_Project
             // 
             this.uxBackButton.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxBackButton.Location = new System.Drawing.Point(46, 194);
-            this.uxBackButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxBackButton.Margin = new System.Windows.Forms.Padding(2);
             this.uxBackButton.Name = "uxBackButton";
             this.uxBackButton.Size = new System.Drawing.Size(89, 38);
             this.uxBackButton.TabIndex = 57;
@@ -97,7 +97,7 @@ namespace CIS560_Project
             // 
             this.uxSaveButton.Font = new System.Drawing.Font("Berlin Sans FB", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxSaveButton.Location = new System.Drawing.Point(401, 194);
-            this.uxSaveButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxSaveButton.Margin = new System.Windows.Forms.Padding(2);
             this.uxSaveButton.Name = "uxSaveButton";
             this.uxSaveButton.Size = new System.Drawing.Size(89, 38);
             this.uxSaveButton.TabIndex = 56;
@@ -120,7 +120,7 @@ namespace CIS560_Project
             // 
             this.uxGuestScore.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxGuestScore.Location = new System.Drawing.Point(357, 116);
-            this.uxGuestScore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxGuestScore.Margin = new System.Windows.Forms.Padding(2);
             this.uxGuestScore.Name = "uxGuestScore";
             this.uxGuestScore.Size = new System.Drawing.Size(75, 22);
             this.uxGuestScore.TabIndex = 64;
@@ -141,7 +141,7 @@ namespace CIS560_Project
             // 
             this.uxHomeScore.Font = new System.Drawing.Font("Berlin Sans FB", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxHomeScore.Location = new System.Drawing.Point(98, 116);
-            this.uxHomeScore.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.uxHomeScore.Margin = new System.Windows.Forms.Padding(2);
             this.uxHomeScore.Name = "uxHomeScore";
             this.uxHomeScore.Size = new System.Drawing.Size(75, 22);
             this.uxHomeScore.TabIndex = 62;
@@ -178,9 +178,10 @@ namespace CIS560_Project
             this.Controls.Add(this.uxHomeTeamLabel);
             this.Controls.Add(this.uxBackButton);
             this.Controls.Add(this.uxSaveButton);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "InsertGameSchoolStatistics";
             this.Text = "InsertGameSchoolStatistics";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.InsertGameSchoolStatistics_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.uxGuestScore)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.uxHomeScore)).EndInit();
             this.ResumeLayout(false);

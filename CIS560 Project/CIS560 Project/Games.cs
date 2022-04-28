@@ -171,7 +171,7 @@ namespace CIS560_Project
                 showViewPlayer();
                 uxCurrPlayerLabel.Text = "Selected Player: " + uxSelectPlayer.Text;
                 uxCurrGameLabel.Text = "Selected Game: " + uxSelectGame.Text;
-                uxPlayerStats.Text = "Points: " + pgs.Points.ToString() + "\n" + "3Points: " + pgs.ThreePoints.ToString() + "\n" + "FGM: " + pgs.FGM.ToString() + "\n" + "FGA: " + pgs.FGA.ToString() + "\n" + "Rebounds: " + pgs.Rebounds.ToString() + "\n" + "Minutes: " + pgs.Minutes.ToString();
+                uxPlayerStats.Text = "-Points: " + pgs.Points.ToString() + "\n\n" + "-3Points: " + pgs.ThreePoints.ToString() + "\n\n" + "-FGM: " + pgs.FGM.ToString() + "\n\n" + "-FGA: " + pgs.FGA.ToString() + "\n\n" + "-Rebounds: " + pgs.Rebounds.ToString() + "\n\n" + "-Minutes: " + pgs.Minutes.ToString();
             }
         }
 
@@ -243,7 +243,7 @@ namespace CIS560_Project
                     winner = guest.SchoolName;
                 }
 
-                uxPlayerStats.Text = home.SchoolName + " Points: " + home.Score.ToString() + "\n" + guest.SchoolName + " Points: " + guest.Score.ToString() + "\n" + "Winning Team: " + winner;
+                uxPlayerStats.Text = "-" + home.SchoolName + " Points: " + home.Score.ToString() + "\n\n" + "-" + guest.SchoolName + " Points: " + guest.Score.ToString() + "\n\n" + "-" + "Winning Team: " + winner;
             }
         }
 
@@ -283,7 +283,7 @@ namespace CIS560_Project
             {
                 if (model.GameRepo.DeleteGameStats(((Game)uxSelectGame.SelectedItem).GameID))
                 {
-                    MessageBox.Show("Game statistics delted!");
+                    MessageBox.Show("Game statistics deleted!");
                 }
             }
             else
@@ -308,7 +308,10 @@ namespace CIS560_Project
         {
             if (uxSelectGame.SelectedItem != null)
             {
-                InsertGameSchoolStatistics form = new InsertGameSchoolStatistics(model, this, ((Game)uxSelectGame.SelectedItem));
+                GameSchool home = model.GameSchoolRepo.RetrieveHomeSchoolForGame(((Game)uxSelectGame.SelectedItem).GameID);
+                GameSchool guest = model.GameSchoolRepo.RetrieveGuestSchoolForGame(((Game)uxSelectGame.SelectedItem).GameID);
+
+                InsertGameSchoolStatistics form = new InsertGameSchoolStatistics(model, this, ((Game)uxSelectGame.SelectedItem), home, guest);
                 this.Enabled = false;
                 form.Show();
             }

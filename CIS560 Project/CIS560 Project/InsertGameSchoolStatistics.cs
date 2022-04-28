@@ -32,7 +32,7 @@ namespace CIS560_Project
 
         private BindingList<School> SchoolsGuest;
 
-        public InsertGameSchoolStatistics(Model m, Form parent, Game g)
+        public InsertGameSchoolStatistics(Model m, Form parent, Game g, GameSchool home, GameSchool guest)
         {
             InitializeComponent();
             Parent = parent;
@@ -43,14 +43,41 @@ namespace CIS560_Project
             SchoolsHome = new BindingList<School>();
             SchoolsGuest = new BindingList<School>();
 
+            
+
+            HomeScore = home.Score;
+            GuestScore = guest.Score;
+
+            uxHomeScore.Value = HomeScore;
+            uxGuestScore.Value = GuestScore;
+
             foreach(School s in model.Schools)
             {
                 SchoolsHome.Add(s);
                 SchoolsGuest.Add(s);
             }
 
+            foreach (School s in SchoolsHome)
+            {
+                if (s.SchoolID == home.SchoolID)
+                {
+                    Home = s;
+                }
+            }
+
+            foreach (School s in SchoolsGuest)
+            {
+                if (s.SchoolID == guest.SchoolID)
+                {
+                    Guest = s;
+                }
+            }
+
             uxSelectHomeTeam.DataSource = SchoolsHome;
             uxSelectGuestTeam.DataSource = SchoolsGuest;
+
+            uxSelectHomeTeam.SelectedItem = Home;
+            uxSelectGuestTeam.SelectedItem = Guest;
         }
 
         private void uxSelectHomeTeam_SelectedIndexChanged(object sender, EventArgs e)
@@ -114,6 +141,11 @@ namespace CIS560_Project
         private void uxSelectGuestTeam_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             Guest = ((School)uxSelectGuestTeam.SelectedItem);
+        }
+
+        private void InsertGameSchoolStatistics_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Parent.Enabled = true;
         }
     }
 }
