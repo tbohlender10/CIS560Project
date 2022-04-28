@@ -48,8 +48,17 @@ namespace CIS560_Project
             HomeScore = home.Score;
             GuestScore = guest.Score;
 
-            uxHomeScore.Value = HomeScore;
-            uxGuestScore.Value = GuestScore;
+            if(HomeScore >= 0  && GuestScore >= 0)
+            {
+                uxHomeScore.Value = HomeScore;
+                uxGuestScore.Value = GuestScore;
+            }
+            else
+            {
+                uxHomeScore.Value = 0;
+                uxGuestScore.Value = 0;
+            }
+
 
             foreach(School s in model.Schools)
             {
