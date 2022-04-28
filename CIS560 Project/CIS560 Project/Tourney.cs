@@ -23,7 +23,6 @@ namespace CIS560_Project
             label2.Text = "";
             label4.Text = "";
             label3.Text = "";
-            label5.Text = "";
 
             parent = f;
             close = true;
@@ -55,17 +54,6 @@ namespace CIS560_Project
             label2.Show();
             label4.Show();
             label3.Show();
-            uxBack.Show();
-        }
-
-        private void ShowSmallQueries()
-        {
-            close = false;
-            foreach (Control c in this.Controls)
-            {
-                c.Hide();
-            }
-            label5.Show();
             uxBack.Show();
         }
 
@@ -103,23 +91,14 @@ namespace CIS560_Project
             label4.Text = "";
 
             ShowWins();
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 5; i++)
             {
-                label1.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
+                label1.Text += (i + 1) + ". " + model.AllPPG[i] + "\n\n";
             }
-            for (int i = 3; i < 6; i++)
+            for (int i = 5; i < 10; i++)
             {
-                label2.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
+                label3.Text += (i + 1) + ". " + model.AllPPG[i] + "\n\n";
             }
-            for (int i = 6; i < 9; i++)
-            {
-                label3.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
-            }
-            for (int i = 9; i < 10; i++)
-            {
-                label4.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
-            }
-
         }
 
         private void uxPointDiff_Click(object sender, EventArgs e)
@@ -130,17 +109,21 @@ namespace CIS560_Project
             label4.Text = "";
 
             ShowWins();
-            for (int i = 0; i < 16 && i < model.AllPointDiff.Count; i++)
+            for (int i = 0; i < 8 && i < model.AllPointDiff.Count; i++)
             {
-                label1.Text += (i + 1) + ". " + model.AllPointDiff[i] + "\n";
+                label1.Text += " Margin of " + model.AllPointDiff[i] + "\n\n";
             }
-            for (int i = 16; i < 32 && i < model.AllPointDiff.Count; i++)
+            for (int i = 8; i < 16 && i < model.AllPointDiff.Count; i++)
             {
-                label2.Text += (i + 1) + ". " + model.AllPointDiff[i] + "\n";
+                label2.Text += " Margin of " + model.AllPointDiff[i] + "\n\n";
             }
-            for (int i = 32; i < 48 && i < model.AllPointDiff.Count; i++)
+            for (int i = 16; i < 24 && i < model.AllPointDiff.Count; i++)
             {
-                label3.Text += (i + 1) + ". " + model.AllPointDiff[i] + "\n";
+                label3.Text += " Margin of " + model.AllPointDiff[i] + "\n\n";
+            }
+            for (int i = 24; i < model.AllPointDiff.Count; i++)
+            {
+                label4.Text += " Margin of " + model.AllPointDiff[i] + "\n\n";
             }
         }
 
@@ -152,13 +135,13 @@ namespace CIS560_Project
             label4.Text = "";
 
             ShowWins();
-            for (int i = 0; i < 16 && i < model.AllUpsets.Count; i++)
+            for (int i = 0; i < 8 && i < model.AllUpsets.Count; i++)
             {
-                label1.Text += (i + 1) + ". " + model.AllUpsets[i] + "\n";
+                label1.Text += (i + 1) + ". " + model.AllUpsets[i] + "\n\n";
             }
-            for (int i = 16; i < 32 && i < model.AllUpsets.Count; i++)
+            for (int i = 8; i < 16 && i < model.AllUpsets.Count; i++)
             {
-                label3.Text += (i + 1) + ". " + model.AllUpsets[i] + "\n";
+                label3.Text += (i + 1) + ". " + model.AllUpsets[i] + "\n\n";
             }
         }
 
