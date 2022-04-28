@@ -145,9 +145,10 @@
             this.uxSelectGame.DropDownWidth = 120;
             this.uxSelectGame.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uxSelectGame.FormattingEnabled = true;
+            this.uxSelectGame.IntegralHeight = false;
             this.uxSelectGame.Location = new System.Drawing.Point(11, 61);
             this.uxSelectGame.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.uxSelectGame.MaxDropDownItems = 5;
+            this.uxSelectGame.MaxDropDownItems = 10;
             this.uxSelectGame.Name = "uxSelectGame";
             this.uxSelectGame.Size = new System.Drawing.Size(328, 26);
             this.uxSelectGame.Sorted = true;
