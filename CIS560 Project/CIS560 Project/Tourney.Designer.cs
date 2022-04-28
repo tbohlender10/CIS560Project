@@ -101,7 +101,7 @@
             this.uxPointDiff.Name = "uxPointDiff";
             this.uxPointDiff.Size = new System.Drawing.Size(111, 79);
             this.uxPointDiff.TabIndex = 13;
-            this.uxPointDiff.Text = "Top 5 Team Point Differentials";
+            this.uxPointDiff.Text = "Most Common Margins of Victory";
             this.uxPointDiff.UseVisualStyleBackColor = true;
             this.uxPointDiff.Click += new System.EventHandler(this.uxPointDiff_Click);
             // 
@@ -111,7 +111,7 @@
             this.uxPPG.Name = "uxPPG";
             this.uxPPG.Size = new System.Drawing.Size(99, 55);
             this.uxPPG.TabIndex = 12;
-            this.uxPPG.Text = "Top 10 PPG (By Region)";
+            this.uxPPG.Text = "Top 10 PPG";
             this.uxPPG.UseVisualStyleBackColor = true;
             this.uxPPG.Click += new System.EventHandler(this.uxPPG_Click);
             // 
@@ -121,7 +121,7 @@
             this.uxUpsets.Name = "uxUpsets";
             this.uxUpsets.Size = new System.Drawing.Size(105, 70);
             this.uxUpsets.TabIndex = 11;
-            this.uxUpsets.Text = "Top 5 Upsets (By seeding)";
+            this.uxUpsets.Text = "Biggest Upsets (By seeding)";
             this.uxUpsets.UseVisualStyleBackColor = true;
             this.uxUpsets.Click += new System.EventHandler(this.uxUpsets_Click);
             // 

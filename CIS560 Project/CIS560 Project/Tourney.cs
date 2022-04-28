@@ -97,24 +97,69 @@ namespace CIS560_Project
 
         private void uxPPG_Click(object sender, EventArgs e)
         {
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
+
             ShowWins();
-            label1.Text = "Region 1:";
-            label2.Text = "Region 2:";
-            label3.Text = "Region 3:";
-            label4.Text = "Region 4:";
+            for (int i = 0; i < 3; i++)
+            {
+                label1.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
+            }
+            for (int i = 3; i < 6; i++)
+            {
+                label2.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
+            }
+            for (int i = 6; i < 9; i++)
+            {
+                label3.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
+            }
+            for (int i = 9; i < 10; i++)
+            {
+                label4.Text += (i + 1) + "\n" + model.AllPPG[i] + "\n\n";
+            }
 
         }
 
         private void uxPointDiff_Click(object sender, EventArgs e)
         {
-            ShowSmallQueries();
-            label5.Text = "1.\n2.\n3.\n4.\n5.";
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
+
+            ShowWins();
+            for (int i = 0; i < 16 && i < model.AllPointDiff.Count; i++)
+            {
+                label1.Text += (i + 1) + ". " + model.AllPointDiff[i] + "\n";
+            }
+            for (int i = 16; i < 32 && i < model.AllPointDiff.Count; i++)
+            {
+                label2.Text += (i + 1) + ". " + model.AllPointDiff[i] + "\n";
+            }
+            for (int i = 32; i < 48 && i < model.AllPointDiff.Count; i++)
+            {
+                label3.Text += (i + 1) + ". " + model.AllPointDiff[i] + "\n";
+            }
         }
 
         private void uxUpsets_Click(object sender, EventArgs e)
         {
-            ShowSmallQueries();
-            label5.Text = "1.\n2.\n3.\n4.\n5.";
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
+
+            ShowWins();
+            for (int i = 0; i < 16 && i < model.AllUpsets.Count; i++)
+            {
+                label1.Text += (i + 1) + ". " + model.AllUpsets[i] + "\n";
+            }
+            for (int i = 16; i < 32 && i < model.AllUpsets.Count; i++)
+            {
+                label3.Text += (i + 1) + ". " + model.AllUpsets[i] + "\n";
+            }
         }
 
         private void uxBack_Click(object sender, EventArgs e)

@@ -87,8 +87,6 @@ C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\source\repos\CIS560ProjectPlayerTabWorking\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
-C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.ChangeGameTeams.resources
-C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.UpdateGameStats.resources
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe.config
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.exe
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\bin\Debug\CIS560 Project.pdb
@@ -127,3 +125,4 @@ C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debu
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
+C:\Users\nickg\Source\Repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.InsertGameSchoolStatistics.resources

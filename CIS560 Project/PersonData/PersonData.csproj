@@ -56,6 +56,9 @@
     <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForSchoolDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrievePointDiff.cs" />
+    <Compile Include="DataDelegates\RetrieveUpsets.cs" />
+    <Compile Include="DataDelegates\RetrievePPG.cs" />
     <Compile Include="DataDelegates\RetrieveSchoolWins.cs" />
     <Compile Include="DataDelegates\RetrieveSchoolsForGame.cs" />
     <Compile Include="DataDelegates\UpdatePlayerGameStatistics.cs" />
@@ -67,6 +70,9 @@
     <Compile Include="DataDelegates\UpdateSchoolRegion.cs" />
     <Compile Include="DataDelegates\UpdateSchoolSeed.cs" />
     <Compile Include="DataDelegates\UpdateSchoolCoach.cs" />
+    <Compile Include="IUpsetRepository.cs" />
+    <Compile Include="IPointDiffRepository.cs" />
+    <Compile Include="IPPGRepository.cs" />
     <Compile Include="IGameSchoolRepository.cs" />
     <Compile Include="IPlayerSeasonStatisticsRepository.cs" />
     <Compile Include="IPlayerGameStatisticsRepository.cs" />
@@ -79,6 +85,9 @@
     <Compile Include="Models\PlayerSeasonStatistics.cs" />
     <Compile Include="Models\Round.cs" />
     <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\Upsets.cs" />
+    <Compile Include="Models\PointDiff.cs" />
+    <Compile Include="Models\PPG.cs" />
     <Compile Include="Models\SchoolWins.cs" />
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Game.cs" />
@@ -89,6 +98,9 @@
     <Compile Include="SqlPlayerSeasonStatisticsRepository.cs" />
     <Compile Include="SqlPlayerGameStatisticsRepository.cs" />
     <Compile Include="SqlGameRepository.cs" />
+    <Compile Include="SqlUpsetRepository.cs" />
+    <Compile Include="SqlPPGRepository.cs" />
+    <Compile Include="SqlPointDiffRepository.cs" />
     <Compile Include="SqlSchoolWinsRepository.cs" />
     <Compile Include="SqlSchoolRepository.cs" />
     <Compile Include="SqlPlayerRepository.cs" />
@@ -227,6 +239,15 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Sql\Procedures\Basketball.InsertGameSchoolStatistics.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchPointDiff.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchUpsetsBySeed.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql\Procedures\Basketball.FetchTopPPG.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

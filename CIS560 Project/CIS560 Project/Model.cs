@@ -28,7 +28,19 @@ namespace CIS560_Project
 
         public SqlSchoolWinsRepository WinsRepo;
 
+        public SqlPPGRepository PPGRepo;
+
+        public SqlPointDiffRepository PointDiffRepo;
+
+        public SqlUpsetRepository UpsetRepo;
+
         public List<SchoolWins> SchoolWins;
+
+        public List<PPG> AllPPG;
+
+        public List<PointDiff> AllPointDiff;
+
+        public List<Upsets> AllUpsets;
 
         public Model()
         {
@@ -37,10 +49,16 @@ namespace CIS560_Project
             GameRepo = new SqlGameRepository(connectionString);
             PlayerGameStatisticsRepo = new SqlPlayerGameStatisticsRepository(connectionString);
             GameSchoolRepo = new SqlGameSchoolRepository(connectionString);
-            Schools = SchoolRepo.RetrieveSchools();
-
             WinsRepo = new SqlSchoolWinsRepository(connectionString);
+            PPGRepo = new SqlPPGRepository(connectionString);
+            PointDiffRepo = new SqlPointDiffRepository(connectionString);
+            UpsetRepo = new SqlUpsetRepository(connectionString);
+
+            Schools = SchoolRepo.RetrieveSchools();
             SchoolWins = WinsRepo.RetrieveAllSchoolWins();
+            AllPPG = PPGRepo.RetrieveAllPPG();
+            AllPointDiff = PointDiffRepo.RetrieveAllPointDiff();
+            AllUpsets = UpsetRepo.RetrieveAllUpsets();
         }
     }
 }

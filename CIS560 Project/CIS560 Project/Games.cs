@@ -196,6 +196,7 @@ namespace CIS560_Project
             if (g != null && p != null && s != null && Points != -1 && ThreePoints != -1 && FGM != -1 && FGA != -1 && Rebounds != -1 && Minutes != -1)
             {
                 model.PlayerGameStatisticsRepo.UpdatePlayerGameStatistics(g.GameID, p.PlayerID, s.SchoolID, Points, ThreePoints, FGM, FGA, Rebounds, Minutes);
+                model.AllPPG = model.PPGRepo.RetrieveAllPPG();
                 MessageBox.Show("Player info updated!");
             }
             else

@@ -120,7 +120,8 @@ namespace CIS560_Project
             model.GameRepo.InsertGameSchoolStatistics(Game.GameID, Guest.SchoolID, 2, GuestScore))
             {
                 MessageBox.Show("New game data saved!");
-
+                model.AllPointDiff = model.PointDiffRepo.RetrieveAllPointDiff();
+                model.AllUpsets = model.UpsetRepo.RetrieveAllUpsets();
                 Parent.Enabled = true;
                 this.Close();
             }
