@@ -76,19 +76,34 @@ namespace CIS560_Project
 
         private void uxSaveButton_Click(object sender, EventArgs e)
         {
-            if(model.GameRepo.InsertGameSchoolStatistics(Game.GameID, Home.SchoolID, 1, HomeScore) &&
+            if(uxHomeScore.Value == uxGuestScore.Value)
+            {
+                MessageBox.Show("Cannot insert same scores!");
+            }
+            else if (uxSelectHomeTeam.Text.Equals(uxSelectGuestTeam.Text))
+            {
+
+                MessageBox.Show("Cannot have the same school for Home and Guest teams!");
+            }
+            else if (((School)uxSelectHomeTeam.SelectedItem).Seed > ((School)uxSelectGuestTeam.SelectedItem).Seed)
+            {
+                MessageBox.Show("Team with a higher seed should be the Home team!");
+            }
+            else if(model.GameRepo.InsertGameSchoolStatistics(Game.GameID, Home.SchoolID, 1, HomeScore) &&
             model.GameRepo.InsertGameSchoolStatistics(Game.GameID, Guest.SchoolID, 2, GuestScore))
             {
                 MessageBox.Show("New game data saved!");
-               
+
+                Parent.Enabled = true;
+                this.Close();
             }
             else
             {
                 MessageBox.Show("New game data not saved!");
-            }
 
-            Parent.Enabled = true;
-            this.Close();
+                Parent.Enabled = true;
+                this.Close();
+            }
         }
 
         private void Games_FormClosing(object sender, FormClosingEventArgs e)

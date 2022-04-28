@@ -26,12 +26,5 @@ namespace PersonData
             var d = new RetrieveHomeSchoolForGame(gameID);
             return executor.ExecuteReader(d);
         }
-
-        public bool UpdateGameScore(int gameID, int schoolID, int score)
-        {
-            var d = new UpdateGameScore(gameID, schoolID, score);
-            executor.ExecuteNonQuery(d);
-            return true;
-        }
     }
 }

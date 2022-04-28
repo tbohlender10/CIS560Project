@@ -65,7 +65,6 @@ namespace CIS560_Project
 
             uxViewPlayer.Show();
             uxViewGame.Show();
-            uxUpdateGame.Show();
             uxBack.Show();
         }
 
@@ -114,7 +113,6 @@ namespace CIS560_Project
             {
                 uxSelectTeam.Enabled = true;
                 uxViewGame.Enabled = true;
-                uxUpdateGame.Enabled = true;
                 uxDeleteGameStats.Enabled = true;
                 uxInsertGameStats.Enabled = true;
 
@@ -246,20 +244,6 @@ namespace CIS560_Project
                 }
 
                 uxPlayerStats.Text = home.SchoolName + " Points: " + home.Score.ToString() + "\n" + guest.SchoolName + " Points: " + guest.Score.ToString() + "\n" + "Winning Team: " + winner;
-            }
-        }
-
-        private void uxUpdateGame_Click(object sender, EventArgs e)
-        {
-            if (uxSelectGame.SelectedItem != null)
-            {
-                UpdateGameStats form = new UpdateGameStats(model, ((Game)uxSelectGame.SelectedItem), this);
-                this.Enabled = false;
-                form.Show();
-            }
-            else
-            {
-                MessageBox.Show("Please select a game to update!");
             }
         }
 

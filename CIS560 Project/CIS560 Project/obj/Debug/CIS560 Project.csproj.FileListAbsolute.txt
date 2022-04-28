@@ -98,12 +98,10 @@ C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\bin\Debug\DataAccess.pdb
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.AssemblyReference.cache
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Bracket.resources
-C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.ChangeGameTeams.resources
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Games.resources
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Properties.Resources.resources
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Stats.resources
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.Tourney.resources
-C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.UpdateGameStats.resources
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.GenerateResource.cache
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CoreCompileInputs.cache
 C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
@@ -129,3 +127,4 @@ C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debu
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.csproj.CopyComplete
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.exe
 C:\Users\tbohl\source\repos\CIS560Project\CIS560 Project\CIS560 Project\obj\Debug\CIS560 Project.pdb
+C:\Users\Eric Yu\Desktop\Spring 2022\CIS 560\The Good Kush\CIS560 Project\CIS560 Project\obj\Debug\CIS560_Project.InsertGameSchoolStatistics.resources
