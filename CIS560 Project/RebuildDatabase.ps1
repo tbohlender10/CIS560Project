@@ -62,7 +62,6 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.UpdatePlayerPosition.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.UpdatePlayerGameStatistics.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.InsertPlayerGameStatistics.sql"
-Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.InsertGameSchoolStatistics.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.RetrieveSchoolsForGame.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.FetchPlayerGameStatisticsForPlayerGame.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.RetrieveHomeSchoolForGame.sql"
@@ -74,6 +73,7 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.UpdateSchoolSeed.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Procedures\Basketball.UpdateSchoolRegion.sql"
 
+
 Write-Host "Inserting data..."
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.Round.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.Region.sql"
@@ -81,8 +81,8 @@ Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.School.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.Player.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.Game.sql"
-Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.GameSchool.sql"
 Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.PlayerGameStatistics.sql"
+Invoke-SqlCmd -ServerInstance $Server -Database $Database -InputFile "PersonData\Sql\Data\Basketball.GameSchool.sql"
 
 Write-Host "Rebuild completed."
 Write-Host ""

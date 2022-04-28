@@ -56,6 +56,7 @@
     <Compile Include="DataDelegates\GetSchoolDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\FetchPlayerSeasonStatisticsDataReaderDelegate.cs" />
     <Compile Include="DataDelegates\RetrieveGamesForSchoolDataReaderDelegate.cs" />
+    <Compile Include="DataDelegates\RetrieveSchoolWins.cs" />
     <Compile Include="DataDelegates\RetrieveSchoolsForGame.cs" />
     <Compile Include="DataDelegates\UpdatePlayerGameStatistics.cs" />
     <Compile Include="DataDelegates\UpdatePlayerGrade.cs" />
@@ -70,6 +71,7 @@
     <Compile Include="IPlayerSeasonStatisticsRepository.cs" />
     <Compile Include="IPlayerGameStatisticsRepository.cs" />
     <Compile Include="IGameRepository.cs" />
+    <Compile Include="ISchoolWinsRepository.cs" />
     <Compile Include="ISchoolRepository.cs" />
     <Compile Include="IPlayerRepository.cs" />
     <Compile Include="Models\GameSchool.cs" />
@@ -77,6 +79,7 @@
     <Compile Include="Models\PlayerSeasonStatistics.cs" />
     <Compile Include="Models\Round.cs" />
     <Compile Include="Models\Region.cs" />
+    <Compile Include="Models\SchoolWins.cs" />
     <Compile Include="Models\School.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Player.cs" />
@@ -86,6 +89,7 @@
     <Compile Include="SqlPlayerSeasonStatisticsRepository.cs" />
     <Compile Include="SqlPlayerGameStatisticsRepository.cs" />
     <Compile Include="SqlGameRepository.cs" />
+    <Compile Include="SqlSchoolWinsRepository.cs" />
     <Compile Include="SqlSchoolRepository.cs" />
     <Compile Include="SqlPlayerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

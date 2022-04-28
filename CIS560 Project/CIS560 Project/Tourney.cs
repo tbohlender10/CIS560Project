@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PersonData.Models;
 
 namespace CIS560_Project
 {
@@ -70,11 +71,28 @@ namespace CIS560_Project
 
         private void uxWins_Click(object sender, EventArgs e)
         {
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
+
             ShowWins();
-            label1.Text = "1.\n2.\n3.\n...";
-            label2.Text = "17.\n18.\n19.\n...";
-            label3.Text = "33.\n34.\n35.\n...";
-            label4.Text = "49.\n50.\n51.\n...";
+            for(int i = 0; i < 16; i++)
+            {
+                label1.Text += (i + 1) + ". " + model.SchoolWins[i] + "\n";
+            }
+            for (int i = 16; i < 32; i++)
+            {
+                label2.Text += (i + 1) + ". " + model.SchoolWins[i] + "\n";
+            }
+            for (int i = 32; i < 48; i++)
+            {
+                label3.Text += (i + 1) + ". " + model.SchoolWins[i] + "\n";
+            }
+            for (int i = 48; i < 64; i++)
+            {
+                label4.Text += (i + 1) + ". " + model.SchoolWins[i] + "\n";
+            }
         }
 
         private void uxPPG_Click(object sender, EventArgs e)

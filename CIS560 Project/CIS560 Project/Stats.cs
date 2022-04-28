@@ -17,6 +17,7 @@ namespace CIS560_Project
 
         Player currPlayer;
         School currSchool;
+        int currSchoolWins = 0;
 
         BindingList<String> players;
         public Stats(Form f, Model m)
@@ -142,6 +143,14 @@ namespace CIS560_Project
                 }
             }
             currSchool = model.SchoolRepo.GetSchool(schoolID);
+            foreach(SchoolWins sw in model.SchoolWins)
+            {
+                if(sw.SchoolID == schoolID)
+                {
+                    currSchoolWins = sw.Wins;
+                    break;
+                }
+            }
             bs.DataSource = players;
             uxSelectPlayer.DataSource = bs;
             foreach (Player p in model.PlayerRepo.RetrievePlayersForSchool(schoolID))
@@ -184,7 +193,7 @@ namespace CIS560_Project
             showViewStats();
 
             PersonData.Models.Region region = (PersonData.Models.Region)currSchool.RegionId;
-            uxInfo.Text = "School: " + uxSelectTeam.Text + "\n\nGames Won: N/A\n\nSeed: " + currSchool.Seed + "\n\nCoach: " + currSchool.Coach + "\n\nRegion: " + region.ToString();
+            uxInfo.Text = "School: " + uxSelectTeam.Text + "\n\nGames Won: " + currSchoolWins + "\n\nSeed: " + currSchool.Seed + "\n\nCoach: " + currSchool.Coach + "\n\nRegion: " + region.ToString();
 
         }
 
