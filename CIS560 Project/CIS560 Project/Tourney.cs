@@ -172,11 +172,11 @@ namespace CIS560_Project
             label4.Text = "";
 
             ShowWins();
-            for (int i = 0; i < 8 && i < model.CountUpsets.Count; i++)
+            for (int i = 0; i < 5 && i < model.CountUpsets.Count; i++)
             {
                 label1.Text += (i + 1) + ". " + model.CountUpsets[i] + "\n\n";
             }
-            for (int i = 8; i < 16 && i < model.CountUpsets.Count; i++)
+            for (int i = 5; i < model.CountUpsets.Count; i++)
             {
                 label3.Text += (i + 1) + ". " + model.CountUpsets[i] + "\n\n";
             }
