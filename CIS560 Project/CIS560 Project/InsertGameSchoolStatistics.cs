@@ -132,6 +132,7 @@ namespace CIS560_Project
                 model.SchoolWins = model.WinsRepo.RetrieveAllSchoolWins();
                 model.AllPointDiff = model.PointDiffRepo.RetrieveAllPointDiff();
                 model.AllUpsets = model.UpsetRepo.RetrieveAllUpsets();
+                model.CountUpsets = model.UpsetCountRepo.CountAllUpsets();
                 Parent.Enabled = true;
                 this.Close();
             }

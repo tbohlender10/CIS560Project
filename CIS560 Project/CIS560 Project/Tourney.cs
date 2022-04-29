@@ -41,6 +41,7 @@ namespace CIS560_Project
             uxPPG.Show();
             uxWins.Show();
             uxUpsets.Show();
+            uxUpsetCount.Show();
         }
 
         private void ShowWins()
@@ -161,6 +162,24 @@ namespace CIS560_Project
         private void Tourney_FormClosing(object sender, FormClosingEventArgs e)
         {
             parent.Enabled = true;
+        }
+
+        private void uxUpsetCount_Click(object sender, EventArgs e)
+        {
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
+            label4.Text = "";
+
+            ShowWins();
+            for (int i = 0; i < 8 && i < model.CountUpsets.Count; i++)
+            {
+                label1.Text += (i + 1) + ". " + model.CountUpsets[i] + "\n\n";
+            }
+            for (int i = 8; i < 16 && i < model.CountUpsets.Count; i++)
+            {
+                label3.Text += (i + 1) + ". " + model.CountUpsets[i] + "\n\n";
+            }
         }
     }
 }

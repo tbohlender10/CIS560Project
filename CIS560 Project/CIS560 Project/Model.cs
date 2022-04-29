@@ -34,6 +34,8 @@ namespace CIS560_Project
 
         public SqlUpsetRepository UpsetRepo;
 
+        public SqlUpsetSeedCountRepository UpsetCountRepo;
+
         public List<SchoolWins> SchoolWins;
 
         public List<PPG> AllPPG;
@@ -41,6 +43,8 @@ namespace CIS560_Project
         public List<PointDiff> AllPointDiff;
 
         public List<Upsets> AllUpsets;
+
+        public List<UpsetCount> CountUpsets;
 
         public Model()
         {
@@ -53,12 +57,14 @@ namespace CIS560_Project
             PPGRepo = new SqlPPGRepository(connectionString);
             PointDiffRepo = new SqlPointDiffRepository(connectionString);
             UpsetRepo = new SqlUpsetRepository(connectionString);
+            UpsetCountRepo = new SqlUpsetSeedCountRepository(connectionString);
 
             Schools = SchoolRepo.RetrieveSchools();
             SchoolWins = WinsRepo.RetrieveAllSchoolWins();
             AllPPG = PPGRepo.RetrieveAllPPG();
             AllPointDiff = PointDiffRepo.RetrieveAllPointDiff();
             AllUpsets = UpsetRepo.RetrieveAllUpsets();
+            CountUpsets = UpsetCountRepo.CountAllUpsets();
         }
     }
 }
